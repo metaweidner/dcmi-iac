@@ -61,6 +61,6 @@ We more or less agreed on investigating some static site generation
 approach. To get this started, we have to decide on the next step, e.g.,
 forming a task group or get some demonstrations or prototypes.
 
-[first-call]: {% post_url 2015-11-06-DCMI-IAC-Kickoff-Call %}
-[second-call]: {% post_url 2015-11-20-DCMI-IAC-Call %}
+[first-call]: {{ site.baseurl }}{% post_url 2015-11-06-DCMI-IAC-Kickoff-Call %}
+[second-call]: {{ site.baseurl }}{% post_url 2015-11-20-DCMI-IAC-Call %}
 [static]: https://staticsitegenerators.net/

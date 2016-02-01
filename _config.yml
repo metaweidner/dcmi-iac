@@ -12,6 +12,7 @@ description: > # this means to ignore newlines until next config
   for the Dublin Core Metatdata Initiative's Infrastructure Advisory Committee (DCMI-IAC).
 twitter_username: DublinCore
 github_username:  dcmi
+baseurl: "/dcmi-iac"
 
 # Build settings
 markdown: kramdown
