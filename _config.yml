@@ -13,7 +13,8 @@ description: > # this means to ignore newlines until next config
 twitter_username: DublinCore
 github_username:  dcmi
 baseurl: "/dcmi-iac"
+paginate: 2
 
 # Build settings
 markdown: kramdown
-paginate: 2
+gems: [jekyll-paginate]
