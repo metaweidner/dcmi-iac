@@ -15,6 +15,10 @@ permalink: /resources/
 - [DCMI Link Inventory - Google Doc][link-inventory]
 - [Static Site Generators][static-generators]
 
+### Documentation Demo Links
+
+- [Dublin Core Element Set Demo][dces-demo]
+
 <!--- DCMI Websites -->
 [dublincore-org]: http://dublincore.org/
 [dublincore-wp]: http://dublincore.net/
@@ -23,3 +27,6 @@ permalink: /resources/
 <!--- IAC Committee Links -->
 [link-inventory]: https://docs.google.com/spreadsheets/d/1cNs_ZHGbwQ2JidFTnNyN8GgH92wwTm10e3g5DGS_HQw/edit#gid=0
 [static-generators]: https://staticsitegenerators.net/
+
+<!--- Documentation Demo Links -->
+[dces-demo]: {{ site.baseurl }}/documents/dces/

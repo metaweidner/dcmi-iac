@@ -1,0 +1,59 @@
+---
+layout: page
+title: Dublin Core Element Set
+permalink: /documents/dces/
+---
+
+<a name="the_elements" id="the_elements"></a> 
+<h2>The Elements</h2>
+
+<p>|
+  {% for element in site.data.elements %}
+  <a href="#{{ element.name }}"> {{ element.label }}</a> |
+  {% endfor %}
+</p>
+
+<table class="border" cellspacing="0">
+{% for element in site.data.elements %}
+  <tr>
+    <th colspan="2"><h3 id="{{ element.name }}">{{ element.name }}</h3></th>
+  </tr>
+  <tr>
+    <td>URI:</td>
+    <td>
+      <a href="{{ element.uri }}">{{ element.uri }}</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Label:</td>
+    <td>{{ element.label }}</td>
+  </tr>
+  <tr>
+    <td>Definition:</td>
+    <td>{{ element.definition }}</td>
+  </tr>
+  <tr>
+    <td>Comment:</td>
+    <td>{{ element.comment }}</td>
+  </tr>
+  {% if element.references %}
+    <tr>
+      <td>References:</td>
+      <td>{{ element.references }}</td>
+    </tr>
+  {% endif %}
+{% endfor %}
+</table>
+
+<!--   <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+ -->
