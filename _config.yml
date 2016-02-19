@@ -43,7 +43,12 @@ prose:
         field:
           element: "text"
           label: "Title"
-          value: ""
+          # value: ""
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          # value: "minutes"
       - name: "categories"
         field:
           element: "text"
