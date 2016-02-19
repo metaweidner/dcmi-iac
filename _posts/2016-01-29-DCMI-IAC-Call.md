@@ -5,7 +5,7 @@ year: 2016
 month: "01"
 day: 29
 categories: minutes
-author:
+author: ""
 attendees: Stuart, Kai, Tom, Andrew, Jon, Paul
 regrets: Adrian
 ---

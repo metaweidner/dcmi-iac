@@ -5,9 +5,9 @@ year: 2015
 month: 11
 day: 20
 categories: minutes
-author:
+author: ""
 attendees: Stuart, Tom, Kai, Andrew, Joachim, Adrian
-regrets:
+regrets: ""
 ---
 
 - Inventory of infrastructural stuff: [DCMI Infrastructure Inventory][dcmi-infrastructure]

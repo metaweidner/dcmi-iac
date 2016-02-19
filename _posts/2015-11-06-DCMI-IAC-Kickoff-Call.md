@@ -5,7 +5,7 @@ year: 2015
 month: 11
 day: "06"
 categories: minutes
-author:
+author: ""
 attendees: Stuart, Tom, Kai, Adrian, Kevin, Andrew, Joachim, Konstantin, Paul
 regrets: Tim
 ---
