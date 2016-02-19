@@ -2,7 +2,7 @@
 layout: post
 title:  "DCMI-IAC Call"
 year: 2016
-month: 01
+month: "01"
 day: 29
 categories: minutes
 author:

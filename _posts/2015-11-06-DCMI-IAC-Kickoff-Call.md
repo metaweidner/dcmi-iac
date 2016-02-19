@@ -3,7 +3,7 @@ layout: post
 title:  "DCMI-IAC Kickoff Call"
 year: 2015
 month: 11
-day: 06
+day: "06"
 categories: minutes
 author:
 attendees: Stuart, Tom, Kai, Adrian, Kevin, Andrew, Joachim, Konstantin, Paul
