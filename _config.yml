@@ -156,6 +156,8 @@ prose:
               value: "minutes"
             - name: "Announcements"
               value: "announcements"
+            - name: "Documentation"
+              value: "documentation"
       - name: "author"
         field:
           element: "text"
