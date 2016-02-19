@@ -7,8 +7,8 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.year }}-{{ page.month }}-{{ page.day }}</time>{% if page.author != "" %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
-      {% if page.attendees %}<br />Attendees: {{ page.attendees }}{% endif %}
-      {% if page.regrets %}<br />Regrets: {{ page.regrets }}{% endif %}</p>
+      {% if page.attendees != "" %}<br />Attendees: {{ page.attendees }}{% endif %}
+      {% if page.regrets != ""  %}<br />Regrets: {{ page.regrets }}{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
