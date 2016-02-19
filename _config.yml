@@ -49,9 +49,14 @@ prose:
           label: "Date"
       - name: "categories"
         field:
-          element: "text"
+          element: "multiselect"
           label: "Categories"
           value: "minutes"
+          options:
+            - name: "Minutes"
+              value: "minutes"
+            - name: "Announcements"
+              value: "announcements"
       - name: "author"
         field:
           element: "text"
