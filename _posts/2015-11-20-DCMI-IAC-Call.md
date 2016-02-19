@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "DCMI-IAC Call"
-date:   2015-11-20 16:00 CET
+year: 2015
+month: 11
+day: 20
 categories: minutes
 author:
 attendees: Stuart, Tom, Kai, Andrew, Joachim, Adrian

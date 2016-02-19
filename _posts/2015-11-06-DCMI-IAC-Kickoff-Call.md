@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "DCMI-IAC Kickoff Call"
-date:   2015-11-06 16:00 CET
+year: 2015
+month: 11
+day: 06
 categories: minutes
 author:
 attendees: Stuart, Tom, Kai, Adrian, Kevin, Andrew, Joachim, Konstantin, Paul
