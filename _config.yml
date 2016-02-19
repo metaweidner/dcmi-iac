@@ -50,7 +50,7 @@ prose:
           value: "2016"
       - name: "month"
         field:
-          element: "multiselect"
+          element: "select"
           label: "Month"
           placeholder: "Select a Month"
           options:
@@ -80,7 +80,7 @@ prose:
               value: "12"
       - name: "day"
         field:
-          element: "multiselect"
+          element: "select"
           label: "Day"
           placeholder: "Select a Day"
           options:
@@ -146,10 +146,10 @@ prose:
               value: "30"
             - name: "31"
               value: "31"
-      - name: "categories"
+      - name: "category"
         field:
-          element: "multiselect"
-          label: "Categories"
+          element: "select"
+          label: "Category"
           placeholder: "Select a Category"
           options:
             - name: "Minutes"
