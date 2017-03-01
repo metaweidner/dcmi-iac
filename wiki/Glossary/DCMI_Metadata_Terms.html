@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr">
+<head>
+<title>Glossary/DCMI Metadata Terms - DCMI_MediaWiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Glossary_DCMI_Metadata_Terms skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">Glossary/DCMI Metadata Terms</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From DCMI_MediaWiki</h3>
+		
+		
+		
+<h2> <span class="mw-headline" id="DCMI_Metadata_Terms"> DCMI Metadata Terms </span>
+</h2>
+<p>The RDF Properties, Classes, Vocabulary Encoding Schemes, and Datatypes declared and maintained by the Dublin Core Metadata Initiative are collectively referred to as <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/dcmi-terms/" class="external text" rel="nofollow">DCMI Metadata Terms</a><sup id="cite_ref-0" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-0">[1]</a></sup>.  Of the four types of terms, Properties, Classes, and Datatypes (Syntax Encoding Scheme) are defined exactly as in <a href="http://metaweidner.github.io/dcmi-iac/wiki/Glossary/RDF" title="Glossary/RDF">RDF</a>.  The notion of a Vocabulary Encoding Scheme is unique to DCMI, though it is similar to -- arguably, formally indistinguishable from -- the notion of a <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/TR/skos-reference/#schemes" class="external text" rel="nofollow">Concept Scheme</a><sup id="cite_ref-1" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-1">[2]</a></sup> in Simple Knowledge Organization System (SKOS).
+</p>
+<p>It hasn't always been this way.  When Elements were introduced in a 1995 workshop, and Qualifiers in 1997, the W3C specification for RDF did not yet exist.  The path from "native Dublin Core" term types to RDF only really ended with the publication of a revised DCMI Abstract Model in 2007<sup id="cite_ref-2" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-2">[3]</a></sup>.  Starting with the Canberra Qualifiers of 1997<sup id="cite_ref-3" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-3">[4]</a></sup> -- Language, Scheme, and Type (Sub-Element) -- and continuing with the transitional Types A and B of 1998 <sup id="cite_ref-4" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-4">[5]</a></sup>, the path to RDF took the following turns:
+</p>
+<ul><li> The Dublin Core Qualifiers published in 2000 were of two types -- Element Refinements and Encoding Schemes.<sup id="cite_ref-5" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-5">[6]</a></sup>
+</li></ul>
+<ul><li> By 2003, Elements began to be called Properties.  The type Encoding Scheme was differentiated into Vocabulary Encoding Schemes and Syntax Encoding Schemes.<sup id="cite_ref-6" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-6">[7]</a></sup>
+</li></ul>
+<ul><li> In the meantime, 2004 saw the publication of a major revision of RDF and laying the groundwork for modern Semantic Web implementations.<sup id="cite_ref-7" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-7">[8]</a></sup>
+</li></ul>
+<ul><li> In the revised DCMI Abstract Model of 2007, Property replaced Element as the designation of choice and was explicitly equated with RDF Property.  The term Element Refinement was dropped with the explanation that an Element Refinement was no more than a Property which happened to be a sub-property of another.  Syntax Encoding Schemes were declared to be RDF Datatypes.
+</li></ul>
+<h3> <span class="mw-headline" id="Equivalences"> Equivalences </span>
+</h3>
+<table border="1" cellpadding="2">
+
+<tr>
+<td width="200pt">The Dublin Core (1995)
+</td>
+<td colspan="2" width="300pt">DCMI Grammatical Principles (2000-2001)
+</td>
+<td width="300pt">DCMI Abstract Model (2007)
+</td>
+<td width="300pt">RDF and SKOS (today)
+</td>
+</tr>
+<tr>
+<td>
+<i>element</i>
+</td>
+<td colspan="2">
+<i>element</i>
+</td>
+<td>
+<i>property</i> or <i>element</i>
+</td>
+<td>
+<a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" class="external text" rel="nofollow"><i>rdf:Property</i></a>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+</td>
+<td rowspan="3">
+<i>qualifier</i>
+</td>
+<td>
+<i>element refinement</i>
+</td>
+<td>
+<i>property</i> with sub-property-of relation
+</td>
+<td>
+<a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" class="external text" rel="nofollow"><i>rdf:Property</i></a> with <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/2000/01/rdf-schema#subPropertyOf" class="external text" rel="nofollow"><i>rdfs:subPropertyOf</i></a> relationship
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<i>encoding scheme</i>
+</td>
+<td>
+<i>syntax encoding scheme</i>
+</td>
+<td>
+<a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/2000/01/rdf-schema#Datatype" class="external text" rel="nofollow"><i>rdfs:Datatype</i></a>
+</td>
+</tr>
+<tr>
+<td>
+<i>vocabulary encoding scheme</i>
+</td>
+<td>
+<a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/TR/skos-reference/#schemes" class="external text" rel="nofollow"><i>skos:ConceptScheme</i></a>, though the equivalence is debatable and has not been formally declared
+</td>
+</tr>
+</table>
+<h3> <span class="mw-headline" id="References"> References </span>
+</h3>
+<ol class="references">
+<li id="cite_note-0">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-0">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/dcmi-terms/" class="external free" rel="nofollow">http://dublincore.org/documents/dcmi-terms/</a>
+</li>
+<li id="cite_note-1">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-1">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/TR/skos-reference/#schemes" class="external free" rel="nofollow">http://www.w3.org/TR/skos-reference/#schemes</a>
+</li>
+<li id="cite_note-2">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-2">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/2007/06/04/abstract-model/#sect-5" class="external free" rel="nofollow">http://dublincore.org/documents/2007/06/04/abstract-model/#sect-5</a>
+</li>
+<li id="cite_note-3">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-3">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.dlib.org/dlib/june97/metadata/06weibel.html" class="external free" rel="nofollow">http://www.dlib.org/dlib/june97/metadata/06weibel.html</a>
+</li>
+<li id="cite_note-4">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-4">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/1998/10/07/datamodel/index.shtml" class="external free" rel="nofollow">http://dublincore.org/documents/1998/10/07/datamodel/index.shtml</a>
+</li>
+<li id="cite_note-5">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-5">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/2000/07/11/dcmes-qualifiers/" class="external free" rel="nofollow">http://dublincore.org/documents/2000/07/11/dcmes-qualifiers/</a>
+</li>
+<li id="cite_note-6">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-6">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/usage/documents/2003/02/07/principles/" class="external free" rel="nofollow">http://dublincore.org/usage/documents/2003/02/07/principles/</a>
+</li>
+<li id="cite_note-7">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-7">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://www.w3.org/TR/2004/REC-rdf-concepts-20040210/" class="external free" rel="nofollow">http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/</a>
+</li>
+</ol>
+
+
+
+				
+				
+	</div>
+</div></div>
+
+
+
+</div>
+
+
+</body>
+</html>

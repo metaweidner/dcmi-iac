@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr">
+<head>
+<title>Glossary/Description Set Profile - DCMI_MediaWiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Glossary_Description_Set_Profile skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">Glossary/Description Set Profile</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From DCMI_MediaWiki</h3>
+		
+		
+		
+<h2> <span class="mw-headline" id="Description_Set_Profile_Constraint_Language_.28DC-DSP.29"> Description Set Profile Constraint Language (DC-DSP) </span>
+</h2>
+<p>The March 2008 specification "Description Set Profiles: a constraint language for Dublin Core application profiles" (hereafter DC-DSP) <sup id="cite_ref-0" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-0">[1]</a></sup> provided a language for specifying constraints on a "description set" as defined by the <a href="http://metaweidner.github.io/dcmi-iac/wiki/Glossary/DCMI_Abstract_Model" title="Glossary/DCMI Abstract Model">DCMI Abstract Model</a>. The notion of "constraints" acknowledges that the set of possible ways that the slots defined by the Description Set Model may be filled is infinite, and that these infinite possibilities can be configured, or "constrained", in specific ways for specific content.  
+</p>
+<p>In the terminology of the DC-DSP specification, sets of constraints are expressed in "templates".  Templates use constraints to specify community- or application-specific rules for the contents of a description set: first for individual descriptions in a description set (Description Templates); then within each description, for individual statements (Statement Templates); then for each component "slot" within each statement (Constraints).  Conceptually, templates are like cookie cutters for mass-producing actual descriptions and statements in real instance metadata.  Actual descriptions and statements in real instance metadata, in turn, are conceptualized as "matching" specific templates according to a matching algorithm.
+</p>
+<p>The DC-DSP specification aimed at providing an initial set of simple constraint types of use for the structural validation of metadata records with the expectation that the set might be extended with additional constraint types in response to user feedback.  Very broadly, this initial set included constraints on:
+</p>
+<ul><li> Minimum and maximum allowable occurrences of actual descriptions matching a given Description Template within a Description Set.
+</li></ul>
+<ul><li> Whether descriptions matching a given Description Template may stand alone within a Description Set or whether their presence depends on the presence of descriptions matching another Description Template (example: "no stand-alone descriptions of authors in the absence of a description of the book they wrote").  
+</li></ul>
+<ul><li> Minimum and maximum allowable occurrences of actual statements matching a given Statement Template within a Description.
+</li></ul>
+<ul><li> For slots designed to hold URIs -- such as Property URI, Value URI, and Value Encoding Scheme URI -- whether it is mandatory, optional, or disallowed that the given slot be filled in a given Statement Template, or a list of URIs that may be used in the given slot (as in: "the slot labeled Property URI must contain one of these URIs").
+</li></ul>
+<ul><li> For slots designed to hold character strings or language tags, whether it is mandatory, optional, or disallowed that the given slot be filled in a given Statement Template, or a list of character strings that may be used in the given slot.
+</li></ul>
+<h3> <span class="mw-headline" id="References"> References </span>
+</h3>
+<ol class="references"><li id="cite_note-0">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-0">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/dc-dsp" class="external free" rel="nofollow">http://dublincore.org/documents/dc-dsp</a>
+</li></ol>
+
+
+
+				
+				
+	</div>
+</div></div>
+
+
+
+</div>
+
+
+</body>
+</html>

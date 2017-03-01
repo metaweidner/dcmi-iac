@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr">
+<head>
+<title>Glossary/Dumb-Down Principle - DCMI_MediaWiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Glossary_Dumb-Down_Principle skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">Glossary/Dumb-Down Principle</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From DCMI_MediaWiki</h3>
+		
+		
+		
+<h2> <span class="mw-headline" id="Dumb-Down_Principle"> Dumb-Down Principle </span>
+</h2>
+<p>The Dumb-Down Principle, which entered Dublin Core discourse in 1998<sup id="cite_ref-0" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-0">[1]</a></sup>, originally denoted a principled way of viewing a complex metadata description through the lens of a simpler representation, typically <a href="http://metaweidner.github.io/dcmi-iac/wiki/Glossary/Simple_Dublin_Core" title="Glossary/Simple Dublin Core">Simple Dublin Core</a>.  
+</p>
+<p>Dumb-Down was associated with the notion of a <a href="http://metaweidner.github.io/dcmi-iac/wiki/Glossary/DCMI_Metadata_Terms" title="Glossary/DCMI Metadata Terms">"qualifier"</a> which, when introduced in 1997, was seen as a way to provide additional context to a metadata value -- clarifications of meaning, references to controlled vocabularies or to parsing rules, and the like. Such additional information could, in principle, be safely ignored by applications for which the extra context was either not understood, or unnecessary.  As the document "Dublin Core Qualifiers" put it in 2000: "a client should be able to ignore any qualifier and use the value as if it were unqualified. While this may result in some loss of specificity, the remaining term value (minus the qualifier) must continue to be generally correct and useful for discovery."<sup id="cite_ref-1" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-1">[2]</a></sup>
+</p>
+<p>The original Dumb-Down algorithms involved following statements using the property rdf:value to resolve complex descriptions to a "simple default name" (or "default value") for a resource, that is, "to ignore all qualifiers that originate at structural nodes, and follow the chain of rdf:value arcs until a String is found. That string is returned as the value of the procedure."<sup id="cite_ref-2" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-2">[3]</a></sup> <sup id="cite_ref-3" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-3">[4]</a></sup>
+</p>
+<p>In 2005, the DCMI Abstract Model introduced a distinction between "Informed" and "Uninformed" Dumb-Down: "Informed dumb-down takes place where the software performing the dumb-down algorithm has knowledge built into it about the property relationships and values being used within a specific DCMI metadata application. Uninformed dumb-down takes place where the software performing the dumb-down algorithm has no prior knowledge about the properties and values being used."  The notion of Informed Dumb-Down introduced the idea of using the sub-property relationships expressed in RDF schemas to infer statements using more-general properties from statements using more-specific properties.<sup id="cite_ref-4" class="reference"><a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_note-4">[5]</a></sup> 
+</p>
+<p>Converting metadata into plain-text forms for display remains an important issue in the Linked Data space, though in the absence of rdf:value, which is currently considered to be too poorly defined for such purposes, there is no clear default way to do so.  As the notion of Simple Dublin Core (understood as "fifteen elements with text values") has become relatively less salient in the context of Linked Data, Dumb-Down is increasingly understood as referring to the more general notion of partial interoperability among imperfectly aligned data sets in an open Web environment on the basis of Semantic Web principles.  
+</p>
+<h3> <span class="mw-headline" id="References"> References </span>
+</h3>
+<ol class="references">
+<li id="cite_note-0">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-0">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/archives/1998/1998-09-24.decisions.html" class="external free" rel="nofollow">http://dublincore.org/archives/1998/1998-09-24.decisions.html</a>
+</li>
+<li id="cite_note-1">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-1">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/2000/07/11/dcmes-qualifiers/" class="external free" rel="nofollow">http://dublincore.org/documents/2000/07/11/dcmes-qualifiers/</a>
+</li>
+<li id="cite_note-2">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-2">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/archives/1998/1998-09-24.decisions.html" class="external free" rel="nofollow">http://dublincore.org/archives/1998/1998-09-24.decisions.html</a>
+</li>
+<li id="cite_note-3">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-3">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/dcq-rdf-xml/#sec3" class="external free" rel="nofollow">http://dublincore.org/documents/dcq-rdf-xml/#sec3</a>
+</li>
+<li id="cite_note-4">
+<a href="http://metaweidner.github.io/dcmi-iac/wiki#cite_ref-4">↑</a> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://dublincore.org/documents/2005/03/07/abstract-model/#sect-5" class="external free" rel="nofollow">http://dublincore.org/documents/2005/03/07/abstract-model/#sect-5</a>
+</li>
+</ol>
+
+
+
+				
+				
+	</div>
+</div></div>
+
+
+
+</div>
+
+
+</body>
+</html>
