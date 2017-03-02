@@ -1,0 +1,282 @@
+---
+layout: page
+title: User Guide
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<ul>
+<li> Contributor: Stefanie Rühle 
+</li>
+<li> Contributer: Tom Baker 
+</li>
+<li> Contributor: Pete Johnston
+</li>
+</ul>
+<p>Go to <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Creating_Metadata" title="User Guide/Creating Metadata">Creating Metadata</a> | <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Publishing_Metadata" title="User Guide/Publishing Metadata">Publishing Metadata</a>
+</p>
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Purpose_and_Scope_of_this_Guide"><span class="tocnumber">1</span> <span class="toctext">Purpose and Scope of this Guide</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_is_Metadata.3F"><span class="tocnumber">2</span> <span class="toctext">What is Metadata?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#What_is_Dublin_Core.3F"><span class="tocnumber">3</span> <span class="toctext">What is Dublin Core?</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Dublin_Core_Terms"><span class="tocnumber">4</span> <span class="toctext">Dublin Core Terms</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Dublin_Core_URIs_and_namespaces"><span class="tocnumber">5</span> <span class="toctext">Dublin Core URIs and namespaces</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#What_is_Linked_Data.3F"><span class="tocnumber">6</span> <span class="toctext">What is Linked Data?</span></a></li>
+<li class="toclevel-1 tocsection-7">
+<a href="#Dublin_Core_and_Linked_Data"><span class="tocnumber">7</span> <span class="toctext">Dublin Core and Linked Data</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8">
+<a href="#Levels_of_Interoperability"><span class="tocnumber">7.1</span> <span class="toctext">Levels of Interoperability</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#References"><span class="tocnumber">7.1.1</span> <span class="toctext">References</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Purpose_and_Scope_of_this_Guide">Purpose and Scope of this Guide</span>
+</h1>
+<p>"The Dublin Core" (aka the Dublin Core Metadata Element Set), created in 1995, is a set of fifteen generic elements for describing resources.  These are: Creator, Contributor, Publisher, Title, Date, Language, Format, Subject, Description, Identifier, Relation, Source, Type, Coverage, and Rights.  Today the Dublin Core is a formal standard <sup id="cite_ref-0" class="reference"><a href="#cite_note-0">[1]</a></sup><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[2]</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[3]</a></sup>, used in countless implementations, and one of the top metadata vocabularies on the Web.
+</p>
+<p>But "Dublin Core metadata" is about more than fifteen elements. It is best described as a <i>style of metadata</i> that has evolved from efforts to put the fifteen elements into the context of a coherent approach to metadata on the World Wide Web generally.  Since the late 1990s, the Dublin Core style has evolved in the context of a Dublin Core Metadata Initiative (DCMI) -- now incorporated as a non-profit organization hosted at the National Library Board of Singapore -- in tandem with a generic approach to metadata developed in the World Wide Web Consortium under the banner "Semantic Web".  The Semantic Web approach achieved a breakthrough in 2006 with the Linked Data movement, which uses DCMI Metadata Terms as one of its key vocabularies.  "DCMI Metadata Terms" is a larger set that includes the fifteen elements along with several dozen related properties and classes. "Dublin Core application profile" is the key expression of the Dublin Core style.  An application profile uses DCMI metadata terms together with terms from other, more specialized vocabularies to describe a specific type of information -- and it does this in the framework of the Semantic Web.
+</p>
+<p>These guidelines provide an entry point for users of Dublin Core -- i.e., for users of DCMI Metadata Terms in the "Dublin Core style". For catalogers, it will show how to create metadata "descriptions" for information resources such as documents, images, data, etc. Implementers will it support publishing Dublin Core Metadata as Linked Data. The guidelines will neither show how to create a Dublin Core Application Profiles -- for this see the <a href="http://dublincore.org/documents/profile-guidelines/" class="external text" rel="nofollow">Guidelines for Dublin Core Application Profils</a> -- nor how to express Dublin Core Terms in different syntaxes (e.g. xml) -- for this see the section "Syntax Guidelines" of <a href="http://dublincore.org/specifications/" class="external text" rel="nofollow">DCMI Specifications</a>. According to this the User Guide contains the following sections:
+</p>
+<ul><li> <b>User Guide</b>: a short introduction about Dublin Core and Dublin Core Terms
+</li></ul>
+<ul><li> <b><a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Creating_Metadata" title="User Guide/Creating Metadata">Creating Metadata</a></b>: a description how to create content for DCMI Metadata illustrated by examples
+</li></ul>
+<ul><li> <b><a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Publishing_Metadata" title="User Guide/Publishing Metadata">Publishing Metadata</a></b>: a description how to use Dublin Core Metadata as linked data illustrated by examples
+</li></ul>
+<h1> <span class="mw-headline" id="What_is_Metadata.3F">What is Metadata?</span>
+</h1>
+<p>Metadata has been with us since people made lists on clay tablets and scrolls. The term "meta" comes from the Greek for "alongside" or "with". Over time, "meta" was also used to denote something transcendental, or beyond nature. "Meta-data", then, is "data about data", such as the contents of catalogs, inventories, etc. Since the 1990s, "metadata" denotes machine-readable descriptions of things, most commonly in the context of the Web. The structured descriptions of metadata help find relevant resources in the undifferentiated masses of data available online. Anything of interest can be described with metadata, from book collections to football leagues and stuff you want to sell. Describing different types of resources requires different types of metadata and metadata standards.
+</p>
+<h1> <span class="mw-headline" id="What_is_Dublin_Core.3F"> What is Dublin Core? </span>
+</h1>
+<p>In the mid 1990s Dublin Core started with the idea of "core metadata" for simple and generic description of electronic resources. An international, cross-disciplinary group of professionals from librarianship, computer science, text encoding and museum community, and other related fields of scholarship and practice developed such a core standard – the fifteen Dublin Core elements. But this was just the first steps – since then the World Wide Web has changed in some ways and has broken new ground on the way to a semantic web. Dublin Core followed this path developing further standards for metadata based on the World Wide Web Consortium's work on a generic data model for metadata, the Resource Description Framework (RDF). At the same time the scope of Dublin Core metadata was broadened from "electronic resources" to encompass, in principle, any object that can be identified, wether electronic, real-world, or conceptual, and particularly including resources of the sort named in the DCMI Type Vocabulary.
+</p>
+<p>So <b>Dublin Core metadata standards</b> today are:
+</p>
+<ul>
+<li> The <a href="http://dublincore.org/documents/abstract-model/" class="external text" rel="nofollow">DCMI Abstract Model</a> (DCAM) – an RDF based syntax independent model supporting mappings and cross-syntax translations.
+</li>
+<li> The <a href="http://dublincore.org/documents/singapore-framework/" class="external text" rel="nofollow">Sinagpore Framework for Dublin Core Application Profiles</a> – a framework which defines the components that are necessary for documenting a Dublin Core compatible Application Profile.
+</li>
+<li> <b>The Dublin Core Metadata Vocabularies</b>
+<ul>
+<li> <a href="http://dublincore.org/documents/dcmi-terms/" class="external text" rel="nofollow">DCMI Metadata Terms</a> in the /terms/ Namespace
+</li>
+<li> <a href="http://dublincore.org/documents/dcmi-type-vocabulary/" class="external text" rel="nofollow">DCMI Type Vocabulary</a>
+</li>
+<li> Metadata terms related to the  <a href="http://dublincore.org/documents/abstract-model/" class="external text" rel="nofollow">DCMI Abstract Model</a>
+</li>
+<li> <a href="http://dublincore.org/documents/dces/" class="external text" rel="nofollow">Dublin Core Metadata Element Set, Version 1.1</a>
+</li>
+</ul>
+</li>
+</ul>
+<h1> <span class="mw-headline" id="Dublin_Core_Terms"> Dublin Core Terms  </span>
+</h1>
+<p>The Dublin Core Metadata Vocabularies distinguish four types of terms: properties, classes, datatypes and vocabulary encoding schemes.
+</p>
+<ul><li> Dublin Core <b>Properties</b> resp. <b>Elements</b> are the "core" attributes of resources, used for the uniform structured resource description. Properties like dc:title, dc:creator, etc. are defined in the <a href="http://dublincore.org/documents/dcmi-terms/#H3" class="external text" rel="nofollow">Dublin Core Metadata Element Set</a> (DCMES), which is the Set of the fifteen generic elements created in the 1990s. And properties like dcterms:title, dcterms:alterantive, etc. are defined as <a href="http://dublincore.org/documents/dcmi-terms/#H2" class="external autonumber" rel="nofollow">[1]</a> DCMI Metadata Terms - also known as subproperties or refinements of the DCMES. In record based metadata systems properties are usually called metadata fields. 
+</li></ul>
+<ul><li> <b>Classes</b> are groups of resources having certain properties in common and therefore put together as members of one concept. Dublin Core Classes are the terms of the <a href="http://dublincore.org/documents/dcmi-terms/#H7" class="external text" rel="nofollow">DCMI Type Vocabularies</a> - e.g. dcmitype:Collection, dcmitype:dataset, etc. Dublin Core also defined [ <a href="http://dublincore.org/documents/dcmi-terms/#H6" class="external free" rel="nofollow">http://dublincore.org/documents/dcmi-terms/#H6</a> Classes as DCMI Metadate Terms] - e.g. dcterms:Agent, dcterms:BibliographicResource, etc. Relationships between Dublin Core Classes and Properties are the following: 
+<ul>
+<li> Each property may be related to one or more classes by a <b>has domain relationship</b>, where the domain indicates the class of resources that the property should be used to describe.
+</li>
+<li> Each property may be related to one or more classes by a <b>has range relationship</b>, where the range indicates the class of resources that should be used as values for that property.
+</li>
+</ul>
+</li></ul>
+<dl><dd> For further information about domains and ranges used with DCMI Properties see <a href="http://dublincore.org/documents/domain-range/" class="external text" rel="nofollow">Domains and Ranges for DCMI Properties</a> 
+</dd></dl>
+<ul><li> <b>Datatypes</b> resp. <b>Syntax Encoding Schemes (SES)</b> are the rules that specify how a value has to be structured. Dublin Core defined Syntax Encoding Schemes as DCMI Metadata Terms - e.g. dcterms:W3CDTF for date specification. The relationship between Dublin Core datatypes and properties is as follows:
+<ul><li> Certain properties - e.g. date, identifier, etc. - may be typed by a Syntax Encoding Scheme, where the Syntax Encoding Scheme dictates the syntax of the values used with that property.
+</li></ul>
+</li></ul>
+<ul><li> A <b>Vocabulary Encoding Scheme (VES)</b> resp. <b>Concept Scheme</b> identifies controlled vocabularies - such as thesauri, classifications, subject headings, taxonomies, etc. - whose terms may be used as values. The relationship between Dublin Core vocabulary encoding schemes and properties is as follows:
+<ul><li> Certain properties - e.g. subject, coverage, etc. - may be constrained by a Vocabulary Encodings Scheme, where the Vocabulary Encodings Scheme dictates what values may be used with that property. 
+</li></ul>
+</li></ul>
+<p>This User Guide describes the usage of Dublin Core Properties and their relation to Classes, Syntax Encoding Schemes and Vocabulary Encoding Schemes. Therefore it lists all properties defined in the following two namespaces of <a href="http://dublincore.org/documents/dcmi-terms/" class="external text" rel="nofollow">DCMI Metadata Terms</a>:
+</p>
+<ul>
+<li> <a href="http://purl.org/dc/elements/1.1/" class="external free" rel="nofollow">http://purl.org/dc/elements/1.1/</a> (referred to here using the short prefix "dc:")
+</li>
+<li> <a href="http://purl.org/dc/terms/" class="external free" rel="nofollow">http://purl.org/dc/terms/</a> ("dcterms:").
+</li>
+</ul>
+<p>and illustrate their usage by examples. Examples are offered for two points of view: for the "cataloger" creating metadata descriptions, typically with help from a software interface, and for the "technician" responsible for publishing the data created as linked data.
+</p>
+<ul><li> <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Creating_Metadata" title="User Guide/Creating Metadata">Creating Metadata</a>: describes how to create content for DCMI Metadata listing each property by name, abbreviated URI, and definition, and groups together related properties -- i.e. properties that can be described with similar usage guidelines and illustrated with similar examples.
+</li></ul>
+<ul><li> <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Publishing_Metadata" title="User Guide/Publishing Metadata">Publishing Metadata</a>: describes how to use DCMI Metadata as linked data listing the properties by namespaces.
+<ul>
+<li> The terms namespace
+<ul>
+<li> used with literal values
+</li>
+<li> used with non-literal values
+</li>
+</ul>
+</li>
+<li> The legacy or element namespace 
+</li>
+</ul>
+</li></ul>
+<p>The guide does not regard information about the usage of Dublin Core Properties with different syntaxes. For this see: 
+</p>
+<ul>
+<li> <a href="http://dublincore.org/documents/dc-rdf/" class="external text" rel="nofollow">Expressing Dublin Core metadata using the Resource Description Framework (RDF)</a>
+</li>
+<li> <a href="http://dublincore.org/documents/dc-xml-guidelines/" class="external text" rel="nofollow">Guidelines for implementing Dublin Core in XML</a>
+</li>
+<li> <a href="http://dublincore.org/documents/dc-ds-xml/" class="external text" rel="nofollow">Expressing Dublin Core Description Sets using XML (DC-DS-XML)</a>
+</li>
+<li> <a href="http://dublincore.org/documents/dc-html/" class="external text" rel="nofollow">Expressing Dublin Core metadata using HTML/XHTML meta and link elements</a>
+</li>
+<li> <a href="http://dublincore.org/documents/dc-text/" class="external text" rel="nofollow">Expressing Dublin Core metadata using the DC-Text format</a>
+</li>
+</ul>
+<h1> <span class="mw-headline" id="Dublin_Core_URIs_and_namespaces"> Dublin Core URIs and namespaces </span>
+</h1>
+<p>Each Dublin Core Term has to be assigned a name that is unique in the context of a particular DCMI term set - e.g. abstract - and a URI of a DCMI namspace which is a globally unique identifier for that term - e.g. <a href="http://purl.org/dc/terms/abstract" class="external free" rel="nofollow">http://purl.org/dc/terms/abstract</a>. 
+</p>
+<p>The <a href="http://dublincore.org/documents/dcmi-namespace/index.shtml" class="external text" rel="nofollow">DCMI Namspace Policy</a> defines a <b>DCMI Term URI</b> as "the URI for a term that is declared and managed by DCMI" and a <b>DCMI Namespace</b> as "a collection of DCMI term URIs where each term is assigned a URI that starts with the same <i>base URI</i>. The <i>base URI</i> is known as the DCMI Namespace URI. (Note that a DCMI namespace is not the same as an 'XML namespace')." The policy defines the following four base URIs:
+</p>
+<ul><li> <b><a href="http://purl.org/dc/elements/1.1/" class="external free" rel="nofollow">http://purl.org/dc/elements/1.1/</a></b> for the fifteen properties of the Dublin Core Metadata Element Set - called the <b>legacy namespace</b>
+</li></ul>
+<ul><li> <b><a href="http://purl.org/dc/dcmitype" class="external free" rel="nofollow">http://purl.org/dc/dcmitype</a></b>  for classes in the DCMI Type Vocabulary - called the <b>type namespace</b>
+</li></ul>
+<ul><li> <b><a href="http://purl.org/dc/dcam" class="external free" rel="nofollow">http://purl.org/dc/dcam</a></b> for terms used in the DCMI Abstract Model (of which there are currently two)
+</li></ul>
+<ul><li> <b><a href="http://purl.org/dc/terms/" class="external free" rel="nofollow">http://purl.org/dc/terms/</a></b> for all other DCMI properties, classes, vocabulary encoding schemes and datatypes - called the <b>terms namespace</b>
+</li></ul>
+<p>To ensure interoperability and persistence all DCMI URIs dereference to machine-processable DCMI term declarations, representing one or more DCMI terms.
+</p>
+<h1> <span class="mw-headline" id="What_is_Linked_Data.3F"> What is Linked Data? </span>
+</h1>
+<p>Linked Data is a method of exposing, sharing, and connecting data on the Semantic Web using URIs and RDF (see <a href="http://linkeddata.org/" class="external free" rel="nofollow">http://linkeddata.org/</a>). Metadata are the backbone of this method, making <b>statements</b> about data and how they relate to each other. In Linked Data these statements have to be expressed in RDF triples, which break statements in three parts:
+</p>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/File:Diagram1.jpeg" class="image"><img alt="Diagram1.jpeg" src="/images/0/06/Diagram1.jpeg" width="237" height="119"></a>
+</p>
+<ul>
+<li> the subject - the part that identifies the thing the statement describes,
+</li>
+<li> the predicate - the part that identifies a property of the described thing.
+</li>
+<li> the object - the part that identifies the value this property has when describing this thing.
+</li>
+</ul>
+<p>(see: <a href="http://www.w3.org/TR/2004/REC-rdf-primer-20040210/#statements" class="external free" rel="nofollow">http://www.w3.org/TR/2004/REC-rdf-primer-20040210/#statements</a>)
+</p>
+<p>Another "must" when publishing metadata in Linked Data is the usage of URIs. In Linked Data you need URIs referencing to things by identifying, localizing and interlinking them. Considering this a triple graph describing Charles Dickens "A Christmas Carol" might look this way:
+</p>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/File:Dickens2.jpeg" class="image"><img alt="Dickens2.jpeg" src="/images/e/ed/Dickens2.jpeg" width="554" height="195"></a>
+</p>
+<p>Here the value "A Christmas Carol" is a simple string or literal value. Another sort of values used in a triple are non-literal values, which means you use a URI that references to another description - the description of a thing that is the object of your statement. In our example the dbpedia URI of Charles Dickens references to such a description.
+</p>
+<p>Based on the above said a metadata description in Linked Data consists of:
+</p>
+<ul>
+<li> <b>a reference to a described resource</b>, i.e. to the thing that the metadata is <i>about</i>, the <i>subject</i> of the metadata.  This reference takes the form of a Uniform Resource Identifier (URI) or of an unnamed placeholder that is inferred by context (e.g., that metadata embedded in a document is about the enclosing document).
+</li>
+<li> <b>references to properties</b>: typed relationships between the described resource and various bits of descriptive information, or between the described resource and another resource.  Examples of properties, which are also known as <i>predicates</i>, include the fifteen elements of the Dublin Core.
+</li>
+<li> <b>values</b>: bits of descriptive information (string <i>literals</i>) or references to other entities (resources), such as people or concepts, which are related to the described resource via the properties.
+</li>
+<li> <b>references to classes</b>, i.e. to types, or categories, of things, such as the category <i>books</i> or the category <i>people</i>.
+</li>
+<li> <b>references to syntax encoding schemes (RDF datatypes)</b>, i.e. specifications of how value strings map refer to things in the world, such as <i>2010-09-24</i>, which uses the YYYY-MM-DD pattern specified in ISO 8601 to represent the date 22 September 2010.
+</li>
+<li> <b>references to vocabulary encoding schemes (VES)</b>, enumerated sets of resources of which the things referenced as values are members, the way a subject heading belongs to the VES <i>Library of Congress Subject Headings</i>.
+</li>
+<li> <b>language tags</b> indicating the language of words used in literal string values.
+</li>
+</ul>
+<p>In a RDF graph this might look this way:
+</p>
+<p><br>
+<a href="http://metaweidner.github.io/dcmi-iac/wiki/File:Dickens3.jpeg" class="image"><img alt="Dickens3.jpeg" src="/images/1/14/Dickens3.jpeg" width="803" height="454"></a>
+</p>
+<p><br>
+In this example the <b>described resource</b> is a web page referenced by the URI <a href="http://www.gutenberg.org/files/46/46-h/46-h.htm" class="external free" rel="nofollow">http://www.gutenberg.org/files/46/46-h/46-h.htm</a>. We may reference to a <b>class</b> - in our example its the class "text" of the Dublin Core Type Vocabulary - using the property type. Further <b>properties</b> of the resource are "title", "author", "created" and "subject". We used literal - "A Christmas Carol" and "2004-08-11" - and non-literal <b>values</b> - &lt;<a href="http://dbpedia.org/resource/Charles_Dickens" class="external free" rel="nofollow">http://dbpedia.org/resource/Charles_Dickens</a>&gt; and &lt;<a href="http://id.loc.gov/authorities/sh85025303#concept" class="external free" rel="nofollow">http://id.loc.gov/authorities/sh85025303#concept</a>&gt;. Literal values may be constrained by <b>datatypes</b>. In our example values describing dates are conform with W3CDTF. A <b>language tag</b> can be used to describe the language of a literal value (in our example the value of the title is English). Non-literal values may be constrained by <b>vocabulary encoding schemes</b>. In our example the value used describing the topic of the resource is a concept of the Library of Congress Subject Headings. This relation is specified by the property memberOf.
+</p>
+<h1> <span class="mw-headline" id="Dublin_Core_and_Linked_Data"> Dublin Core and Linked Data </span>
+</h1>
+<p>Since the emergence of the Semantic Web and Linked Data approaches, implementers face a wider range of choices in designing applications. Traditional approaches based on metadata records and descriptive tags embedded in Web pages remain effective alternatives within closed, controlled implementation environments, while Linked Data approaches are designed to provide metadata in a generic form that is easily reusable by other applications for "mashing up" your data with related data published by others.  Linked Data has given new meaning to old ideas, such as embedded metadata, which are being reinvented with new Web technologies and tools to solve practical problems of resource discovery and navigation. "The Dublin Core" (and DCMI Metadata Terms) provides a solid basis for bridging these traditional and modern approaches, lookin at DC terms as a "small language for making a particular class of statements about resources". In this language terms are arranged into a simple pattern of statements and DCMI metadata properties are used as predicates in subject-predicate-object triples.
+</p>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/File:MilkingTheGoats.jpeg" class="image"><img alt="MilkingTheGoats.jpeg" src="/images/2/2d/MilkingTheGoats.jpeg" width="439" height="367"></a>
+</p>
+<p><br>
+To describe this in a text form we may use the <a href="http://www.w3.org/TeamSubmission/2008/SUBM-turtle-20080114/" class="external text" rel="nofollow">Turtle Syntax for RDF</a>. In this syntax the triple will look like this:
+</p>
+<pre> ex:myPicture dc:title "Milking the goats" ;
+              dc:creator &lt;<a href="http://d-nb.info/gnd/131724126" class="external free" rel="nofollow">http://d-nb.info/gnd/131724126</a>&gt; .
+</pre>
+<pre> &lt;<a href="http://d-nb.info/gnd/131724126" class="external free" rel="nofollow">http://d-nb.info/gnd/131724126</a>&gt; foaf:name "Rühle, Stefanie" ;
+                                   foaf:workplaceHomepage &lt;<a href="http://www.sub.uni-goettingen.de/" class="external free" rel="nofollow">http://www.sub.uni-goettingen.de/</a>&gt; .
+</pre>
+<p>In this example there are two statements about a picture: 
+</p>
+<ul>
+<li> it has a title, which is „Milking the goats
+</li>
+<li> it has a creator, represented by the URI <a href="http://d-nb.info/gnd/131724126" class="external free" rel="nofollow">http://d-nb.info/gnd/131724126</a>
+</li>
+</ul>
+<p>and two statements about a person who created this picture:
+</p>
+<ul>
+<li> it's a link to the homepage of her workplace
+</li>
+<li> and her name
+</li>
+</ul>
+<p>The object or value we use in the title statement is a simple string called a literal value. The value used in the creator statement is a non-literal value, a URI that leads to another metadata description, where the person who is the creator is described in a more detailed way - by her name and the homepage of her workplace. Though the statements we make about the person are not using Dublin Core properties they are non the less DC compatible, because in the namespace these terms are explicitly declared to be properties - one of the four metadata terms Dublin Core knows - and have been assigned a proper URI (see Dublin Core URIs and namespaces). This means we may use other properties than Dublin Core Terms as long as these terms are Dublin Core compatible. This way Dublin Core provides the grammar for a "metadata pidgin for digital tourists", a grammar that allows to merge terms from different vocabularies of different communities in one language and may be used to display both simple and complex issues. With this grammar Dublin Core provides a mechanism for extending the Dublin Core term set for additional resource discovery needs expecting that other communities will create and administer additional metadata sets, specialized for the need of their community.
+</p>
+<h2> <span class="mw-headline" id="Levels_of_Interoperability">Levels of Interoperability</span>
+</h2>
+<p>Metadata is most helpful when used to navigate the <i>information jungle</i> of the Web -- to find, identify, use resources -- or to share and exchange structured information.  However there is a tension between requirements of applications and of people:
+</p>
+<ul>
+<li> people prefer customized descriptions which reflect their understanding of the world
+</li>
+<li> applications need interoperability between descriptions in order to process them efficiently.  
+</li>
+</ul>
+<p>Metadata <i>vocabularies</i> help bridge this gap. <i>Vocabularies</i> define properties and classes that can be used to describe resources in a coherent way within or between communities. A vocabulary provides the shared basis for exchanging descriptions within groups of people. They support the interoperability of different metadata applications, and they support the ability of applications to change data with systems with no or minimal loss of information. The Dublin Core distinguishs <a href="http://dublincore.org/documents/interoperability-levels/" class="external text" rel="nofollow">four levels of interoperability</a>. This User Guide is concerned with the first two of these levels: 
+</p>
+<ul><li> <b>Level 1</b>: Shared term definitions: At this level, a community uses the same classes and properties, for example <a href="http://dublincore.org/documents/dcmi-terms/" class="external text" rel="nofollow">DCMI Metadata Terms</a>. CreatingMetadata supports this level of interoperability. But Level 1 interoperability is so open-ended that it quickly leads to a proliferation of custom-built solutions incompatible with each other, such as metadata expressed in document formats that require customized software to read and data models that cannot easily be mapped to generic, interoperable representations such as those expressed in RDF. Therefore this User Guide recommends to include  Level 2 interoperbility.
+</li></ul>
+<ul><li> <b>Level 2</b>: Formal semantic interoperability: At this level, the description of resources is based on, or automatically mappable to, the shared formal model for metadata provided by W3C's Resource Description Framework (RDF), the basis of Linked Data. It's the sweet spot between ad-hoc implementations and shared models of records and constraints, which remain the object of experimentation and research. Given the state of play in 2010, implementers can design their metadata for compatibility Linked Data target with the confidence that this will ensure its formal compatibility with an explosively growing <a href="http://lod-cloud.net/" class="external text" rel="nofollow">Cloud of Linked Data</a>. - PublishingMetadata supports this level of interoperbility. 
+</li></ul>
+<p>Users can explore the Dublin Core approach to shared record constraints (Levels 3 and 4) in the DCMI documents <a href="http://dublincore.org/documents/singapore-framework/" class="external text" rel="nofollow">"Singapore Framework for Dublin Core Application Profiles"</a>, the draft <a href="http://dublincore.org/documents/dc-dsp/" class="external text" rel="nofollow">"Description Set Profiles: A constraint language for Dublin Core Application Profiles"</a>, and the <a href="http://dublincore.org/documents/profile-guidelines/" class="external text" rel="nofollow">"Guidelines for Dublin Core Application Profiles"</a>.  A well-developed example of an application profile developed according to these principles may be found in the <a href="http://dublincore.org/scholarwiki/SWAPDSP" class="external text" rel="nofollow">"Scholarly Works Application Profile"</a>.
+</p>
+<h3> <span class="mw-headline" id="References">References</span>
+</h3>
+<ol class="references">
+<li id="cite_note-0">
+<a href="#cite_ref-0">↑</a> <a href="http://www.iso.org/iso/search.htm?qt=15836&amp;searchSubmit=Search&amp;sort=rel&amp;type=simple&amp;published=on" class="external free" rel="nofollow">http://www.iso.org/iso/search.htm?qt=15836&amp;searchSubmit=Search&amp;sort=rel&amp;type=simple&amp;published=on</a>
+</li>
+<li id="cite_note-1">
+<a href="#cite_ref-1">↑</a> <a href="http://www.niso.org/standards/z39-85-2007/" class="external free" rel="nofollow">http://www.niso.org/standards/z39-85-2007/</a>
+</li>
+<li id="cite_note-2">
+<a href="#cite_ref-2">↑</a> <a href="http://www.ietf.org/rfc/rfc5013.txt" class="external free" rel="nofollow">http://www.ietf.org/rfc/rfc5013.txt</a>
+</li>
+</ol>
+
+
+
+				
+				
+	</div>
