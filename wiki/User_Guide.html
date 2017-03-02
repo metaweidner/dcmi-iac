@@ -166,7 +166,7 @@ title: User Guide
 </h1>
 <p>Linked Data is a method of exposing, sharing, and connecting data on the Semantic Web using URIs and RDF (see <a href="http://linkeddata.org/" class="external free" rel="nofollow">http://linkeddata.org/</a>). Metadata are the backbone of this method, making <b>statements</b> about data and how they relate to each other. In Linked Data these statements have to be expressed in RDF triples, which break statements in three parts:
 </p>
-<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/File:Diagram1.jpeg" class="image"><img alt="Diagram1.jpeg" src="/images/0/06/Diagram1.jpeg" width="237" height="119"></a>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/Diagram1.jpeg" class="image"><img alt="Diagram1.jpeg" src="http://metaweidner.github.io/dcmi-iac/wiki/images/Diagram1.jpeg" width="237" height="119"></a>
 </p>
 <ul>
 <li> the subject - the part that identifies the thing the statement describes,
@@ -180,7 +180,7 @@ title: User Guide
 </p>
 <p>Another "must" when publishing metadata in Linked Data is the usage of URIs. In Linked Data you need URIs referencing to things by identifying, localizing and interlinking them. Considering this a triple graph describing Charles Dickens "A Christmas Carol" might look this way:
 </p>
-<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/File:Dickens2.jpeg" class="image"><img alt="Dickens2.jpeg" src="/images/e/ed/Dickens2.jpeg" width="554" height="195"></a>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/Dickens2.jpeg" class="image"><img alt="Dickens2.jpeg" src="http://metaweidner.github.io/dcmi-iac/wiki/images/Dickens2.jpeg" width="554" height="195"></a>
 </p>
 <p>Here the value "A Christmas Carol" is a simple string or literal value. Another sort of values used in a triple are non-literal values, which means you use a URI that references to another description - the description of a thing that is the object of your statement. In our example the dbpedia URI of Charles Dickens references to such a description.
 </p>
@@ -205,7 +205,7 @@ title: User Guide
 <p>In a RDF graph this might look this way:
 </p>
 <p><br>
-<a href="http://metaweidner.github.io/dcmi-iac/wiki/File:Dickens3.jpeg" class="image"><img alt="Dickens3.jpeg" src="/images/1/14/Dickens3.jpeg" width="803" height="454"></a>
+<a href="http://metaweidner.github.io/dcmi-iac/wiki/images/Dickens3.jpeg" class="image"><img alt="Dickens3.jpeg" src="http://metaweidner.github.io/dcmi-iac/wiki/images/Dickens3.jpeg" width="803" height="454"></a>
 </p>
 <p><br>
 In this example the <b>described resource</b> is a web page referenced by the URI <a href="http://www.gutenberg.org/files/46/46-h/46-h.htm" class="external free" rel="nofollow">http://www.gutenberg.org/files/46/46-h/46-h.htm</a>. We may reference to a <b>class</b> - in our example its the class "text" of the Dublin Core Type Vocabulary - using the property type. Further <b>properties</b> of the resource are "title", "author", "created" and "subject". We used literal - "A Christmas Carol" and "2004-08-11" - and non-literal <b>values</b> - &lt;<a href="http://dbpedia.org/resource/Charles_Dickens" class="external free" rel="nofollow">http://dbpedia.org/resource/Charles_Dickens</a>&gt; and &lt;<a href="http://id.loc.gov/authorities/sh85025303#concept" class="external free" rel="nofollow">http://id.loc.gov/authorities/sh85025303#concept</a>&gt;. Literal values may be constrained by <b>datatypes</b>. In our example values describing dates are conform with W3CDTF. A <b>language tag</b> can be used to describe the language of a literal value (in our example the value of the title is English). Non-literal values may be constrained by <b>vocabulary encoding schemes</b>. In our example the value used describing the topic of the resource is a concept of the Library of Congress Subject Headings. This relation is specified by the property memberOf.
@@ -214,7 +214,7 @@ In this example the <b>described resource</b> is a web page referenced by the UR
 </h1>
 <p>Since the emergence of the Semantic Web and Linked Data approaches, implementers face a wider range of choices in designing applications. Traditional approaches based on metadata records and descriptive tags embedded in Web pages remain effective alternatives within closed, controlled implementation environments, while Linked Data approaches are designed to provide metadata in a generic form that is easily reusable by other applications for "mashing up" your data with related data published by others.  Linked Data has given new meaning to old ideas, such as embedded metadata, which are being reinvented with new Web technologies and tools to solve practical problems of resource discovery and navigation. "The Dublin Core" (and DCMI Metadata Terms) provides a solid basis for bridging these traditional and modern approaches, lookin at DC terms as a "small language for making a particular class of statements about resources". In this language terms are arranged into a simple pattern of statements and DCMI metadata properties are used as predicates in subject-predicate-object triples.
 </p>
-<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/File:MilkingTheGoats.jpeg" class="image"><img alt="MilkingTheGoats.jpeg" src="/images/2/2d/MilkingTheGoats.jpeg" width="439" height="367"></a>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/MilkingTheGoats.jpeg" class="image"><img alt="MilkingTheGoats.jpeg" src="http://metaweidner.github.io/dcmi-iac/wiki/images/MilkingTheGoats.jpeg" width="439" height="367"></a>
 </p>
 <p><br>
 To describe this in a text form we may use the <a href="http://www.w3.org/TeamSubmission/2008/SUBM-turtle-20080114/" class="external text" rel="nofollow">Turtle Syntax for RDF</a>. In this syntax the triple will look like this:
