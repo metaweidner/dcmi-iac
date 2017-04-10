@@ -1,0 +1,158 @@
+---
+layout: page
+title: Telecon 20111212
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1">
+<a href="#Schema.org_Alignment_Task_Group_Telecon"><span class="tocnumber">1</span> <span class="toctext">Schema.org Alignment Task Group Telecon</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#1._Sources_of_the_mappings"><span class="tocnumber">1.1</span> <span class="toctext">1. Sources of the mappings</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#2._Publication_of_mappings"><span class="tocnumber">1.2</span> <span class="toctext">2. Publication of mappings</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#3._Reaching_agreement_on_the_mapping_proposals"><span class="tocnumber">1.3</span> <span class="toctext">3. Reaching agreement on the mapping proposals</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Schema.org_Alignment_Task_Group_Telecon"> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/Schema.org_Alignment/Telecon_20111212" class="external text" rel="nofollow">Schema.org Alignment Task Group Telecon</a> </span>
+</h2>
+<table>
+
+<tr>
+<td> Wiki page
+</td>
+<td> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/Schema.org_Alignment/Telecon_20111212" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/Schema.org_Alignment/Telecon_20111212</a>
+</td>
+</tr>
+<tr>
+<td> Chair
+</td>
+<td> Tom
+</td>
+</tr>
+<tr>
+<td> Expected
+</td>
+<td> Tom Baker, Dan Brickley, Stuart Sutton, Bernard Vatant, Ahsan Morshed, Jon Phipps, Dickson Luckose, Antoine Isaac, Kirsten Jeude, Stefanie Ruehle, Corey Harper, Jane Greenberg
+</td>
+</tr>
+<tr>
+<td> Date
+</td>
+<td> Monday, December 12, 2011
+</td>
+</tr>
+<tr>
+<td> Start Time
+</td>
+<td> 11:00 AM Eastern Std Time
+</td>
+</tr>
+<tr>
+<td> Dial-in Number
+</td>
+<td> +1-218-936-4141
+</td>
+</tr>
+<tr>
+<td> Participant Access Code
+</td>
+<td> 334034
+</td>
+</tr>
+<tr>
+<td> Chat channel
+</td>
+<td> <a href="irc://irc.freenode.net/#dcmi" class="external free" rel="nofollow">irc://irc.freenode.net/#dcmi</a>
+</td>
+</tr>
+<tr>
+<td> Mailing list
+</td>
+<td> <a href="http://www.jiscmail.ac.uk/lists/dc-architecture" class="external free" rel="nofollow">http://www.jiscmail.ac.uk/lists/dc-architecture</a>
+</td>
+</tr>
+</table>
+<h3> <span class="mw-headline" id="1._Sources_of_the_mappings"> 1. Sources of the mappings </span>
+</h3>
+<ul><li> For DCMI Metadata Terms, the latest-version RDF schemas:
+<ul>
+<li> <a href="http://purl.org/dc/elements/1.1/" class="external free" rel="nofollow">http://purl.org/dc/elements/1.1/</a>, which resolves to <a href="http://dublincore.org/2010/10/11/dcelements.rdf#" class="external free" rel="nofollow">http://dublincore.org/2010/10/11/dcelements.rdf#</a>
+</li>
+<li> <a href="http://purl.org/dc/terms/" class="external free" rel="nofollow">http://purl.org/dc/terms/</a>, which resolves to <a href="http://dublincore.org/2010/10/11/dcterms.rdf#" class="external free" rel="nofollow">http://dublincore.org/2010/10/11/dcterms.rdf#</a>
+</li>
+<li> <a href="http://purl.org/dc/dcmitype/" class="external free" rel="nofollow">http://purl.org/dc/dcmitype/</a>, which resolves to <a href="http://dublincore.org/2010/10/11/dctype.rdf#" class="external free" rel="nofollow">http://dublincore.org/2010/10/11/dctype.rdf#</a>
+</li>
+</ul>
+</li></ul>
+<ul><li> For Schema.org terms
+<ul>
+<li> Officially: the RDFS/OWL export linked from <a href="http://schema.org/docs/datamodel" class="external free" rel="nofollow">http://schema.org/docs/datamodel</a>, i.e.: <a href="http://schema.org/docs/schemaorg.owl" class="external free" rel="nofollow">http://schema.org/docs/schemaorg.owl</a>
+</li>
+<li> In practice: one of the versions maintained at schema.rdfs.org, i.e.: <a href="http://schema.rdfs.org/all.nt" class="external free" rel="nofollow">http://schema.rdfs.org/all.nt</a>
+</li>
+</ul>
+</li></ul>
+<p>FOR DISCUSSION
+</p>
+<ul><li> The version at schema.rdfs.org appears to be continually updated, and versions are made available in RDF/XML, Turtle, NTriples, and JSON.  These versions are slightly more convenient; e.g., when the domain or range of a property is just one class, it replaces the OWL constructs of the schema.org version ("unionOf" statements, using blank nodes) with simple domain or range statements.
+</li></ul>
+<h3> <span class="mw-headline" id="2._Publication_of_mappings"> 2. Publication of mappings </span>
+</h3>
+<p>FOR DISCUSSION
+</p>
+<ul>
+<li> The [<a href="http://mappings.dbpedia.org/server/ontology/export%7CDBPedia" class="external text" rel="nofollow">mappings</a>] are published by DBPedia in RDF/XML and linked to from the mappings page maintained by schema.rdfs.org at <a href="http://schema.rdfs.org/mappings.html" class="external free" rel="nofollow">http://schema.rdfs.org/mappings.html</a>.  Should we follow the same pattern?
+<ul>
+<li> Alternatively, should they be published under schema.rdfs.org, like the SIOC mappings at <a href="http://schema.rdfs.org/mappings/sioc" class="external free" rel="nofollow">http://schema.rdfs.org/mappings/sioc</a>?
+</li>
+<li> Alternatively, should they published on a Mercurial repository at W3C being set up for the Web Schemas Task Force?  (Does anyone know the status of this?)
+</li>
+<li> Do we additionally need to publish human-readable mappings?
+</li>
+</ul>
+</li>
+<li> Should we follow the pattern used for publishing DCMI Terms documentation, i.e.:
+<ul>
+<li> Assign PURLs to the mappings under the domain purl.org/dc?
+</li>
+<li> Maintain redirects to the latest, time-stamped versions?
+</li>
+<li> Alternatively, should we consider other ways to version the mappings -- e.g., using Mercurial or Git?
+</li>
+</ul>
+</li>
+<li> What sort of statement should DCMI issue as context?  These mappings potentially set a precedent for others.  For example, the statement could say:
+<ul><li> Inasmuch vocabularies can evolve, and the understanding of how vocabularies relate to each other can change with experience, DCMI makes no guarantees regarding the stability of the mappings.
+</li></ul>
+</li>
+<li> For simplicity, should mapping files fall under the CC0 license ("No Rights Reserved"), <a href="http://creativecommons.org/about/cc0" class="external free" rel="nofollow">http://creativecommons.org/about/cc0</a>?
+</li>
+<li> These mappings can be published by the "authority" of the Schema.org Alignment Task Group.  Do we foresee a need to formalize or routinize the review and publication mappings, e.g., by a re-oriented Usage Board?
+</li>
+</ul>
+<h3> <span class="mw-headline" id="3._Reaching_agreement_on_the_mapping_proposals"> 3. Reaching agreement on the mapping proposals </span>
+</h3>
+<ul>
+<li> Bernard's proposal <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/Schema.org_Alignment/Mappings" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/Schema.org_Alignment/Mappings</a>
+</li>
+<li> See <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/Schema.org_Alignment/Mappings_Details" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/Schema.org_Alignment/Mappings_Details</a>
+</li>
+</ul>
+<p>FOR DISCUSSION
+</p>
+<ul><li> Process for reaching agreement.  Poll this group?  On a call or online?  Use Usage Board criteria ("To be approved, a proposal needs more than 50% of assigned votes in favor and less than 25% of assigned votes against.")?
+</li></ul>
+
+
+
+				
+				
+	</div>

@@ -1,0 +1,86 @@
+---
+layout: page
+title: DM2E
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p><b>Case study: Overview</b>
+</p>
+<p>The DM2E model is a specialisation of the <a href="http://metaweidner.github.io/dcmi-iac/wiki/EDM" title="EDM">EDM</a> for the manuscript domain. It is used for mappings to Europeana and for publishing delivered metadata as LOD via the DM2E LOD API in the scope of the Digitised manuscripts to Europeana (DM2E) project. 
+Before creating the fixed version of DM2E model that is used by data providers for their mappings, several modelling decisions had to be made including the method of reusing external resources, decisions on the granularity of the specialisation and instruments of documentation. The first step in the model creation was to analyse the metadata about manuscripts coming from different data providers and in different formats like TEI, METS/MODS, MARC21 or provider-specific schemas. It was also checked if the data meets the mandatory requirements of the EDM. Additional properties, classes, resource definitions, restrictions and recommendations that were needed to represent the manuscripts as adequately as possible were added to the EDM which resulted in the DM2E model. Special instructions for the data providers for mappings to the DM2E model were added via the property <i>dm2e:scopeNote</i>. We decided to create a new property for not mixing up different <i>skos:notes</i> or similar properties that can be used for comments on a specific class or property and may also be used by others for the same resources. 
+The first operational version of the model was created in April 2013 and since then iteratively refined. New functions of the model include e.g. the representation of uncertain timespans and hierarchical objects.
+</p>
+<p>Short presentation of the model: <a href="http://de.slideshare.net/DM2E/national-aggr-droege" class="external free" rel="nofollow">http://de.slideshare.net/DM2E/national-aggr-droege</a>
+</p>
+<p><br>
+<b>Documentation</b>
+</p>
+<p>The model is documented in three different ways:
+</p>
+<ol>
+<li> Resources in the DM2E namespace can be accessed via their URIs (see <a href="http://onto.dm2e.eu/schemas/dm2e/" class="external free" rel="nofollow">http://onto.dm2e.eu/schemas/dm2e/</a> for all resources). We used Neologism for that.
+</li>
+<li> We do also publish an owl-file where resources in the DM2E namespace and resources from other namespaces are represented. This ontology was created with Protégé based on the EDM ontology (<a href="https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu/rdf" class="external free" rel="nofollow">https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu/rdf</a>). It can be found here: <a href="https://github.com/DM2E/dm2e-ontologies/blob/master/src/main/resources/dm2e-model/DM2Ev1.1.owl" class="external free" rel="nofollow">https://github.com/DM2E/dm2e-ontologies/blob/master/src/main/resources/dm2e-model/DM2Ev1.1.owl</a>
+</li>
+<li> Especially important for data providers in the project is a textual description of the model with mapping examples. Here, we list the original scope notes of reused resources as well as the DM2E description (if needed). The model specification of the latest stable version of the model (1.1) can be accessed here: <a href="http://wiki.dm2e.eu/wiki/images/6/6a/DM2E_Model_V1.1_Specification.pdf" class="external free" rel="nofollow">http://wiki.dm2e.eu/wiki/images/6/6a/DM2E_Model_V1.1_Specification.pdf</a>
+</li>
+</ol>
+<p><br>
+<b>Validation</b>
+</p>
+<p>Data that is now in the DM2E model is not always completely represented in the way we have intended it to be. We need a way to validate the mappings directly and want to integrate this into our data ingestion tool OmNom (which is used to publish DM2E data as LOD). At one stage in the project, we have used Schematron for validation. It is planned to update this to the latest model version and use it to directly check if valid DM2E data was produced. Currently, the data is validated during the ingestion process via a Java tool written by Konstantin Baierer <a href="https://github.com/DM2E/dm2e-ontologies/tree/d6af4a8858af83871bb86f905df55bc7e67567f8/src/test/java/eu/dm2e/validation/validator" class="external autonumber" rel="nofollow">[1]</a>. The validator gives feedback to the data provider via the following notification:
+</p>
+<ul>
+<li> NOTICE (for things that are not a problem but may have eluded the mapper's attention)
+</li>
+<li> WARNING (for things that are not errors, but that contradict strong recommendations in the model)
+</li>
+<li> ERROR (for things that contradict strict assertions in the model, such as mandatory elements missing)
+</li>
+<li> FATAL (for errors that cripple the data to an extent where it can't be worked with sensibly)
+</li>
+</ul>
+<p>If FATAL or ERROR occurs the data is not ingested.
+</p>
+<p><br>
+<b>Validation use cases</b>
+</p>
+<ul>
+<li> Mandatory properties and classes in EDM
+</li>
+<li> Additional mandatory properties in DM2E
+</li>
+<li> Recommended properties
+</li>
+<li> Non-repeatable properties
+</li>
+<li> Wrong mime types (Web resources)
+</li>
+<li> Wrong datatypes (datatype property ranges)
+</li>
+<li> Property domains
+</li>
+<li> Object property ranges
+</li>
+<li> Illegal URI characters
+</li>
+<li> Mandatory language tags
+</li>
+<li> Unknown properties
+</li>
+</ul>
+<p>See <a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/128" class="external autonumber" rel="nofollow">[2]</a> and <a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=use-cases" class="external autonumber" rel="nofollow">[3]</a> for use case descriptions.
+</p>
+<p><b>What we need</b>
+</p>
+<p>A better way to mix&amp;match resources from different namespaces and to better add comments or mapping instructions for the specific use case. Which would be the best way to reuse resources when we, for example, would like add restrictions to a resource like “Do not use this property twice” in our own context?
+</p>
+
+
+				
+				
+	</div>

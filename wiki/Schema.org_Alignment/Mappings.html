@@ -1,0 +1,103 @@
+---
+layout: page
+title: Mappings
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p>Raw mapping draft from DC2011 "unconference". --<a href="http://metaweidner.github.io/dcmi-iac/wiki/User:BernardVatant" title="User:BernardVatant">BernardVatant</a> 16:40, 7 October 2011 (KST)
+</p>
+<p>This mapping draft has now been superseded by a <a href="https://github.com/dcmi/schema.org/blob/master/mappings_schema.org.xml" class="external text" rel="nofollow">draft in Github</a>. --<a href="http://metaweidner.github.io/dcmi-iac/wiki/User:TomBaker" title="User:TomBaker">TomBaker</a>, 12 January 2012
+</p>
+<h2> <span class="mw-headline" id="Used_Prefixes"> Used Prefixes</span>
+</h2>
+<p>@prefix owl: &lt;<a href="http://www.w3.org/2002/07/owl#" class="external free" rel="nofollow">http://www.w3.org/2002/07/owl#</a>&gt;
+</p>
+<p>@prefix rdfs: &lt;<a href="http://www.w3.org/2000/01/rdf-schema#" class="external free" rel="nofollow">http://www.w3.org/2000/01/rdf-schema#</a>&gt;
+</p>
+<p>@prefix schema: &lt;<a href="http://schema.org/" class="external free" rel="nofollow">http://schema.org/</a>&gt;
+</p>
+<p>@prefix dct: &lt;<a href="http://purl.org/dc/terms/" class="external free" rel="nofollow">http://purl.org/dc/terms/</a>&gt;
+</p>
+<p>@prefix dc: &lt;<a href="http://purl.org/dc/elements/1.1/" class="external free" rel="nofollow">http://purl.org/dc/elements/1.1/</a>&gt;
+</p>
+<p>@prefix dctype: &lt;<a href="http://purl.org/dc/dcmitype/" class="external free" rel="nofollow">http://purl.org/dc/dcmitype/</a>&gt;
+</p>
+<h2> <span class="mw-headline" id="Classes"> Classes </span>
+</h2>
+<p>schema:Organization rdfs:subClassOf dct:Agent
+</p>
+<p>schema:Person rdfs:subClassOf dct:Agent
+</p>
+<p>schema:Place owl:equivalentClass dct:Location
+</p>
+<p>schema:Event owl:equivalentClass  dctype:Event
+</p>
+<p>schema:Language rdfs:subClassOf dct:LinguisticSystem
+</p>
+<p>dct:BibliographicResource rdfs:subClassOf  schema:CreativeWork
+</p>
+<h2> <span class="mw-headline" id="Properties"> Properties </span>
+</h2>
+<p>dct:title rdfs:subPropertyOf schema:name
+</p>
+<p>schema:description owl:equivalentProperty dct:description
+</p>
+<p>schema:caption rdfs:subPropertyOf dct:description
+</p>
+<p>schema:author rdfs:subPropertyOf dct:creator
+</p>
+<p>schema:about owl:equivalentProperty dct:subject
+</p>
+<p>schema:publisher owl:equivalentProperty dct:publisher
+</p>
+<p>schema:datePublished owl:equivalentProperty dct:issued
+</p>
+<p>schema:inLanguage owl:equivalentProperty dc:language
+</p>
+<p>schema:encodings rdfs:subPropertyOf dct:format
+</p>
+<p>schema:duration rdfs:subPropertyOf dct:extent
+</p>
+<p>schema:keywords rdfs:subPropertyOf dc:subject
+</p>
+<p>schema:url rdfs:subPropertyOf dct:identifier
+</p>
+<p>schema:contentLocation rdfs:subPropertyOf dct:coverage
+</p>
+<p>schema:subEvents rdfs:subPropertyOf dct:hasPart
+</p>
+<p>schema:superEvent rdfs:subPropertyOf dct:isPartOf
+</p>
+<p>schema:contributor rdfs:subPropertyOf dct:contributor
+</p>
+<p>schema:illustrator rdfs:subPropertyOf dct:contributor
+</p>
+<p>schema:actors rdfs:subPropertyOf dct:contributor
+</p>
+<p>schema:director rdfs:subPropertyOf dct:contributor
+</p>
+<p>schema:musicBy rdfs:subPropertyOf dct:contributor
+</p>
+<p>schema:producer rdfs:subPropertyOf dct:creator
+</p>
+<p>schema:productionCompany rdfs:subPropertyOf dct:creator
+</p>
+<p>schema:productId rdfs:subPropertyOf dct:identifier
+</p>
+<p>schema:commentTime rdfs:subPropertyOf dct:date
+</p>
+<p>schema:birthDate rdfs:subPropertyOf dct:date
+</p>
+<p>schema:dateModified rdfs:subPropertyOf dct:modified
+</p>
+<p>schema:mentions rdfs:subPropertyOf dct:related
+</p>
+
+
+				
+				
+	</div>

@@ -1,0 +1,469 @@
+---
+layout: page
+title: Requirements
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/RdfAP_tg.png" class="image" title="RDF AP TG logo"><img alt="RDF AP TG logo" src="http://metaweidner.github.io/dcmi-iac/wiki/images/RdfAP_tg.png" width="200" height="141"></a>
+</p>
+<hr>
+<h5> <span class="mw-headline" id="Handbook:_Table_of_Contents"> <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Handbook" title="DCMI Handbook">Handbook</a>: <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Handbook" title="DCMI Handbook">Table of Contents</a> </span>
+</h5>
+<dl>
+<dd> ► <i><a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Governing_Board" title="DCMI Governing Board">Governing Board</a> committees:</i> <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Governing_Board/finance" title="DCMI Governing Board/finance">Membership &amp; Finance</a> ◘ <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Governing_Board/nominations" title="DCMI Governing Board/nominations">Nominations &amp; Bylaws</a> 
+</dd>
+<dd> ► <i><a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Technical_Board" title="DCMI Technical Board">Technical Board</a> committees:</i> <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Technical_Board/usage" title="DCMI Technical Board/usage">Usage</a> ◘ <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Technical_Board/standards" title="DCMI Technical Board/standards">Standards &amp; Liaisons</a> ◘ <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Technical_Board/specifications" title="DCMI Technical Board/specifications">Community Specifications</a>
+</dd>
+<dd> ► <i><a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Advisory_Board" title="DCMI Advisory Board">Advisory Board</a> committees:</i> <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Advisory_Board/meetings" title="DCMI Advisory Board/meetings">Conferences &amp; Meetings</a> ◘ <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCMI_Advisory_Board/documentation" title="DCMI Advisory Board/documentation">Education &amp; Outreach</a>
+</dd>
+<dd> ► <i>Management:</i> <a href="http://metaweidner.github.io/dcmi-iac/wiki/Exec_Committee" title="Exec Committee">Executive</a> ◘ <a href="http://metaweidner.github.io/dcmi-iac/wiki/Exec_Committee/directorate" title="Exec Committee/directorate">Directorate</a>
+</dd>
+</dl>
+<hr>
+<p><br>
+</p>
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Handbook:_Table_of_Contents"><span class="tocnumber">1</span> <span class="toctext">Handbook: Table of Contents</span></a></li>
+<li class="toclevel-1 tocsection-1">
+<a href="#Report_on_validation_requirements"><span class="tocnumber">2</span> <span class="toctext">Report on validation requirements</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Introduction"><span class="tocnumber">2.1</span> <span class="toctext">Introduction</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3">
+<a href="#Meta-Requirements"><span class="tocnumber">3</span> <span class="toctext">Meta-Requirements</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#R-208_Human-readable_documentation_of_usage_of_all_elements_from_the_perspective_of_the_application_profile"><span class="tocnumber">3.1</span> <span class="toctext">R-208 Human-readable documentation of usage of all elements from the perspective of the application profile</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#R-214_Application_Profile_administrative_information"><span class="tocnumber">3.2</span> <span class="toctext">R-214 Application Profile administrative information</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#R-34_Available_Class_Definition"><span class="tocnumber">3.3</span> <span class="toctext">R-34 Available Class Definition</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#R-224_Use_sub-super_relations_in_validation"><span class="tocnumber">3.4</span> <span class="toctext">R-224 Use sub-super relations in validation</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#R-117_Define_context_of_constraints"><span class="tocnumber">3.5</span> <span class="toctext">R-117 Define context of constraints</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#R-129_Machine_Understandable_Syntaxes"><span class="tocnumber">3.6</span> <span class="toctext">R-129 Machine Understandable Syntaxes</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#R-220_Define_used_vocabulary"><span class="tocnumber">3.7</span> <span class="toctext">R-220 Define used vocabulary</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#R-115_Closed_World_Assumption_.28CWA.29"><span class="tocnumber">3.8</span> <span class="toctext">R-115 Closed World Assumption (CWA)</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#R-205_Varying_levels_of_.22error.22"><span class="tocnumber">3.9</span> <span class="toctext">R-205 Varying levels of "error"</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#R-206_Define_allowed_namespaces_in_a_profile"><span class="tocnumber">3.10</span> <span class="toctext">R-206 Define allowed namespaces in a profile</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#R-207_Support_multiple_levels_of_description"><span class="tocnumber">3.11</span> <span class="toctext">R-207 Support multiple levels of description</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15">
+<a href="#General_requirements"><span class="tocnumber">4</span> <span class="toctext">General requirements</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Validate_for_uniqueness_of_IRIs"><span class="tocnumber">4.1</span> <span class="toctext">Validate for uniqueness of IRIs</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#R-10_Define_Disjoint_Properties"><span class="tocnumber">4.2</span> <span class="toctext">R-10 Define Disjoint Properties</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#R-171_Validate_IRIs_by_Dereferencing"><span class="tocnumber">4.3</span> <span class="toctext">R-171 Validate IRIs by Dereferencing</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#R-171bis_Validate_resource_.28media.29_type_returned_from_dereferencing"><span class="tocnumber">4.4</span> <span class="toctext">R-171bis Validate resource (media) type returned from dereferencing</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#R-98_Check_Validity_Of_IRIs"><span class="tocnumber">4.5</span> <span class="toctext">R-98 Check Validity Of IRIs</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#R-211_Cardinality_constraints"><span class="tocnumber">4.6</span> <span class="toctext">R-211 Cardinality constraints</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22">
+<a href="#Class_requirements"><span class="tocnumber">5</span> <span class="toctext">Class requirements</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="#R-209_Define_valid_classes"><span class="tocnumber">5.1</span> <span class="toctext">R-209 Define valid classes</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#R-7_Disjoint_Classes"><span class="tocnumber">5.2</span> <span class="toctext">R-7 Disjoint Classes</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#R-225_Validation_of_associated_classes_in_one_Description_Set"><span class="tocnumber">5.3</span> <span class="toctext">R-225 Validation of associated classes in one Description Set</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26">
+<a href="#Property_requirements"><span class="tocnumber">6</span> <span class="toctext">Property requirements</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="#R-210_Define_exclusively_allowed_properties_for_a_context"><span class="tocnumber">6.1</span> <span class="toctext">R-210 Define exclusively allowed properties for a context</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#R-67_Boolean_property_patterns"><span class="tocnumber">6.2</span> <span class="toctext">R-67 Boolean property patterns</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#R-68_Required_Properties"><span class="tocnumber">6.3</span> <span class="toctext">R-68 Required Properties</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#R-69_Optional_Properties"><span class="tocnumber">6.4</span> <span class="toctext">R-69 Optional Properties</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#R-70_Repeatable_Properties"><span class="tocnumber">6.5</span> <span class="toctext">R-70 Repeatable Properties</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#R-71_Conditional_Properties"><span class="tocnumber">6.6</span> <span class="toctext">R-71 Conditional Properties</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#R-72_Recommended_Properties"><span class="tocnumber">6.7</span> <span class="toctext">R-72 Recommended Properties</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#R-25_Property_Domain"><span class="tocnumber">6.8</span> <span class="toctext">R-25 Property Domain</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-35">
+<a href="#Value_Requirements"><span class="tocnumber">7</span> <span class="toctext">Value Requirements</span></a>
+<ul>
+<li class="toclevel-2 tocsection-36"><a href="#R-35_Property_Range"><span class="tocnumber">7.1</span> <span class="toctext">R-35 Property Range</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#R-43_Literal_Value_Comparison"><span class="tocnumber">7.2</span> <span class="toctext">R-43 Literal Value Comparison</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#R-44_Pattern_Matching_on_RDF_Literals"><span class="tocnumber">7.3</span> <span class="toctext">R-44 Pattern Matching on RDF Literals</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#R-47_Specify_and_validate_language_tags"><span class="tocnumber">7.4</span> <span class="toctext">R-47 Specify and validate language tags</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#R-49_Property_occurs_once_per_language_tag"><span class="tocnumber">7.5</span> <span class="toctext">R-49 Property occurs once per language tag</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#R-30_Define_value_lists"><span class="tocnumber">7.6</span> <span class="toctext">R-30 Define value lists</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-42"><a href="#Requirements_Classification"><span class="tocnumber">8</span> <span class="toctext">Requirements Classification</span></a></li>
+</ul>
+</td></tr></table>
+<p><br>
+</p>
+<h1> <span class="mw-headline" id="Report_on_validation_requirements">Report on validation requirements</span>
+</h1>
+<p><b>Creator:</b> DCMI Task Group on RDF Application Profiles
+</p>
+<p><b>Date Issued:</b> 2015-08-11
+</p>
+<p><b>Identifier:</b> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org?title=RDF_Application_Profiles/Requirements" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php?title=RDF_Application_Profiles/Requirements</a>
+</p>
+<p><b>Replaces:</b> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/Deliverable_1" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/Deliverable_1</a>
+</p>
+<p><b>Is Replaced By:</b> Not applicable
+</p>
+<p><b>Latest Version:</b> <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF_Application_Profiles/Requirements" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/RDF_Application_Profiles/Requirements</a>
+</p>
+<p><b>Status of Document:</b> Draft
+</p>
+<p><b>Description of Document:</b> This document is the first deliverable of the "DCMI RDF Application Profiles Task Force" (DCMI RDF-AP). It reports on the current state of validation requirements in August 2015.
+</p>
+<p><b>Note:</b> Items with titles in bold are considered by the group to be <b>core</b> validation requirements.
+</p>
+<p><b>Note:</b> These are requirements based on <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF_Application_Profiles/UCR_Deliverable" class="external text" rel="nofollow">these Use Cases</a>
+</p>
+<h2> <span class="mw-headline" id="Introduction">Introduction</span>
+</h2>
+<p>This report supplements the Report on Use Cases <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF_Application_Profiles/UCR_Deliverable" class="external text" rel="nofollow">these Use Cases</a>. Requirements are derived from the use cases and specific case studies. See that report for the list of projects that submitted data for this study. 
+</p>
+<p>The full descriptions of case studies and use cases can be found in the <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF-Application-Profiles" class="external text" rel="nofollow">task force wiki</a>. Case studies and the corresponding use cases are collected in the <a href="http://purl.org/net/rdf-application-profiles" class="external text" rel="nofollow">DCMI RDF-AP database</a> (see <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF_Application_Profiles/UCR_Deliverable#DCMI_RDF_Application_Profiles_database_on_case_studies,_use_cases,_requirements,_and_solutions" class="external text" rel="nofollow">DCMI RDF Application Profiles database on case studies, use cases, requirements, and solutions</a>).
+</p>
+<h1> <span class="mw-headline" id="Meta-Requirements">Meta-Requirements</span>
+</h1>
+<h2> <span class="mw-headline" id="R-208_Human-readable_documentation_of_usage_of_all_elements_from_the_perspective_of_the_application_profile"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/415" class="external text" rel="nofollow">R-208 Human-readable documentation of usage of all elements from the perspective of the application profile</a></b></span>
+</h2>
+<p><b>Description:</b> Provide human-readable documentation for first order elements of an application profile (especially, properties, classes). Taking properties as example: the goal is to provide a documentation or comments area that is intended for human readers where a description of the property can be made. This could both define the property ("title - the title of the resource being described") as well as include other information ("date of publication - in most cases the date of publication is a four-digit year, however there are other dates used, such as month and year. As dates on the items may not be in any standard format, this is a simple text field.")
+</p>
+<p><br>
+<b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Annotations" class="external text" rel="nofollow">Annotations</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Labels_at_Shape" class="external text" rel="nofollow">Property Labels at Shape</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Comment_in_a_Shape" class="external text" rel="nofollow">Property Comment in a Shape</a>
+</p>
+<h2> <span class="mw-headline" id="R-214_Application_Profile_administrative_information"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/428" class="external text" rel="nofollow">R-214 Application Profile administrative information</a></b></span>
+</h2>
+<p><b>Description:</b> The application profile must self-describe (e.g. there must be an available ontology for APs), and must have administrative information like creator, date of creation, version, and rights.
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Annotations" class="external text" rel="nofollow">Annotations</a>
+</p>
+<h2> <span class="mw-headline" id="R-34_Available_Class_Definition"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/41" class="external text" rel="nofollow">R-34 Available Class Definition</a></span>
+</h2>
+<p><b>Description:</b> 
+</p>
+<ul>
+<li> if a type is used in constraints then the definition of the type have to be available
+</li>
+<li> Type Dependency
+</li>
+</ul>
+<h2> <span class="mw-headline" id="R-224_Use_sub-super_relations_in_validation"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/451" class="external text" rel="nofollow">R-224 Use sub-super relations in validation</a></span>
+</h2>
+<p><b>Description:</b> Validation of instances data (direct or indirect) exploiting the subclass or sub-property link in a given ontology.
+This validation can indicate when the data is verbose (redundant) or expressed at a too general level, and could be improved.
+</p>
+<h2> <span class="mw-headline" id="R-117_Define_context_of_constraints"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/148" class="external text" rel="nofollow">R-117 Define context of constraints</a></b></span>
+</h2>
+<p><b>Description:</b> 
+Elements from vocabularies (as defined in namespace) can be re-used across many datasets and applications. Examples are:
+</p>
+<ul>
+<li> application profiles vs vocabulary-level axioms: distinguish between constraints that apply to everything in a specified namespace (e.g. FOAF) and constraints that apply to specific contexts
+</li>
+<li> application profiles documentation: describe the specific purpose (application) of a set of constraints
+</li>
+<li> ability to select an appropriate AP based on some information in the data, such as the provider, the genre, etc.
+</li>
+<li> validate a dataset against one (or more) application-specific profiles (sets of constraints), allowing multiple perspectives on validation of the same data
+</li>
+</ul>
+<p><b>Related W3C requirement: <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Named_Shapes" class="external text" rel="nofollow">Named Shapes</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Association_of_Class_with_Shape" class="external text" rel="nofollow">Association of Class with Shape</a> (maybe)</b>
+</p>
+<h2> <span class="mw-headline" id="R-129_Machine_Understandable_Syntaxes"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/160" class="external text" rel="nofollow">R-129 Machine Understandable Syntaxes</a></b></span>
+</h2>
+<p><b>Description:</b> 
+</p>
+<ul>
+<li> discoverable by programs
+</li>
+<li> machine readable
+</li>
+</ul>
+<h2> <span class="mw-headline" id="R-220_Define_used_vocabulary"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/444" class="external text" rel="nofollow">R-220 Define used vocabulary</a></span>
+</h2>
+<p><b>Description:</b>Used vocabularies must be defined properly in the application profile. Defining vocabulary usage (Class) makes it easier to validate if the used vocabulary uri is dereferenceable. Defining vocabulary prefix for the vocabulary usage makes it easier to write application profiles.
+</p>
+<h2> <span class="mw-headline" id="R-115_Closed_World_Assumption_.28CWA.29"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/146" class="external text" rel="nofollow">R-115 Closed World Assumption (CWA)</a></span>
+</h2>
+<p><b>Description:</b> For validating data one should be able to require the closed world assumption
+(<a href="http://en.wikipedia.org/wiki/Closed-world_assumption" class="external free" rel="nofollow">http://en.wikipedia.org/wiki/Closed-world_assumption</a>): a statement that is true is also known to be true. What is not currently known to be true, is false. I.e. the data to be validated represents the entirety of the knowledge available.
+</p>
+<h2> <span class="mw-headline" id="R-205_Varying_levels_of_.22error.22"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/408" class="external text" rel="nofollow">R-205 Varying levels of "error"</a></b></span>
+</h2>
+<p><b>Description:</b> There is a need to assign error codes to each validation test so that varying levels of "error" can be returned (informational, warning, error, fail). The creation of the list of codes needs needs to be part of the Application Profile.
+</p>
+<p><b>Related W3C requirements:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Severity_Levels" class="external text" rel="nofollow">Severity Levels</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Human-readable_Violation_Messages" class="external text" rel="nofollow">Human-readable Violation Messages</a>
+</p>
+<h2> <span class="mw-headline" id="R-206_Define_allowed_namespaces_in_a_profile"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/410" class="external text" rel="nofollow">R-206 Define allowed namespaces in a profile</a></span>
+</h2>
+<p><b>Description:</b> Set a limit on the number of namespaces, and which namespaces, can be used in a profile.
+</p>
+<p><b>Action:</b>
+</p>
+<h2> <span class="mw-headline" id="R-207_Support_multiple_levels_of_description"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/412" class="external text" rel="nofollow">R-207 Support multiple levels of description</a></b></span>
+</h2>
+<p><b>Description:</b> The Description Set Profile in an Application Profile may have one or more Description Templates, describing instances of different classes.
+(see: <a href="http://dublincore.org/documents/profile-guidelines/#sect-6" class="external free" rel="nofollow">http://dublincore.org/documents/profile-guidelines/#sect-6</a>)
+</p>
+<h1> <span class="mw-headline" id="General_requirements">General requirements</span>
+</h1>
+<h2> <span class="mw-headline" id="Validate_for_uniqueness_of_IRIs"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/1R-1" class="external text" rel="nofollow">Validate for uniqueness of IRIs</a></span>
+</h2>
+<p><b>Description:</b> Validate that each incoming IRI is unique within the data store.
+</p>
+<p><b>Action:</b> Compare incoming IRIs with stored IRIs; duplicate IRIs must trigger an error of type ?
+</p>
+<h2> <span class="mw-headline" id="R-10_Define_Disjoint_Properties"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/17" class="external text" rel="nofollow">R-10 Define Disjoint Properties</a></span>
+</h2>
+<p><b>Description:</b> Define properties that are disjoint to the listed property. 
+</p>
+<p><b>Action:</b> If properties in the incoming graph have a "disjoint" relationship, signal an error.
+</p>
+<h2> <span class="mw-headline" id="R-171_Validate_IRIs_by_Dereferencing"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/286" class="external text" rel="nofollow">R-171 Validate IRIs by Dereferencing</a></span>
+</h2>
+<p><b>Description:</b> Note IRIs that must be validated through dereferencing.
+</p>
+<p><b>Action:</b> For each IRI with this validation requirement, dereference the IRI. The value must return a resource that anything other than an http error code. If an http error code is returned, signal an error.
+</p>
+<h2> <span class="mw-headline" id="R-171bis_Validate_resource_.28media.29_type_returned_from_dereferencing"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/455" class="external text" rel="nofollow">R-171bis Validate resource (media) type returned from dereferencing</a></span>
+</h2>
+<p><b>Description:</b> A dereferenced IRI must return a resource of the stated (media) type.
+</p>
+<p><b>Action:</b> For each IRI with this validation requirement, dereference the IRI. The value must return a resource that matches the defined resource (media) type. Note this is about content type, for example, "JPEG", not the RDF type of a resource (for example, foaf:Person). If the resource type is not a match, signal an error.
+</p>
+<h2> <span class="mw-headline" id="R-98_Check_Validity_Of_IRIs"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/118" class="external text" rel="nofollow">R-98 Check Validity Of IRIs</a></span>
+</h2>
+<p><b>Description:</b> Check that incoming IRIs are structurally valid.
+</p>
+<p><b>Action:</b> Check that each incoming IRI has the structure "http://" followed by a domain name... and ?? (Do we want to be able to require hash/slash IRIs?
+</p>
+<h2> <span class="mw-headline" id="R-211_Cardinality_constraints"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/424" class="external text" rel="nofollow">R-211 Cardinality constraints</a></b></span>
+</h2>
+<p><b>Description:</b> Allow classes and properties in the profile to be given minimum and maximum cardinality constraints. This may be presented to users as "mandatory/optional" "repeatable/not repeatable".
+</p>
+<p><b>Action:</b> Signal an error for any properties or classes that violated the defined cardinality.
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Min.2FMax_Cardinality" class="external text" rel="nofollow">Property Min/Max Cardinality</a>
+</p>
+<h1> <span class="mw-headline" id="Class_requirements">Class requirements</span>
+</h1>
+<h2> <span class="mw-headline" id="R-209_Define_valid_classes"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/422" class="external text" rel="nofollow">R-209 Define valid classes</a></span>
+</h2>
+<p><b>Description:</b> Define which classes are valid for the graph.
+</p>
+<p><b>Action:</b> Classes that are not defined as valid for the graph may be ignored or dropped, as per the preference of the application.
+</p>
+<h2> <span class="mw-headline" id="R-7_Disjoint_Classes"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=R-7-DISJOINT-CLASSES" class="external text" rel="nofollow">R-7 Disjoint Classes</a></span>
+</h2>
+<p><b>Description:</b> Define classes that are disjoint within the graph.
+</p>
+<p><b>Action:</b> If disjoint classes are encountered in the same graph, signal error ?
+</p>
+<h2> <span class="mw-headline" id="R-225_Validation_of_associated_classes_in_one_Description_Set"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/453" class="external text" rel="nofollow">R-225 Validation of associated classes in one Description Set</a></span>
+</h2>
+<p><b>Description:</b> A Description Set with a Description of an instance of class A must also have a Description of an instance of class B.
+</p>
+<p><b>Example:</b> When describing an edm:ProvidedCHO in a Description there must be at least another Description in the same Description Set which has to be an instance of ore:Aggregation (for wording see <a href="http://dublincore.org/documents/dc-rdf/" class="external free" rel="nofollow">http://dublincore.org/documents/dc-rdf/</a>).
+</p>
+<p><b>Related W3C requirement:</b><a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Basic_Graph_Patterns" class="external text" rel="nofollow">Expressivity: Basic Graph Patterns</a>
+</p>
+<h1> <span class="mw-headline" id="Property_requirements">Property requirements</span>
+</h1>
+<h2> <span class="mw-headline" id="R-210_Define_exclusively_allowed_properties_for_a_context"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/423" class="external text" rel="nofollow">R-210 Define exclusively allowed properties for a context</a></b></span>
+</h2>
+<p><b>Description:</b> What properties can be used within this context? Context can be a class or node, a data receipt function, data creation function, API, etc.
+</p>
+<h2> <span class="mw-headline" id="R-67_Boolean_property_patterns"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/74" class="external text" rel="nofollow">R-67 Boolean property patterns</a></span>
+</h2>
+<p><b>Description:</b> 
+Descriptions and constraints may employ boolean combinations of properties, such as "propA xor propB xor propC"
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Logical_Operators" class="external text" rel="nofollow">Expressivity: Logical Operators</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Non-Existence_of_Patterns" class="external text" rel="nofollow">Expressivity: Non-Existence of Patterns</a>
+</p>
+<h2> <span class="mw-headline" id="R-68_Required_Properties"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/75" class="external text" rel="nofollow">R-68 Required Properties</a></b></span>
+</h2>
+<p><b>Description:</b> Resources of a given type sometimes must be accompanied by a specified property expected properties for resources of specific classes ('propD if type=X')
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Min.2FMax_Cardinality" class="external text" rel="nofollow">Property Min/Max Cardinality</a>
+</p>
+<h2> <span class="mw-headline" id="R-69_Optional_Properties"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/76" class="external text" rel="nofollow">R-69 Optional Properties</a></span>
+</h2>
+<p><b>Description:</b> Properties that are optional, not required. I.e. properties with minimum=0.
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Min.2FMax_Cardinality" class="external text" rel="nofollow">Property Min/Max Cardinality</a>
+</p>
+<h2> <span class="mw-headline" id="R-70_Repeatable_Properties"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/77" class="external text" rel="nofollow">R-70 Repeatable Properties</a></b></span>
+</h2>
+<p><b>Description:</b> Properties that are repeatable, i.e. with maximum &gt; 1.
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Min.2FMax_Cardinality" class="external text" rel="nofollow">Property Min/Max Cardinality</a>
+</p>
+<h2> <span class="mw-headline" id="R-71_Conditional_Properties"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/78" class="external text" rel="nofollow">R-71 Conditional Properties</a></b></span>
+</h2>
+<p><b>Description:</b> 
+</p>
+<ul>
+<li> various conditions possible
+</li>
+<li> condition: universal quantification on object and data properties
+</li>
+<li> condition: existential quantification on object and data properties
+</li>
+<li> condition: if specific properties are present, then specific other properties also have to be present
+</li>
+</ul>
+<p>For instance EDM defines that if the class edm:ProvidedCHO is present, at least one dc:title or dc:description should be present and at least one dc:subject or dc:type or dc:coverage or dcterms:spatial and edm:type should be present.
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Basic_Graph_Patterns" class="external text" rel="nofollow">Expressivity: Basic Graph Patterns</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Non-Existence_of_Patterns" class="external text" rel="nofollow">Expressivity: Non-Existence of Patterns</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Logical_Operators" class="external text" rel="nofollow">Expressivity: Logical Operators</a>
+</p>
+<p><b>Antoine [15-02-17]: this requirement has not really been discussed at <a href="https://etherpad.wikimedia.org/p/requirements_analysis" class="external free" rel="nofollow">https://etherpad.wikimedia.org/p/requirements_analysis</a> . It seems to be slightly redundant with R-67 and all the cardinality requirements.</b>
+</p>
+<h2> <span class="mw-headline" id="R-72_Recommended_Properties"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/79" class="external text" rel="nofollow">R-72 Recommended Properties</a></span>
+</h2>
+<p><b>Description:</b> This can be noted in the human-readable descriptive information. It should also be possible to return a message when such a property is not included in a data set.
+</p>
+<h2> <span class="mw-headline" id="R-25_Property_Domain"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=R-25-OBJECT-PROPERTY-DOMAIN" class="external text" rel="nofollow">R-25 Property Domain</a></b></span>
+</h2>
+<p><b>Description:</b> Proposed new definition by Antoine, 14-09-15
+</p>
+<p>An Object Property Domain constraint specifies that a property should be used in statements where the subject is an instance of a specific class.
+</p>
+<p>A Data Property Domain constraint applies only to datatype properties, i.e. properties which are used in statements where the object is a value (for example an RDF literal, i.e. a string).
+</p>
+<h1> <span class="mw-headline" id="Value_Requirements">Value Requirements</span>
+</h1>
+<h2> <span class="mw-headline" id="R-35_Property_Range"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=R-35-DATA-PROPERTY-RANGE" class="external text" rel="nofollow">R-35 Property Range</a></b></span>
+</h2>
+<p>Description: Defines the range of a property - either a class, a datatype, or a literal.
+</p>
+<p><b>Examples:</b> 
+</p>
+<ul>
+<li> the value of the property dbo:certificationDate must be of type xsd:date
+</li>
+<li> the value of the property dbo:isPeerReviewed must be of type xsd:boolean
+</li>
+<li> the value of the property dct:creator must be of type dct:Agent
+</li>
+<li> the dbo:birthPlace of a dbo:Person must be a dbo:Place
+</li>
+</ul>
+<p><br>
+<b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Type" class="external text" rel="nofollow">Property type</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Datatype" class="external text" rel="nofollow">Property Datatype</a>
+</p>
+<h2> <span class="mw-headline" id="R-43_Literal_Value_Comparison"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/50" class="external text" rel="nofollow">R-43 Literal Value Comparison</a></b></span>
+</h2>
+<p><b>Description:</b> Some constraints or property semantics require to compare literal values, based on order and/or (in)equality. 
+</p>
+<ul><li> operators: &lt;, &lt;=, &gt;, &gt;=, =, !=
+</li></ul>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Literal_Value_Comparison" class="external text" rel="nofollow">Expressivity: Literal Value Comparison</a>
+</p>
+<h2> <span class="mw-headline" id="R-44_Pattern_Matching_on_RDF_Literals"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/51" class="external text" rel="nofollow">R-44 Pattern Matching on RDF Literals</a></b></span>
+</h2>
+<p><b>Description:</b> 
+</p>
+<ul>
+<li> lexical form validation
+</li>
+<li> restrict literals of multiple datatypes according to patterns (regular expressions)
+</li>
+<li> restrictions on the form of a literal value
+</li>
+<li> The literal value of a resource matches/does not match a certain regex pattern (for instance avoid whitespaces in literals or leading nor trailing white spaces)
+</li>
+<li> data property we need to check against the regular expression
+</li>
+<li> it is also possible to check whether a regular expressions is not matched by a specific literal value for a specific data property
+</li>
+<li> perform whitespace processing, e.g. remove leading/trailing spaces; remove all whitespace characters
+</li>
+<li> test the length of values (requires the regex language to have look-ahead)
+</li>
+</ul>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Datatype_Property_Facets" class="external text" rel="nofollow">Datatype Property Facets</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Non-Existence_of_Patterns" class="external text" rel="nofollow">Expressivity: Non-Existence of Patterns</a> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_String_Operations" class="external text" rel="nofollow">Expressivity: String Operations</a>
+</p>
+<h2> <span class="mw-headline" id="R-47_Specify_and_validate_language_tags"><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/54" class="external text" rel="nofollow">R-47 Specify and validate language tags</a></span>
+</h2>
+<p><b>Description:</b>
+</p>
+<ul>
+<li> suggested (KC): Check all literals for language tags. If none, give "error message" X to communicate back to provider.
+</li>
+<li> description: does a literal for a specific data property within the context of a specific class have a specific language tag? Language tags are not required but are highly recommended for all literals.
+</li>
+</ul>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Language_Tags" class="external text" rel="nofollow">Expressivity: Language Tags</a>
+</p>
+<h2> <span class="mw-headline" id="R-49_Property_occurs_once_per_language_tag"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/56" class="external text" rel="nofollow">R-49 Property occurs once per language tag</a></b></span>
+</h2>
+<p><b>Description:</b> resources of a given type must have at most 1 value of a specific language for a given data property
+</p>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Expressivity:_Language_Tags" class="external text" rel="nofollow">Expressivity: Language Tags</a>
+</p>
+<h2> <span class="mw-headline" id="R-30_Define_value_lists"><b><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/37" class="external text" rel="nofollow">R-30 Define value lists</a></b></span>
+</h2>
+<p><b>Description:</b>
+One needs to check that values for statements come from a (controled) "list". This list of allowed values may come from
+</p>
+<ul>
+<li> explicit, flat enumeration of literals (as for edm:type in UC-8 <a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/341" class="external free" rel="nofollow">http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/341</a>)
+</li>
+<li> a 'vocabulary' or 'space' of literals (ISO codes, MIME types...) - which is eventually defined as flat list of strings
+</li>
+<li> explicit, flat enumeration of resources (URIS), as for edm:rights in UC-8 <a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/341" class="external free" rel="nofollow">http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/341</a>
+</li>
+<li> a URI pattern, like 'all URIs starting with <a href="http://example.org/example/*'" class="external free" rel="nofollow">http://example.org/example/*'</a>. This may not be best practice (as replaces the other recipes) but is likely to be convenient.
+</li>
+<li> concepts (URIs) that are defined by their belonging to a (SKOS) concept scheme, as in Data Cube code lists expressed as SKOS (<a href="http://www.w3.org/TR/vocab-data-cube/#schemes" class="external free" rel="nofollow">http://www.w3.org/TR/vocab-data-cube/#schemes</a>)
+</li>
+<li> resources that belong to a given (OWL) class, as also possible in Data Cube <a href="http://www.w3.org/TR/vocab-data-cube/#schemes" class="external free" rel="nofollow">http://www.w3.org/TR/vocab-data-cube/#schemes</a>
+</li>
+<li> list of results of querying a SPARQL endpoint (Cf R-219 <a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/432" class="external free" rel="nofollow">http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/432</a>)
+</li>
+</ul>
+<p><b>Related W3C requirement:</b> <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements#Property_Value_Enumerations" class="external text" rel="nofollow">Property Value Enumerations</a>
+</p>
+<h1> <span class="mw-headline" id="Requirements_Classification"> Requirements Classification </span>
+</h1>
+<p>In order to structure the requirements, we propose a classification system. 
+The most important top-level categories are 
+</p>
+<ul>
+<li> Constraint Formulation (how to formulate constraints?) and
+</li>
+<li> Constraint Expressivity (what kind of constraints should be formulated?).
+</li>
+</ul>
+<p>For the expressivity of constraints, we identified several sub-categories, such as:
+</p>
+<ul>
+<li> identification and uniqueness,
+</li>
+<li> cardinality restrictions,
+</li>
+<li> disjointness and equivalence, and
+</li>
+<li> constraints on RDF properties, objects, literals, and individuals.
+</li>
+</ul>
+<p>The two top-level categories "Constraint Formulation" and "Constraint Expressivity" are the most important ones for the DCMI community, as
+</p>
+<ul>
+<li> the constraint languages should be concise, human-understandable, and intuitive (constraint formulation requirements) and 
+</li>
+<li> many of the already identified DCMI requirements are classified as constraint expressivity requirements.
+</li>
+</ul>
+
+
+
+				
+				
+	</div>

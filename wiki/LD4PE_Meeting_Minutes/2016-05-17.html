@@ -1,0 +1,148 @@
+---
+layout: page
+title: 2016-05-17
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/Ld4pe.png" class="image" title="LD4PE logo"><img alt="LD4PE logo" src="http://metaweidner.github.io/dcmi-iac/wiki/images/Ld4pe.png" width="100" height="99"></a>
+<a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/Pet/ld4pe" class="external text" rel="nofollow">LD4PE Task Group Homepage</a> 
+</p>
+<h1> <span class="mw-headline" id="17_May_2016:_Meeting_Summary"> 17 May 2016: Meeting Summary </span>
+</h1>
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1">
+<a href="#17_May_2016:_Meeting_Summary"><span class="tocnumber">1</span> <span class="toctext">17 May 2016: Meeting Summary</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Agenda"><span class="tocnumber">1.1</span> <span class="toctext">Agenda</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Summary"><span class="tocnumber">1.2</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Action_items"><span class="tocnumber">1.3</span> <span class="toctext">Action items</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Meeting_Resources_.26_References"><span class="tocnumber">1.4</span> <span class="toctext">Meeting Resources &amp; References</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Agenda"> Agenda </span>
+</h2>
+<ul>
+<li> Technical Work- Stuart Sutton 
+</li>
+<li> Resource Collection- Sean Dolan
+</li>
+<li> Editorial Board- Tom Baker 
+</li>
+<li> Marketing and Community Building- Mike Lauruhn
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Summary"> Summary </span>
+</h2>
+<p>Present: Joseph Chapman, Mike Crandall, Abi Evans, Mike Lauruhn, Sam Oh, Stuart Sutton, David Talley, Marcia Zeng
+</p>
+<ul><li> <b>Technical:</b> 
+</li></ul>
+<p>Abi building out saved sets addition; should be done in next few days after discussing with David. Joseph continuing to work on authentication for resource authoring, and will do the update on the revised Competency Index once Stuart gives go-ahead (in next day or two). David has added a "contact us" form that is now operational. Will move onto learning maps as next (and final) deliverable. 
+</p>
+<ul><li> <b>Resource Collection:</b> 
+</li></ul>
+<p>Sam is working on learning resources, may have some ready at end of June. Mike will follow up with Sam on possibility of including some Topic Map resources in the collection and the Competency Index.
+</p>
+<ul><li> <b>Editorial Board:</b> 
+</li></ul>
+<p>Editorial Board met last Friday, and approved new competencies developed over last two calls. These are reflected in a new <a href="http://tinyurl.com/ld4pe-competencies-may14" class="external text" rel="nofollow">Google Doc</a><sup id="cite_ref-0" class="reference"><a href="#cite_note-0">[1]</a></sup> that is open for comment. Stuart used the ASN editor this weekend (and is rechecking because of multiple changes to the index) to transfer these changes so that David and Abi could refresh the <a href="http://explore.dublincore.net/linked-data-learning-resources/" class="external text" rel="nofollow">published version</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[2]</a></sup>. To do this, Stuart works through <a href="https://github.com/ld4pe/cieb/commit/d221c5af08ad611c6e6c197b99b3c793e758f7b9" class="external text" rel="nofollow">"diffs"</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[3]</a></sup>, and enters the changes in the ASN editor manually. The process, which is documented <a href="https://github.com/ld4pe/cieb/blob/master/CompIndex/README" class="external text" rel="nofollow">here</a><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[4]</a></sup>, is reasonably simple and straightforward.  However, it does presuppose
+</p>
+<ul><li>
+<ul>
+<li> A "source editor" (currently Tom), who: 1) understands how the process works, 2) can edit the source files, 3) can run `make`, which runs the Ruby script, which requires:* prior installation of `ruby`, * prior installation of `pandoc`, 4) can commit files to <a href="https://github.com/ld4pe/cieb" class="external text" rel="nofollow">https://github.com/ld4pe/cieb/blob/master/CompIndex/README</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[5]</a></sup>, and 5) can communicate the URL to...
+</li>
+<li> A "production editor" (currently Stuart), who 1) can use ASN to manually update the competency index in the ASN editor, and 2) can communicate to
+</li>
+<li> A "webmaster", such as David or Abi, who can update the website with the latest version of the Competency Index in the ASN editor.
+</li>
+</ul>
+</li></ul>
+<p>The major activity that requires hand-generation is the creation of the Google doc for public comments- the hope is that eventually some other mechanism can be found for commenting.  Moving from Github to public comment is the difficult piece of the process. The closest successful analog for the community-driven development of a vocabulary is Schema.org.  Like the source for the Competency Index, the Schema.org vocabulary is <a href="https://github.com/schemaorg/schemaorg" class="external text" rel="nofollow">posted on Github</a><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[6]</a></sup>.  As the next step, the Editorial Board will propose a way to adapt the <a href="http://dataliberate.com/2016/03/01/evolving-schema-org-in-practice-pt3-choosing-where-to-extend/" class="external text" rel="nofollow">Schema.org process</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[7]</a></sup> to CIEB.
+</p>
+<p>One of the goals of the last CIEB meeting was to look at gaps, to find areas where no competencies are available. Want to fill these in- very close to having full competencies. May not have benchmarks for all, but will have fully populated competencies by the next build in June. Thorough coverage of benchmarks under SPARQL, less complete elsewhere. They would like to fill out as many of the following gaps as possible:
+</p>
+<ul><li>
+<ul>
+<li> Expressing provenance of Linked Data
+</li>
+<li> RDF data analytics (with help of an appropriate expert?)
+</li>
+<li> Approaches to persistent identifiers
+</li>
+<li> SPARQL endpoints
+</li>
+<li> Triple stores
+</li>
+<li> Non-RDF linked data (note lowercase) - eg, Microdata, graph databases (Neo4j)
+</li>
+</ul>
+</li></ul>
+<p>The Competency Index Editorial Board plans to hold at least two more teleconferences before the summer -- June 3 and June 24. The goal will be to declare Competency Index Version 1 by the end of June. Two final teleconferences will be held in September and October to wrap up any loose ends and, ideally, to test a Schema.org-like approach to maintaining the Competency Index.
+</p>
+<p>Marcia notes that hierarchical browsing now means you have to have knowledge of the classification. Could consider adding search or indexed keywords as alternate entry mechanism- adding further filtering as a means to access content through facets, not just competencies and topics.  This will have to be undertaken down the road after the initial project wraps up, but is worth keeping in mind. Can use existing metadata (learning resource type, interactivity type) as index terms, but probably won't be able to move beyond this in the current project scope. The underlying infrastructure is in place, but will need additional expansion to fully implement for access through aboutness. Might consider using blog posts to move this discussion forward, with links to saved sets or learning maps to facilitate discussion, since concrete examples will help ground in reality. May be something that Marcia's team can work on during user studies this summer. David and Marcia will follow up to discuss plan for user evaluation of site.
+</p>
+<ul><li> <b>Marketing and Community Building:</b> 
+</li></ul>
+<p>Mike L will put up a blog post on the new CI for public comment this weekend. Earlier feedback asking for breaking up CI by beginner, intermediate, advanced or by job role has not been followed through on (see discussion above)- is there a way to provide response to input? Two mechanisms now for feedback- Google doc and partners in the field. Should all be going into Github as issues, but not happening now. Result is that some decisions are not recorded, and thus a gap in feedback results. Maybe there is a way to allow commenting on nodes in learning maps, might be worth exploring down the road. 
+</p>
+<p>Mike L will be on a full day NISO webinar on linked data next month (June 15), and will be talking about LD4PE as part of that. DCMI/ASIST events will have dates and times soon for workshop and special session. IFLA poster sessions will be on August 15/16.
+</p>
+<h2> <span class="mw-headline" id="Action_items"> Action items </span>
+</h2>
+<ul>
+<li> Abi and David to finish saved sets function and go live
+</li>
+<li> Mike to follow up with Sam on possible Topic Map competencies and learning resources
+</li>
+<li> Stuart to finish reviewing CI revisions so Joseph can add to triple store and Abi and David can refresh website
+</li>
+<li> David and Marcia connect regarding plan for site assessment
+</li>
+<li> Mike L to put out blog post on revised CI for feedback this weekend
+</li>
+<li> Stuart consult with Tom, David and Joseph about what to do with OCLC data set (from last month)
+</li>
+<li> <b>Next Meeting:</b> Tuesday, 6/21/16 at 7:00 AM PDT.
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Meeting_Resources_.26_References"> Meeting Resources &amp; References </span>
+</h2>
+<ol class="references">
+<li id="cite_note-0">
+<a href="#cite_ref-0">↑</a> <a href="http://tinyurl.com/ld4pe-competencies-may14" class="external free" rel="nofollow">http://tinyurl.com/ld4pe-competencies-may14</a>
+</li>
+<li id="cite_note-1">
+<a href="#cite_ref-1">↑</a> <a href="http://explore.dublincore.net/linked-data-learning-resources/" class="external free" rel="nofollow">http://explore.dublincore.net/linked-data-learning-resources/</a>
+</li>
+<li id="cite_note-2">
+<a href="#cite_ref-2">↑</a> <a href="https://github.com/ld4pe/cieb/commit/d221c5af08ad611c6e6c197b99b3c793e758f7b9" class="external free" rel="nofollow">https://github.com/ld4pe/cieb/commit/d221c5af08ad611c6e6c197b99b3c793e758f7b9</a>
+</li>
+<li id="cite_note-3">
+<a href="#cite_ref-3">↑</a> <a href="https://github.com/ld4pe/cieb/blob/master/CompIndex/README" class="external free" rel="nofollow">https://github.com/ld4pe/cieb/blob/master/CompIndex/README</a>
+</li>
+<li id="cite_note-4">
+<a href="#cite_ref-4">↑</a> <a href="https://github.com/ld4pe/cieb/blob/master/CompIndex/README" class="external free" rel="nofollow">https://github.com/ld4pe/cieb/blob/master/CompIndex/README</a>
+</li>
+<li id="cite_note-5">
+<a href="#cite_ref-5">↑</a> <a href="https://github.com/schemaorg/schemaorg" class="external free" rel="nofollow">https://github.com/schemaorg/schemaorg</a>
+</li>
+<li id="cite_note-6">
+<a href="#cite_ref-6">↑</a>  <a href="http://dataliberate.com/2016/03/01/evolving-schema-org-in-practice-pt3-choosing-where-to-extend/" class="external free" rel="nofollow">http://dataliberate.com/2016/03/01/evolving-schema-org-in-practice-pt3-choosing-where-to-extend/</a>
+</li>
+</ol>
+
+
+
+				
+				
+	</div>

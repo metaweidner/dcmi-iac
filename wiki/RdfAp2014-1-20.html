@@ -1,0 +1,203 @@
+---
+layout: page
+title: RdfAp2014-1-20
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p>RDF Application Profiles Group Meeting, Jan. 20, 2014
+</p>
+<p>PRESENT:
+</p>
+<p>Adrian Pohl, Antoine Isaac, bernard.vatant, cirq-kai, e_droege, Gordon Dunsire, Karen Coyle, marianamalta, Thomas Baker
+</p>
+<p>ACTION ITEMS:
+</p>
+<ul>
+<li> Stephanie: Set up Doodle poll for next meeting in about one month
+</li>
+<li> All: Add use cases to wiki, to be discussed at next meeting
+</li>
+</ul>
+<p>Introduction by Kai: need for a formalized AP which can be validated against; to serve as documentation (internal and external), and validation rules.
+</p>
+<p>DISCUSSION SUMMARY:
+</p>
+<p>Tom: Nervous about having essential information "out of band"
+</p>
+<p>Karen: Need to start with a definition of Application Profile and determine requirements to guide our work.
+</p>
+<p>Kai: When mixing and matching existing vocabularies, when you de-reference you get the standard definition. There's no way for you to provide comments. Also, you may have to access a large number of vocabularies to get the full set for a single application.
+</p>
+<p>Karen: (points to DC guidelines document <a href="http://dublincore.org/documents/profile-guidelines/" class="external free" rel="nofollow">http://dublincore.org/documents/profile-guidelines/</a>)
+</p>
+<p>Adrian: Points to work being done on Lobid. 
+</p>
+<ul>
+<li> <a href="http://api.lobid.org/" class="external free" rel="nofollow">http://api.lobid.org/</a>
+</li>
+<li> <a href="http://edoc.hu-berlin.de/series/dini-schriften/2013-14/PDF/14.pdf" class="external free" rel="nofollow">http://edoc.hu-berlin.de/series/dini-schriften/2013-14/PDF/14.pdf</a>
+</li>
+</ul>
+<p>Current profiles are in PDF documents, but even so do not follow a particular methodology
+</p>
+<p>Gordon: Would like an RDF representation of DCAP with DSP. Want to return a Concise Bounded Description together with a validation profile that would validate within a domain. Something that would express to others information about my data.
+</p>
+<p>Tom: There can be more than one view per application; AP should focus on view. Also, a single format should be able to provide documentation for humans as well as machine-actionable constraints. Format can help designers write down the constraints they enforce. Provider documentation was not covered at W3C validation workshop. 
+</p>
+<p>Kai: You need to be able to define what is a "complete" statement or record.
+</p>
+<p>Mariana: People were frustrated with DSP because it wasn't actionable; there was no way to use it for validation.
+</p>
+<p>SKYPE CHAT
+</p>
+<p>Stefanie Ruehle: sruehle added Adrian Pohl, Antoine Isaac, bernard.vatant, cirq-kai, e_droege, Gordon Dunsire, Karen Coyle, marianamalta, Thomas Baker to this conversation
+</p>
+<p>Stefanie Ruehle: Call started
+</p>
+<p>Karen Coyle: could someone post the link to the wiki page? thanks
+</p>
+<p>Kai Eckert: <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF-Application-Profiles" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/RDF-Application-Profiles</a>
+</p>
+<p>Stefanie Ruehle: sruehle added goldfarb_onb to this conversation
+</p>
+<p>Kai Eckert: <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF-Application-Profiles" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/RDF-Application-Profiles</a>
+</p>
+<p>Thomas Baker: I have a comment
+</p>
+<p>Karen Coyle: tom: nervous when out of band information changes semantics - when someone doesn't have your out-of-band information
+</p>
+<p>Thomas Baker: karen: we have jumped forward - we need to have a working definition of AP and talk about requirements - to set a box around our work
+</p>
+<p>Thomas Baker: kai: mix-and-match existing vocabs. Common concern: if you access terms, get standard definition.  No way to provide comments.  No way to get the full set without accessing five vocabularies.
+</p>
+<p>Karen Coyle: <a href="http://dublincore.org/documents/profile-guidelines/" class="external free" rel="nofollow">http://dublincore.org/documents/profile-guidelines/</a>
+</p>
+<p>Antoine Isaac: q+
+</p>
+<p>Bernard Vatant: q+
+</p>
+<p>Adrian Pohl: I'd like to comment.
+</p>
+<p>Gordon Dunsire: <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/DCAM_Revision" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/DCAM_Revision</a> ???
+</p>
+<p>Mariana Curado Malta: I am working on that
+</p>
+<p>Antoine Isaac: Adrian, I would even disagree re. creating a PDF. I don't feel there are really standard gudelines on how to do it...
+</p>
+<p>Mariana Curado Malta: that is my Phd work...
+</p>
+<p>Antoine Isaac: (or at least they are not applied)
+</p>
+<p>Adrian Pohl: yes, I was talking about representing an application profile in RDF.
+</p>
+<p>Mariana Curado Malta: <a href="http://dcevents.dublincore.org/IntConf/dc-2013/paper/view/178/81" class="external free" rel="nofollow">http://dcevents.dublincore.org/IntConf/dc-2013/paper/view/178/81</a>
+</p>
+<p>Gordon Dunsire: We discussed a lot of this stuff wrt DCAM Revision (see link above)
+</p>
+<p>Stefanie Ruehle: DC did some work on a syntax for wikis, see: <a href="http://dublincore.org/documents/dsp-wiki-syntax/" class="external free" rel="nofollow">http://dublincore.org/documents/dsp-wiki-syntax/</a>
+</p>
+<p>Gordon Dunsire: Totally agree - what I would like is an RDF representation, with guidance, of a DC Application Profile Description Set Profile ...
+</p>
+<p>Gordon Dunsire: I want to know how much I can do within an RDF data environment, and how much I have to use other representations.
+</p>
+<p>Antoine Isaac: muted
+</p>
+<p>Gordon Dunsire: I want to return a Concise Bounded Description mashed with a "record validation profile" to dereference an element in my maintenance domain.
+</p>
+<p>Karen Coyle: validation would be built on AP? is AP itself a validation method, or is it a constraint definition?
+</p>
+<p>Mariana Curado Malta: I see it as a constraints definition
+</p>
+<p>Thomas Baker: antoine: with stefanie, working on collecting mappings to Europeana Data Model.  A lot of these are in effect APs, but we never defined what we need.  We need validation that can work for RDF data.
+</p>
+<p>Thomas Baker: ...there could be several validation strategies.  Three versions of XML schema because different constraints at different points of process.
+</p>
+<p>Thomas Baker: kai: for content negotiation on web - place to create comments, documentation - create right out of technical definition.
+</p>
+<p>Thomas Baker: Tom: I would like a way to validate a graph against a "view" that defines what constitutes a "complete" graph and that defines a set of constraints to which a graph should (or must) conform.  We would need a language for writing down that set of constraints - something that is easy for data designers to understand and author (as Karen says: "define and document").  That language for constraints would ideally be translatable automatically into a language that could be used for validation (conformance to constraints), such as SPARQL -- a technology for making the validation itself.
+</p>
+<p>Karen Coyle: tom: there may be multiple views; what is a complete view, and what is the conformance of a graph to such a view?
+</p>
+<p>Karen Coyle: tom: the documentation for users should ideally be translatable to an actionable technology
+</p>
+<p>Karen Coyle: kai: providing a basic, local, subjective view of their data
+</p>
+<p>Gordon Dunsire: I just want to describe, in RDF, the context of RDF vocabularies which I publish. I design those vocabularies for a specific (local) application/environment, but I publish them so that 1) they can be re-used globally, and 2) to allow datasets produced in my environment can interoperate with global data.
+</p>
+<p>Karen Coyle: kai: "complete" -- what is a complete statement
+</p>
+<p>Karen Coyle: tom: help designers of data write down what constraints they enforce; w3c workshop was mainly about validation technology, but not about provider documentation.
+</p>
+<p>Gordon Dunsire: So I want to give all other applications the documentation I have for my local applications - for example, the rules for property values, the expected repeatability or mandatory status of elements, etc.
+</p>
+<p>Mariana Curado Malta: TOM: DCAP has the DSP, right? But DSP os not practical...
+</p>
+<p>Mariana Curado Malta: *is
+</p>
+<p>Mariana Curado Malta: "not interpreted by a machine"
+</p>
+<p>Karen Coyle: mariana - there is an xsd for DSP; I'll try to find the link
+</p>
+<p>Adrian Pohl: <a href="http://api.lobid.org/" class="external free" rel="nofollow">http://api.lobid.org/</a>
+</p>
+<p>Adrian Pohl: <a href="http://edoc.hu-berlin.de/series/dini-schriften/2013-14/PDF/14.pdf" class="external free" rel="nofollow">http://edoc.hu-berlin.de/series/dini-schriften/2013-14/PDF/14.pdf</a>
+</p>
+<p>Antoine Isaac: Oh, yes, I agree Adrian :-)
+</p>
+<p>Antoine Isaac: (it's just that everyone ends up doing their own 'style' of doc
+</p>
+<p>Thomas Baker: Mariana: DSP exists, but ideally we'd have a way to make it easy for people to author APs using DSP (something like the <a href="http://dublincore.org/documents/2008/10/06/dsp-wiki-syntax/" class="external free" rel="nofollow">http://dublincore.org/documents/2008/10/06/dsp-wiki-syntax/</a> wiki syntax).  Then we'd need a way to turn that DSP representation into a set of constraints that could be used for validation (e.g., SPARQL queries).
+</p>
+<p>Mariana Curado Malta: Karen: but xsd is not a "going back" in technology? (sorry if I am saying mistakes...)
+</p>
+<p>Gordon Dunsire: I want my APs to be machine-actionable.
+</p>
+<p>Mariana Curado Malta: Right Tom. I understand that.
+</p>
+<p>Adrian Pohl: <a href="https://wiki1.hbz-nrw.de/x/aIaf" class="external free" rel="nofollow">https://wiki1.hbz-nrw.de/x/aIaf</a>
+</p>
+<p>Antoine Isaac: +1 for putting Adrian's proposal for discussion in the group!
+</p>
+<p>Thomas Baker: Mariana: also, the DSP is based on DCAM, which gets in the way a bit because people do not know it (and it may not be
+</p>
+<p>Antoine Isaac: Gordon++ Every project contributing data to Europeana make their AP, roughly.
+</p>
+<p>Antoine Isaac: q+
+</p>
+<p>Karen Coyle: dsp xsd no long on DC site. put it here: <a href="http://kcoyle.net/temp/dcmi-dsp.xsd" class="external free" rel="nofollow">http://kcoyle.net/temp/dcmi-dsp.xsd</a>
+</p>
+<p>Karen Coyle: yes, xsd is "yesterday", but this is something one can play with today
+</p>
+<p>Mariana Curado Malta: Antoine: the guy from Madrid was the leader of the VMAP building process (VARIAZIONI Metdata Application Profile)
+</p>
+<p>Mariana Curado Malta: Antoine: he is Carlos A. Iglesias
+</p>
+<p>Mariana Curado Malta: Antoine: if you are interested in his contact I can send it to you
+</p>
+<p>Karen Coyle: do we have a mailing list?
+</p>
+<p>Antoine Isaac: Thanks, Mariana! That's ok, I just to see what they've done.
+</p>
+<p>Adrian Pohl: +1 for 1 call per month
+</p>
+<p>Antoine Isaac: +1
+</p>
+<p>doron goldfarb: +1
+</p>
+<p>Thomas Baker: Karen, see <a href="http://dublincore.org/moinmoin-wiki-archive/architecturewiki/attachments/dcmi-dsp.xsd" class="external free" rel="nofollow">http://dublincore.org/moinmoin-wiki-archive/architecturewiki/attachments/dcmi-dsp.xsd</a>
+</p>
+<p>Bernard Vatant: ok
+</p>
+<p>Karen Coyle: great, tom. fortunately i had a copy
+</p>
+<p>Thomas Baker: I had archived it when we deactivated the moinmoin wikis.
+</p>
+
+
+				
+				
+	</div>

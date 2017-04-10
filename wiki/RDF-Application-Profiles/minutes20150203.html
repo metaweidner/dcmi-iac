@@ -1,0 +1,250 @@
+---
+layout: page
+title: minutes20150203
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p><b>Meeting date</b>: Feb 3, 2015
+</p>
+<p><b>Etherpad</b>: <a href="http://etherpad.wikimedia.org/p/dcmi-ap-rdf-03-02-2015" class="external free" rel="nofollow">http://etherpad.wikimedia.org/p/dcmi-ap-rdf-03-02-2015</a>
+</p>
+<p><b>Attendees</b>: Thomas Baker, Karen, Antoine, Corey, Kai, Evelyn, Valentine, Thomas Bosch, Stefanie
+</p>
+<p><b>Regrets</b>: Lars
+</p>
+<h2> <span class="mw-headline" id="Discussion_of_use_cases_and_requirements"> Discussion of use cases and requirements </span>
+</h2>
+<p><a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/" class="external free" rel="nofollow">http://lelystad.informatik.uni-mannheim.de/rdf-validation/</a>
+</p>
+<p><a href="https://etherpad.wikimedia.org/p/requirements_analysis" class="external free" rel="nofollow">https://etherpad.wikimedia.org/p/requirements_analysis</a>
+</p>
+<p>process for requirement merges - see <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DC-ARCHITECTURE;704b0413.1411" class="external free" rel="nofollow">https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DC-ARCHITECTURE;704b0413.1411</a>
+</p>
+<p>New page for clean list: <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF_Application_Profiles/Requirements" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/RDF_Application_Profiles/Requirements</a>
+</p>
+<p>ACTION: Karen to complete new list of Reqs it as much as possible and call others to contribute
+--ONGOING
+</p>
+<p>Karen: still needs to completed. E.g. point back to the database.
+</p>
+<p>... Current description, title, number
+</p>
+<p>... also 'action'. What is needed more?
+</p>
+<p>Corey: 'action' should be included in 'description'
+</p>
+<p>Karen: R-91 shows a difference
+</p>
+<p>Antoine: I get the point
+</p>
+<p>Karen: and explaining what to do with the issues - signal an error
+</p>
+<p>Antoine: we could have it in the wiki, especially if it's not yet in the DB
+</p>
+<p>Karen: do we need other things
+</p>
+<p>Corey: not sure we should specify for signaling errors
+</p>
+<p>Tom: many of the things are test. Anything beyond this may refer to the realm of applications.
+</p>
+<p>Corey: for R-98 describing what the test is, is ok
+</p>
+<p>... for other requirements saying what to do with signals could be too far
+</p>
+<p>Karen: in w3c there's also a confusion between the language and the application of the language.
+</p>
+<p>... e.g.: 'classes are disjoints' vs 'what to do once classes have been detected'
+</p>
+<p>Corey: typically UC stop at the point of what you want
+</p>
+<p>... one set of things to do when an error is detected
+</p>
+<p>Karen: this puts a nice boundary for what we would have in our requirments
+</p>
+<p>... we would have the descriptive part
+</p>
+<p>Corey: +1
+</p>
+<p>Karen: ok so we should be as descriptive as possible
+</p>
+<p>... later W3C will develop the technology that implements this.
+</p>
+<p>Tom: are there any requirements that can't be conceptualized as tests/checks (if the data matches the condition)
+</p>
+<p>Karen: conceptually that's the case.
+</p>
+<p>... but it's not necessarily how we've defined them
+</p>
+<p>... e.g. R-210 doesn't have much of a test
+</p>
+<p>... I think my 'actions' are your 'tests' 
+</p>
+<p>... do we need them here?
+</p>
+<p>Tom: we should be clear about what's testable
+</p>
+<p>Karen: description in the DB are all over the place
+</p>
+<p>... we could have a unified approach in the wiki
+</p>
+<p>Valentine: can't the test be expressed in the UC, not the requirement?
+</p>
+<p>... it was a bit how we wrote them
+</p>
+<p>[
+</p>
+<p>looking at UC-Europeana-2
+<a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/338" class="external free" rel="nofollow">http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=node/338</a>
+</p>
+<p>and then UC-11
+<a href="http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=UC-11-WRONG-PROPERTY-DOMAINS" class="external free" rel="nofollow">http://lelystad.informatik.uni-mannheim.de/rdf-validation/?q=UC-11-WRONG-PROPERTY-DOMAINS</a>
+</p>
+<p>]
+</p>
+<p>UC-Europeana-2 says a lot about 'what if ...'
+</p>
+<p>Stefanie: UC-11 says: 'do the test'. 
+</p>
+<p>... do we need this in the UC or Req?
+</p>
+<p>Valentine: this was Corey's point : UC are more application-specific
+</p>
+<p>Evelyn: it really depends on the application, what to do
+</p>
+<p>... send a warning, correct the error, etc
+</p>
+<p>Corey: when writing UCR, we should be application neutral
+</p>
+<p>... but do we want to have a way for authors of AP to specify what the desired behavior is?
+</p>
+<p>Karen: ok. But as DC do we want to go at this level?
+</p>
+<p>Tom: I'm influenced by DSP and Sing. Framework
+</p>
+<p>... DSP: define templates to match for data
+</p>
+<p>... SF: stuff around it
+</p>
+<p>... R-216. Is it a requirement for the language?
+</p>
+<p>Karen: we declared it out of scope but there might be others here to question
+</p>
+<p>Tom: general question/style
+</p>
+<p>... requirement be expressed as concise sentences
+</p>
+<p>... e.g R-32 (which is deprecated). use verbs '
+</p>
+<p>Karen: for others we have this. for example  'check validity of IRIs'
+</p>
+<p>Karen+Tom: the name of the requirement says what it is.
+</p>
+<p>Karen: it's good to change them in the wiki, do it later in the DB
+</p>
+<p>Tom: R-49 is good "Property occurs once per language tag"
+</p>
+<p>Tom: ok I can do this
+</p>
+<p>Karen: requirements to remove?
+</p>
+<p>... the ones covered by cardinality R-68, R-69, R-70
+</p>
+<p>Stefanie: agree
+</p>
+<p>R-30 and R-32
+</p>
+<p>Antoine: R-32 should be out. Pb with the DB
+</p>
+<p><br>
+R-171 and R-171bis
+</p>
+<p>Karen: still undecided
+</p>
+<p>Karen and Tom re-formulating
+</p>
+<p>Corey: I've got a case for thumbnail. Case is that the thumbnail has not disappeared
+</p>
+<p>Tom: check the Http result codes (or a range thereof)
+</p>
+<p>... related to unit testing - testable conditions
+</p>
+<p>Corey: back to the boundary of the AP
+</p>
+<p>... some stuff (checking the dimension of a JPG) may be externalized
+</p>
+<p>Antoine: do this need to stop us? We can still postpone the two later.
+</p>
+<p>Karen: W3C people asked if it was out of scope.
+</p>
+<p>... they are still assuming a closed view
+</p>
+<p>Antoine: so we keep them?
+</p>
+<p>Karen: R-171bis is quite good 
+</p>
+<p>... R-171 needs a better definition
+</p>
+<p>Tom: these are requirements for language?
+</p>
+<p>Karen: this is what we're trying ot get at
+</p>
+<p>Tom: req for a language could be such that an application could use the language for validate.
+</p>
+<p>... e.g. 'specify the resource type'.
+</p>
+<p>Karen: e.g. 'specify two properties as being disjoint' would work.
+</p>
+<p>Tom: isn't disjoint too OWL?
+</p>
+<p>Karen: disjoint existed before.
+</p>
+<p><br>
+</p>
+<p>ACTION: Tom to review new list of Reqs, see whether the definitions make sense. Start after Karen has finished a first section
+--ONGOING
+</p>
+<p>Antoine: Tom, is it ok with you? Enough input?
+</p>
+<p>Tom: alright. I'll give input before next call.
+</p>
+<p>Karen: anyone got time to copy the descirption from the DB into the wiki
+</p>
+<p>Stefanie: I can try to do it
+</p>
+<p>ACTION: Stefanie to copy-paste the descriptions (not the actions)
+</p>
+<p>Karen: it would be great to have a list of requirements before the W3C meeting
+</p>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Coordination_with_W3C_Shapes_group_-_role_of_DCMI_group"> Coordination with W3C Shapes group - role of DCMI group </span>
+</h2>
+<p>charter: <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/RDF_Application_Profiles/Charter" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/RDF_Application_Profiles/Charter</a>
+</p>
+<p>W3C draft requirements list: <a href="https://www.w3.org/2014/data-shapes/wiki/Requirements" class="external free" rel="nofollow">https://www.w3.org/2014/data-shapes/wiki/Requirements</a>
+</p>
+<p>email: <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DC-ARCHITECTURE;7d388645.1501" class="external free" rel="nofollow">https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DC-ARCHITECTURE;7d388645.1501</a>
+</p>
+<p>Karen editing W3C Data Shapes use case document 
+</p>
+<p>ACTION: Stefanie &amp; Antoine to interlink DCAP Reqs with W3C Reqs and send result to W3C WG, after Karen and Tom have compiled the list of requirements
+</p>
+<p>ACTION: put Thomas' analysis of BF on wiki
+</p>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Admin_-_Next_calls"> Admin - Next calls </span>
+</h2>
+<pre>   2015-02-17 - Karen not available - at the W3C F2F - Tom also can't make it
+</pre>
+<p>ACTION: Corey to send a Doodle poll
+</p>
+
+
+				
+				
+	</div>

@@ -1,0 +1,397 @@
+---
+layout: page
+title: DCLib AP
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1">
+<a href="#DC-Library_Application_Profiles"><span class="tocnumber">1</span> <span class="toctext">DC-Library Application Profiles</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#DC-Library_Application_Profile_for_Bibliographic_Text_Resources_.28September_2011.29"><span class="tocnumber">1.1</span> <span class="toctext">DC-Library Application Profile for Bibliographic Text Resources (September 2011)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Objectives_and_Scope_of_DC-Lib_AP_for_Bibliographic_Text_Resources"><span class="tocnumber">1.2</span> <span class="toctext">Objectives and Scope of DC-Lib AP for Bibliographic Text Resources</span></a></li>
+<li class="toclevel-2 tocsection-4">
+<a href="#Functional_Requirements_of_DC-Lib_AP_for_Bibliographic_Text_Resources"><span class="tocnumber">1.3</span> <span class="toctext">Functional Requirements of DC-Lib AP for Bibliographic Text Resources</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Metadata_as_linked_data"><span class="tocnumber">1.3.1</span> <span class="toctext">Metadata as linked data</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Simple_creation_of_bibliographic_metadata"><span class="tocnumber">1.3.2</span> <span class="toctext">Simple creation of bibliographic metadata</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Discovery_of_library_resources"><span class="tocnumber">1.3.3</span> <span class="toctext">Discovery of library resources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Entity-Relationship_Model_of_DC-Lib_AP_for_Bibliographic_Text_Resources"><span class="tocnumber">1.4</span> <span class="toctext">Entity-Relationship Model of DC-Lib AP for Bibliographic Text Resources</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Description_Set_Profile_of_the_DC-Lib_AP_for_Bibliographic_Text_Resources"><span class="tocnumber">1.5</span> <span class="toctext">Description Set Profile of the DC-Lib AP for Bibliographic Text Resources</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DC-Library_Application_Profiles"> DC-Library Application Profiles </span>
+</h1>
+<h2> <span class="mw-headline" id="DC-Library_Application_Profile_for_Bibliographic_Text_Resources_.28September_2011.29"> DC-Library Application Profile for Bibliographic Text Resources (September 2011) </span>
+</h2>
+<p>This Application Profile is based on
+</p>
+<ul>
+<li> <a href="http://dublincore.org/documents/2004/09/10/library-application-profile/" class="external text" rel="nofollow">Library Application Profile [2004-09-10</a>]
+</li>
+<li> <a href="http://dublincore.org/architecturewiki/SingaporeFramework/" class="external text" rel="nofollow">The Singapore Framework for Dublin Core Application Profiles</a>
+</li>
+<li> <a href="http://dublincore.org/documents/2009/03/02/profile-review-criteria/" class="external text" rel="nofollow">Criteria for the Review of Application Profiles</a>
+</li>
+<li> <a href="http://dublincore.org/documents/abstract-model/" class="external text" rel="nofollow">DCMI Abstract Model</a>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Objectives_and_Scope_of_DC-Lib_AP_for_Bibliographic_Text_Resources"> Objectives and Scope of DC-Lib AP for Bibliographic Text Resources </span>
+</h2>
+<p>According to Singapore Framework a Dublin Core Application Profile is a document, or set of documents, which describes a metadata application. In doing so it does not only declare which terms from which namespaces are used in a particular application or project (Description Set Profile), but also defines the entities that are described with these elements (Domain Model) and the functionalities the application needs considering the requirements of the users (Functional Requirements). Additionally an application profile can define rules for the usage of terms (Usage Guidelines) and for their syntactical encoding (Encoding syntax guidelines ).
+</p>
+<p>Scope of this profile are the traditional librarian text materials - published or unpublished - like monographs, continuing publications (journals, yearbooks etc.), articles, preprints and postprints, as well as digitized or digital born versions of such material. We call this materials Bibliographic Text Resources, based on the following definitions:
+</p>
+<ul>
+<li> Dublin Core Metadata Term specification defines Bibliographic Resource as "a book, article, or other documentary resource".
+</li>
+<li> DCMI Type vocabulary defines Text as "a resource consisting primarily of words for reading".
+</li>
+</ul>
+<p>Objective of this Application Profile is a Dublin Core Application Profile that meets the requirements of libraries to describe these Bibliographic Text Resources by metadata and supports the publication of these metadata as linked data. 
+</p>
+<p>For the description of non-textual Bibliographic Resources in libraries (e.g. maps, images, films, etc.) the DC-Lib AP Task Group would develop further Application Profiles as far as these are required and no appropriate profiles exist. 
+</p>
+<p>The application profile proposes how to use DCMI Metadata Terms in libraries and library-related applications and projects. It is not so granular and complex as the DCMI/RDA Application Profiles but is nevertheless adequate for the description of all sorts of text publications in- and outside the library world. Therefore it has the use:
+</p>
+<ul>
+<li> to support the publication of bibliographic metadata as linked data,
+</li>
+<li> to support the discovery of librarian resources in a semantic web, 
+</li>
+<li> to support simple creation of bibliographic metadata within a variety of systems,
+</li>
+<li> to combine bibliographic metadata with data from non-library communities using Dublin Core,
+</li>
+<li> to serve as an interchange format between various systems using different metadata standards/formats,
+</li>
+<li> to use for harvesting metadata from data sources within and outside of the library domain,
+</li>
+</ul>
+<p>In this way the profile will support the interoperability of Dublin Core based librarian and non-librarian metadata applications with rules and formats of the librarian world.
+</p>
+<p>In this regard the Profile will describe
+</p>
+<ul>
+<li> Functional Requirements - the functions that the DC-Library Application Profile is designed to support 
+</li>
+<li> Entity-Relationship Model - the basic entities described by the application profile and their fundamental relationships 
+</li>
+<li> Description Set Profile - the terms with their templates and constraints that are required to fulfil the Functional Requirements 
+</li>
+<li> <a href="http://metaweidner.github.io/dcmi-iac/wiki/Properties2FRBR" title="Properties2FRBR">Properties2FRBR</a> - a mapping of the the properties of the Description Set Profile to FRBR-Entities. 
+</li>
+</ul>
+<p>Target user groups of this profile are:
+</p>
+<ul>
+<li> Developers from the library and non-library world who want to build a simple metadata application for publications.
+</li>
+<li> Information providers who want to integrate bibliographic data into their metadata services.
+</li>
+</ul>
+<p>This profile displaces the latest version of the <a href="http://dublincore.org/documents/2004/09/10/library-application-profile/" class="external text" rel="nofollow">DC-Library Application Profile</a>, published 10. September 2004. It is a product of the "DCMI Library Application Profile Task Group" that is responsible for further changes and maintenance. The profile will be submited for review to the Dublin Core Usage Board.
+</p>
+<h2> <span class="mw-headline" id="Functional_Requirements_of_DC-Lib_AP_for_Bibliographic_Text_Resources"> Functional Requirements of DC-Lib AP for Bibliographic Text Resources </span>
+</h2>
+<p>According to Singapore Framework the Functional Requirements describe the functions of an application with regard to the user needs. A similar statement we find at the Functional Requirements for Bibliographic Records (FRBR) which define the following four generic user tasks:
+</p>
+<ul>
+<li> find an entity
+</li>
+<li> identify an entity
+</li>
+<li> select an entity
+</li>
+<li> acquire or obtain an entity
+</li>
+</ul>
+<p>In addition to these generic functionalities the DC Lib AP for Bibliographic Text Resources defines the following use cases as the specific functions this profile has to achieve:
+</p>
+<h3> <span class="mw-headline" id="Metadata_as_linked_data"> Metadata as linked data </span>
+</h3>
+<ul>
+<li>
+<b>Use Case:</b> Metadata describing bibliographic text resources shall be used in a linked data context.
+</li>
+<li>
+<b>Requirements:</b> Use a linked data compatible syntax.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li>
+<b>Use Case:</b> Metadata describing bibliographic text resources shall be combined with metadata from other sources.
+</li>
+<li>
+<b>Requirement:</b> Use a domain model which allows to join data from other domains.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li>
+<b>Use Case:</b> Metadata describing bibliographic text resource shall be used to fix the relationships between these and other resources.
+</li>
+<li>
+<b>Requirement:</b> Use metadata terms supporting the usage of identifiers for citation and linking.
+</li>
+</ul>
+<p><br>
+</p>
+<h3> <span class="mw-headline" id="Simple_creation_of_bibliographic_metadata"> Simple creation of bibliographic metadata </span>
+</h3>
+<ul>
+<li> <b>Use Case:</b> A developer wants the simple and easy implementation of a cataloguing application.
+</li>
+<li> <b>Requirement:</b> Use a domain model as simple as possible.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A metadata provider wants to make specific assertions about his copy of a publication.
+</li>
+<li> <b>Requirement:</b> The domain model has to distinguish between a publication and its local copies.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A metadata provider wants the creation of metadata quickly and efficiently.
+</li>
+<li> <b>Requirement:</b> Support a standard description using a small number of mandatory metadata terms combined with a manageable number of optional terms.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A metadata provider wants to describe bibliographic text resources by non-librarian staff.
+</li>
+<li> <b>Requirement:</b> Support the creation of metadata by using plain and well defined metadata terms.
+</li>
+</ul>
+<p><br>
+</p>
+<h3> <span class="mw-headline" id="Discovery_of_library_resources"> Discovery of library resources </span>
+</h3>
+<ul>
+<li> <b>Use Case:</b> A user searches for a particular publication of a work and knows the titel, persons and/or coporation responsible for it and/or the identifier.
+</li>
+<li> <b>Requirement:</b> Support the search of a particular publication by given titles, names (of a person or corporate body) and/or identifiers.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A user searches for all publications of a given person or coporate body.
+</li>
+<li> <b>Requirement:</b> Support the search of all publications for which a given person or coporate body is responsible.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A user searches for informations about a specific topic.
+</li>
+<li> <b>Requirement:</b> Support the search of all publications of a given topic.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A User wants to filter search results.
+</li>
+<li> <b>Requirement:</b> Support the filtering of search results by languages, formats, dates, names (of persons or coporate bodys), subjects, types of work and availabilities.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A user wants to identify relevant publications.
+</li>
+<li> <b>Requriement:</b> Support the identification of the relevance of a publication using titles, persons or coproate bodies responsible for the work, descriptions, dates, languages, subjects, relations and identifiers.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A user wants to get information about the life cycle of a particular publication.
+</li>
+<li> <b>Requirement:</b> Show the different dates of the life cycle of a particular publication.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A user wants to know what relationships exist between different publications.
+</li>
+<li> <b>Requirement:</b> Show the relations between publications and link one to another by these relations.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case:</b> A user wants to identify all copies of a publication he can use.
+</li>
+<li> <b>Requirement:</b> Show the usability of a copy by the availiabilities and access conditions.
+</li>
+</ul>
+<p><br>
+</p>
+<ul>
+<li> <b>Use Case</b>: A user wants to obtain a specific copy.
+</li>
+<li> <b>Requirement:</b> Show the identifier and the availability and access conditions of a particular copy.
+</li>
+</ul>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Entity-Relationship_Model_of_DC-Lib_AP_for_Bibliographic_Text_Resources"> Entity-Relationship Model of DC-Lib AP for Bibliographic Text Resources </span>
+</h2>
+<p>According to Singapore Framework an application profile must provide a domain model which defines the basic entities described by the profile and their fundamental relationships. Basis of this model are the Functional Requirements which in our case demand simplicity and feasibility on the one hand and linked data compatibility on the other. Furthermore the Functional Requirements demand a distinction between a publication and its single copies to describe availability and accessability of items in libraries. And finally metadata should be compliant with metadata of other library applications in the long run.
+</p>
+<p>For these reasons we developed a non-FRBR model, aligning on the model of the Functional Requirements of Bibliographic Records (FRBR) in some ways. 
+</p>
+<ul>
+<li> FRBR distinguishes the following Group 1 entities: work, expression, manifestation and item. Our model distinguishes on this level only two entities: bibliographic text resource and item.
+</li>
+<li> FRBR distinguishes the following Group 2 entities: person and corporate body. Our model uses on this level only one entity: agent.
+</li>
+<li> FRBR distingiushes the followong Group 3 entities: concept, object, event und place. Our model uses on this level only one entity: concept
+</li>
+</ul>
+<p>The entity-relationship model represents the relations between these entities:
+</p>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/ClassesDCLAP_v1.jpg" class="image"><img alt="ClassesDCLAP v1.jpg" src="http://metaweidner.github.io/dcmi-iac/wiki/images/ClassesDCLAP_v1.jpg" width="651" height="391"></a>
+</p>
+<p>where 
+</p>
+<ul><li> any Bibliographic Text Resource is an instance of the class bibliographicTextResource, which is a subclass of dcterms:bibliographicResource. (For further definition of bibliographicTextResource see LibClasses) A Bibliographic Text Resource 
+<ul>
+<li> has to be exemplified by one or more items 
+</li>
+<li> has to be created, contributed or published by one or more Agents 
+</li>
+<li> may have one or more Concepts as a subject 
+</li>
+<li> may have relations to one or more other Bibliographic Text Resources 
+</li>
+</ul>
+</li></ul>
+<p>Instances of the class bibliographicTextResource shall be described using the terms of the DCLIB Bibliographic Text Resource Description Set Profile (see BibliographicResourceProperties).  
+</p>
+<ul><li> any Item is an instance of the class frbr:Item. An Item 
+<ul>
+<li> is an exemplar of one and only one Bibliographic Text Resource
+</li>
+<li> is available at one and only one Agent
+</li>
+<li> may be part of one or more Collections 
+</li>
+</ul>
+</li></ul>
+<p>Instances of this class shall be described using the terms of the DCLIB Item Description Set Profile (see ItemProperties).
+</p>
+<ul><li> any Collection is an instance of dcmitype:Collection. For describing instances of this class we recommend to use terms of the <a href="http://dublincore.org/groups/collections/collection-application-profile/2007-03-09/" class="external text" rel="nofollow">Dublin Core Collections Application Profile</a>.
+</li></ul>
+<ul><li> any Agent is an instance of dcterms:Agent. For describing instances of this class we recommend to use terms of <a href="http://xmlns.com/foaf/spec/" class="external text" rel="nofollow">FOAF vocabulary</a>.
+</li></ul>
+<ul><li> any Concept is an instance of skos:concept. For describing instances of this class we recommend to use terms of  <a href="http://www.w3.org/TR/skos-reference/" class="external text" rel="nofollow">SKOS vocabulary</a>.
+</li></ul>
+<p>The model defines the following classes:
+</p>
+<ul>
+<li> my:Collection rdf:type dcmitype:Collection .
+</li>
+<li> my:bibliographicTextResource rdfs:subClassOf dcterms:bibliographicResource .
+</li>
+<li> my:Item rdf:type frbr:Item .
+</li>
+<li> my:Agent rdf:type dcterms:Agent .
+</li>
+<li> my:Concept rdf:type skos:Concept .
+</li>
+</ul>
+<p>where the Application profile provides Description Templates only for the entities my:bibliographicTextResource (see BibliographicResourceProperties and my:Item (see ItemProperties).
+</p>
+<h2> <span class="mw-headline" id="Description_Set_Profile_of_the_DC-Lib_AP_for_Bibliographic_Text_Resources"> Description Set Profile of the DC-Lib AP for Bibliographic Text Resources </span>
+</h2>
+<p>According to Singapore Framework the Description Set Profile defines
+</p>
+<ul>
+<li> the resources that may be described,
+</li>
+<li> the properties that may be used,
+</li>
+<li> and the ways a value may be referenced.
+</li>
+</ul>
+<p>The Description Set Profile of the DC-Lib AP for Bibliographic Text Resources 
+</p>
+<ul>
+<li> provides the <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCLib_AP/DCLib_Classes" title="DCLib AP/DCLib Classes">DCLib classes</a> - <b>classes</b>, whose instances are the subjects in subject-predicate-object triples describing these instances.
+</li>
+<li> declares the <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCLib_AP/Bibliographic_Resource_Properties" title="DCLib AP/Bibliographic Resource Properties">properties of a Bibliographic Text Resource</a> - <b>properties</b> used as predicate of the subject-predicate-object triple describing instances of the class bibliographicTextResource.
+</li>
+<li> declares the <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCLib_AP/Item_Properties" title="DCLib AP/Item Properties">properties of an Item</a> - <b>properties</b> used as predicate of the subject-predicate-object triple describing instances of the class Item.
+</li>
+<li> defines <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCLib_AP/Encoding_Schemes" title="DCLib AP/Encoding Schemes">Encoding Schemes</a> - <b>syntax encoding schemes</b> and <b>vocabulary encoding schemes</b> constraining values used as an object in the subject-predicate-object triple discribing instances of the class bibliographicTextResource or of the class Item. 
+</li>
+</ul>
+<p>Terms used in this Application Profile are taken from the following <b>namespaces</b>:
+</p>
+<ul>
+<li> dc: &lt;<a href="http://purl.org/dc/elements/1.1/" class="external free" rel="nofollow">http://purl.org/dc/elements/1.1/</a>&gt; DCMI legacy namespace used for the 15 core properties
+</li>
+<li> dcterms: &lt;<a href="http://purl.org/dc/terms/" class="external free" rel="nofollow">http://purl.org/dc/terms/</a>&gt;  DCMI terms namespace of the DCMI terms - properties, classes and datatypes
+</li>
+<li> aglsterms: &lt;<a href="http://www.agls.gov.au/agls/terms/" class="external free" rel="nofollow">http://www.agls.gov.au/agls/terms/</a>&gt; Metadata terms of the AGLS (Australian Government Locator Service) metadata set
+</li>
+<li> eprintterms: &lt;<a href="http://purl.org/eprint/terms/" class="external free" rel="nofollow">http://purl.org/eprint/terms/</a>&gt; Metadata terms of the Scholarly Works Application Profile (SWAP) 
+</li>
+<li> frbr: &lt;<a href="http://iflastandards.info/ns/fr/frbr/frbrer/" class="external free" rel="nofollow">http://iflastandards.info/ns/fr/frbr/frbrer/</a>&gt; Metadate Terms of the FRBR model
+</li>
+</ul>
+<p><br>
+To specify the terms of the Description Set Profile the following <b>attributes</b> are used:
+</p>
+<p><br>
+<b>Name</b> A token assigned to the term, unique within the term's namespace.
+</p>
+<p><b>URI</b> The Uniform Resource Identifier used to uniquely identify a term.
+</p>
+<p><b>Definition</b> A statement that represents the concept and essential nature of the term.
+</p>
+<p><b>Type of Term</b> The type of term as described in the DCMI Abstract Model.
+</p>
+<p><b>DCLIB-Comment</b> Additional information about the usage of the term in the DC Lib AP.
+</p>
+<p><b>Has Range</b> A Class of which a value described by the term has to be an instance.
+</p>
+<p><b>Has Domain</b> A Class of which the described resource has to be an instance.
+</p>
+<p><b>SES</b> A datatype appointing the syntax of the value string that has to be used with a property.
+</p>
+<p><b>VES</b> Identifies a controlled vocabulary which instances may be used as values with a property.
+</p>
+<p><b>Obligation</b> Indicates whether a property is required to always or sometimes be present. In this application profile the obligation can be: mandatory (M), mandatory if applicable (MA), strongly recommended (R) or optional (O).
+</p>
+<p><b>Occurence</b> Indicates any limit to the repeatability of a property.
+</p>
+
+
+				
+				
+	</div>

@@ -1,0 +1,94 @@
+---
+layout: page
+title: Developer Scenarios
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1">
+<a href="#Developer_Scenarios"><span class="tocnumber">1</span> <span class="toctext">Developer Scenarios</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Scenario:_Linking_to_Authority_Files"><span class="tocnumber">1.1</span> <span class="toctext">Scenario: Linking to Authority Files</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Scenario:_Enrichment"><span class="tocnumber">1.2</span> <span class="toctext">Scenario: Enrichment</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Scenario:_Other_copies"><span class="tocnumber">1.3</span> <span class="toctext">Scenario: Other copies</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Scenario:_Duplicates"><span class="tocnumber">1.4</span> <span class="toctext">Scenario: Duplicates</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Scenario:_Sources"><span class="tocnumber">1.5</span> <span class="toctext">Scenario: Sources</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Scenario:_Publishers"><span class="tocnumber">1.6</span> <span class="toctext">Scenario: Publishers</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Developer_Scenarios"> Developer Scenarios </span>
+</h1>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/DCMI/RDA_Task_Group_Historical_Archives" class="external text" rel="nofollow">Back to TG Historical Archives page</a>
+</p>
+<h2> <span class="mw-headline" id="Scenario:_Linking_to_Authority_Files"> Scenario: Linking to Authority Files </span>
+</h2>
+<p>The catalog has both bibliographic records and authority records. Authority records contain valid values for particular fields. The authority records also contain additional information about the values, such as non-preferred forms of the value and instructions on usage. To integrate the non-preferred forms into the user interface, the developer must create a link between the value in the bibliographic record and the value in the authority record. This link must remain intact even if the preferred form of the value changes, and even if the metadata creator chooses to use a non-preferred form as the display form. <i>Karen Coyle</i>
+</p>
+<h2> <span class="mw-headline" id="Scenario:_Enrichment"> Scenario: Enrichment </span>
+</h2>
+<p>The system obtains a search result record and wishes to obtain further
+information from ancillary Sources to enrich the record displayed to the
+user. Simple (existing) case is the addition of cover art to book
+records, utilizing a control number. More complex case is identifying
+where a copy of the retrieved work may be obtained (library loan,
+bookseller, online download, etc.), using various bib data. The
+authority link case you sketched out is a close cousin here. 
+Peter Noerr
+</p>
+<h2> <span class="mw-headline" id="Scenario:_Other_copies"> Scenario: Other copies </span>
+</h2>
+<p>Using various bits of the bib metadata try to discover other copies of
+the work at alternate locations. This is a function that comes up in
+federated search situations where a major part of the requirement is the
+"find the most available copy" function. This needs identified bib
+elements useful for discovery, and also some form of equivalence between
+the Source systems. This is regularly done now, but requires 'human
+intervention' and lots of maintenance in general. 
+Peter Noerr
+</p>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Scenario:_Duplicates"> Scenario: Duplicates </span>
+</h2>
+<p>Sort of the opposite of 2). Determine from the available metadata
+whether two records are the same object - at some bibliographic level.
+Obvious candidates are the (relatively) simple manifestations -&gt; work
+'duplication'. But with no link it becomes quite a difficult operation
+if data equivalences are not available. If you work your Latvian
+translation scenario backwards you get the situation here, where only
+the author's name is the same. Now consider that is has been
+transliterated into Cyrillic in a Russian version. 
+Peter Noerr
+</p>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Scenario:_Sources"> Scenario: Sources </span>
+</h2>
+<p>Simply discover Sources (databases, content services, OPACS, etc.) which
+have information about a particular topic, or in a given language, etc.
+This involves metadata about the Source, not the items within it (though
+they must, of course, be represented in aggregate by the Source) and
+hence is a level removed from the other scenarios. 
+Peter Noerr
+</p>
+<p><br>
+</p>
+<h2> <span class="mw-headline" id="Scenario:_Publishers"> Scenario: Publishers </span>
+</h2>
+<p>I need to link bibliographic records to the publisher information that is in the acquisitions system. This will interact with purchasing and supplies for the acquisition of new copies. <i>Karen Coyle</i>
+</p>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/DCMI/RDA_Task_Group_Historical_Archives" class="external text" rel="nofollow">Back to TG Historical Archives page</a>
+</p>
+
+
+				
+				
+	</div>

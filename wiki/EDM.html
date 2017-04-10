@@ -1,0 +1,108 @@
+---
+layout: page
+title: EDM
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p>Machine readable validation specs for EDM.  The EDM Schemas are at at <a href="http://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu" class="external free" rel="nofollow">http://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu</a>
+</p>
+<p>We currently have two profiles, one for the data that is submitted by providers (external) and one that specifies the schema used internally after the data has been ingested and processed.
+</p>
+<p>- EDM-EXTERNAL-MAIN.xsd at <a href="https://github.com/europeana/corelib/blob/master/corelib-solr-definitions/src/main/resources/eu/EDM-EXTERNAL-MAIN.xsd" class="external free" rel="nofollow">https://github.com/europeana/corelib/blob/master/corelib-solr-definitions/src/main/resources/eu/EDM-EXTERNAL-MAIN.xsd</a>
+</p>
+<p>- EDM-INTERNAL-MAIN.xsd at <a href="https://github.com/europeana/corelib/blob/master/corelib-solr-definitions/src/main/resources/eu/EDM-INTERNAL-MAIN.xsd" class="external free" rel="nofollow">https://github.com/europeana/corelib/blob/master/corelib-solr-definitions/src/main/resources/eu/EDM-INTERNAL-MAIN.xsd</a>
+</p>
+<p>Note that the data that complies with these XML schemas is actually valid RDF/XML, so that it can be loaded in a triple store for playing with it outside of the production environment.
+</p>
+<p>- an OWL ontology  <a href="https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu/rdf" class="external free" rel="nofollow">https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu/rdf</a>
+</p>
+<p>In our production service only the XML schemas area used. The problem is that they do not capture all the constraints that we have in the human readable Guidelines, for example, mandatory properties. See <a href="http://pro.europeana.eu/edm-documentation" class="external free" rel="nofollow">http://pro.europeana.eu/edm-documentation</a>.
+</p>
+<p>There are two presentations that try to convey some of the issues we face at:
+</p>
+<p><a href="http://www.slideshare.net/antoineisaac/europeana-rdf-validation" class="external free" rel="nofollow">http://www.slideshare.net/antoineisaac/europeana-rdf-validation</a>  and  <a href="http://www.slideshare.net/antoineisaac/validation-of-europeana-dataapplication-profile-owl-ontology-or-else" class="external free" rel="nofollow">http://www.slideshare.net/antoineisaac/validation-of-europeana-dataapplication-profile-owl-ontology-or-else</a>
+</p>
+<p><b>Summary of current validation.</b>
+</p>
+<p><b>1.	EDM schemas</b>
+</p>
+<p><b>a.	EDM external schema</b>
+A first validation can be performed against the XML Schema for the Europeana Data Model. 
+The schema declares the classes and properties as described in the EDM guidelines. Some classes and properties such as edm:Event are not yet implemented so not included in the schema. Data using such classes and properties can’t be validated using the schema. 
+Not all the EDM constraints can be expressed in the Schema. To define more validation rules, the schema has been extended with rules following the Schematron2 approach. 
+EDM external schema available at <a href="https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu" class="external free" rel="nofollow">https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu</a> 
+</p>
+<p><br>
+<b>b.	EDM internal schema</b>
+This schema is meant for validation inside the Europeana ingestion workflow where data is reorganised to add proxies to distinguish provider data from Europeana data and certain properties are added to support the portal or the API. It is not meant to be used by data providers.  The EDM internal schema is available at <a href="https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu" class="external free" rel="nofollow">https://github.com/europeana/corelib/tree/master/corelib-solr-definitions/src/main/resources/eu</a> 
+</p>
+<p><br>
+<b>c.  The API output</b> 
+There is a large body of legacy data in the Europeana database from the previous metadata format used (ESE).  This does not conform to EDM because of missing mandatory fields so the generation of RDF/XML and JSON/LD for these records fails. 
+The solution is to have a uniform way to generate RDF/XML and JSON/LD so there needs to be a third version of EDM that will not validate against any rules of EDM (schematron, 
+This will enable the generation of these formats, for as long as we have obsolete data that do not conform to EDM-Internal in our repository.  It will be dropped when this is not longer the case and initial plans state that this should be by the end of the year (2014).
+</p>
+<p><br>
+<b>2.	EDM validation for ingestion (external)</b>
+</p>
+<p><b>a.	Schema-level validation</b>
+</p>
+<p><i>i.	Check file validity</i> 
+</p>
+<p>-The validation with the XML schema requires that the classes and the properties follow a certain order (as defined in the schema) 
+</p>
+<p>-Check the syntax of classes and properties names e.g. edm:isRelated when it should be edm:isRelatedTo
+</p>
+<p><br>
+<i>ii.	check on cardinality constraints and occurrences</i>
+</p>
+<p>- check for the presence of the mandatory EDM elements (most of which are inherited from ESE) shown in the  table below. The xml schema checks for the mandatory properties and the Schematron rules check those that have alternatives.
+</p>
+<p>Applicable class	Mandatory Properties (or alternatives)
+Aggregation	edm:dataProvider
+Aggregation	edm:isShownAt or edm:isShownBy
+Aggregation	edm:provider
+Aggregation	edm:rights
+Aggregation	edm:aggregatedCHO
+Aggregation	edm:ugc (when applicable)
+ProvidedCHO	dc:title or dc:description
+ProvidedCHO	dc:language for text objects
+ProvidedCHO	dc:subject or dc:type or dc:coverage or dcterms:spatial
+ProvidedCHO	edm:type
+</p>
+<p><i>iii Check on Value types</i>
+</p>
+<p>Some EDM properties are defined to accept literals or references, for example, dcterms:isPartOf or edm:isRelatedTo.
+</p>
+<p>There is no hard consequence the value is coded as a literal:  
+&lt;dcterms:isPartOf&gt;<a href="http://arachne.uni-koeln.de/entity/1241241" class="external free" rel="nofollow">http://arachne.uni-koeln.de/entity/1241241</a>&lt;/dcterms:isPartOf&gt; 
+instead of as a reference
+&lt;dcterms:isPartOf rdf:resource="<a href="http://arachne.uni-koeln.de/entity/1241241" class="external free" rel="nofollow">http://arachne.uni-koeln.de/entity/1241241</a>"/&gt;.
+</p>
+<p>However other EDM properties only accept references, for example,  edm:IsRepresentationOf, edm:IsNextInSequence, meaning .
+</p>
+<p>&lt;edm:isRepresentationOf&gt;<a href="http://arachne.uni-koeln.de/entity/1241241" class="external free" rel="nofollow">http://arachne.uni-koeln.de/entity/1241241</a>&lt;/edm:isRepresentationOf&gt;
+</p>
+<p>is incorrect coding and it should be 
+</p>
+<p>&lt;edm:isRepresentationOf rdf:resource="<a href="http://arachne.uni-koeln.de/entity/1241241" class="external free" rel="nofollow">http://arachne.uni-koeln.de/entity/1241241</a>"/&gt;
+</p>
+<p><b>Future validation</b>
+Data providers in the Europeana network are now re-using EDM for their own applications and are developing EDM extensions or EDM application profile (see case study CS-6 ). Data providers will provide their data to Europeana using those profiles which won't be validated as the EDM schema for data ingestion doesn't define these extensions.
+There is two cases to take into account:
+- Europeana might not want to ingest the data as describe in the EDM extensions (for the portal) but would still need to be able to validate the data.
+- Europeana might want to ingest the extensions for domain specific portal or applications.
+</p>
+<p>Europeana would therefore need for validation:
+- a schema for the the validation of properties and classes used in the main portal
+- schemas for the validation of properties and classes used only in the extensions
+</p>
+
+
+				
+				
+	</div>

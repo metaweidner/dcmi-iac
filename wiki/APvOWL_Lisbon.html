@@ -1,0 +1,142 @@
+---
+layout: page
+title: APvOWL Lisbon
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p><br>
+</p>
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1">
+<a href="#Application_Profiles_as_an_alternative_to_OWL_Ontologies"><span class="tocnumber">1</span> <span class="toctext">Application Profiles as an alternative to OWL Ontologies</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#FRBRer_Ontology"><span class="tocnumber">1.1</span> <span class="toctext">FRBRer Ontology</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Open_Annotation_Data_Model_as_an_Application_Profile"><span class="tocnumber">1.2</span> <span class="toctext">Open Annotation Data Model as an Application Profile</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Europeana"><span class="tocnumber">1.3</span> <span class="toctext">Europeana</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Discussion"><span class="tocnumber">2</span> <span class="toctext">Discussion</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Application_Profiles_as_an_alternative_to_OWL_Ontologies">Application Profiles as an alternative to OWL Ontologies</span>
+</h2>
+<p><b>Discussion Paper for DC2013 Session</b>
+</p>
+<p>Convenors: Tom Baker &amp; Karen Coyle
+</p>
+<p>Day/Time: Wednesday, 14:30-18:00
+</p>
+<p>Since 2000, much of the research and development in the Dublin Core community has focused on the concept of «Application Profile» <sup id="cite_ref-0" class="reference"><a href="#cite_note-0">[1]</a></sup>. The «Singapore Framework for Dublin Core Application Profiles» <sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[2]</a></sup> and the related «Description Set Profile Constraint Language» <sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[3]</a></sup>, both based on the «DCMI Abstract Model» <sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[4]</a></sup>, describe a method for expressing metadata patterns in platform-independent templates. Application Profiles describe the structure and contents of data. By definition, Application Profiles use RDF vocabularies declared elsewhere and merely specify how the terms of those vocabularies are constrained and packaged in matching sets of instance data.
+</p>
+<p>Ontologies expressed using the Web Ontology Language (OWL), in contrast, typically define an (inevitably reductionist) model of the world by declaring what classes of things are found in that world, their properties, and their relationships. These can be leveraged to infer additional information about things that are described using the ontology.
+</p>
+<p>In Application Profiles, constraints specify how RDF vocabularies are used in data without changing how those RDF vocabularies are defined. Classes and properties can be reused in different application profiles without changing their underlying definition or affecting how they are used elsewhere. OWL Ontologies, in contrast, typically define constraints as an integral part of the vocabulary itself. To describe something using vocabulary from an OWL Ontology is to implicitly accept its underlying model of the universe.
+</p>
+<p>This session examines how the dual requirements of (data-oriented) quality control and (Web-oriented) interoperability are addressed using these two approaches. This topic is particularly timely in light of interest in RDF validation in the W3C community and of the role of community profiles in the data model of the «Bibliographic Framework Transition Initiative». <sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[5]</a></sup> 
+</p>
+<p>Whether patterns are expressed using constraints on data or as constraints on a model of reality can have unintended consequences when data is consumed in the Linked Data environment. The choice between Application Profiles and OWL Ontologies depends on how particular data is intended to be used. 
+</p>
+<p>The session will try to achieve a common view on the strengths and weaknesses of the two approaches and identify next steps in the development of simple and practical conventions for Application Profiles. 
+</p>
+<p>We intend to stimulate discussion of by presenting real-life examples. 
+</p>
+<h3> <span class="mw-headline" id="FRBRer_Ontology">FRBRer Ontology</span>
+</h3>
+<p>Gordon Dunsire will present a short discussion of issues
+around the ontological expression of FRBR<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[6]</a></sup> and RDA<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[7]</a></sup>, the thinking behind the
+proposal for generalized properties (with an update on its status), and the
+role of application profiles for RDA (one of the 2007 "London Meeting" resolutions).
+To contain what could be a lengthy discussion, we propose to focus on 
+properties such as the following:
+</p>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/P3056reduced.jpg" class="image"><img alt="P3056reduced.jpg" src="http://metaweidner.github.io/dcmi-iac/wiki/images/P3056reduced.jpg" width="500" height="265"></a>
+</p>
+<h3> <span class="mw-headline" id="Open_Annotation_Data_Model_as_an_Application_Profile">Open Annotation Data Model as an Application Profile</span>
+</h3>
+<p>We will examine a W3C Community draft, Open Annotation Data Model (OA). Two specifications -- the Open Annotation Ontology<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[8]</a></sup> and the Open Annotation Data Model <sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[9]</a></sup> -- demonstrate a separation between an open ontology and constraints on instance data. The OA Ontology contains few constraints, creating a flexible base for the constraints in the specification.
+</p>
+<p><a href="http://metaweidner.github.io/dcmi-iac/wiki/images/Oaeg.png" class="image"><img alt="Oaeg.png" src="http://metaweidner.github.io/dcmi-iac/wiki/images/Oaeg.png" width="500" height="262"></a>
+</p>
+<p>The OA specification, which we interpret to be an
+Application Profile, then describes the usage of the ontology, with constraints and preferred practices, as in the following
+example from Section 2.2:
+</p>
+<blockquote>There MAY be exactly 1 oa:serializedAt property per Annotation, and MUST NOT be more than 1. The datetime MUST be expressed in the xsd:dateTime format, and SHOULD have a timezone specified.</blockquote>
+<p>The OA Ontology puts no constraints on the range of Annotation bodies or targets, so these default to rdfs:Resource. This allows OA to annotate any resource with any resource.
+</p>
+<p>Although the OA Model is complex, with features such as selectors, states, and serialization, the core of the model is quite simple. The problem of describing annotations has been addressed many times and there are existing specifications and applications from a number of communities. The openness of the OA Ontology should make it possible to develop interoperability between these models so that annotations can be shared.
+</p>
+<h3> <span class="mw-headline" id="Europeana">Europeana</span>
+</h3>
+<p>At the beginning of the second session, Antoine Isaac of Europeana will discuss design considerations for the Europeana Data Model<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[10]</a></sup> and how this model might inform the thinking around Application Profiles.
+</p>
+<h2> <span class="mw-headline" id="Discussion">Discussion</span>
+</h2>
+<p>We propose the following questions for discussion:
+</p>
+<p>1. Inference schemas, such as OWL Ontologies, specify a simplified, "cartoon" universe that can be leveraged to infer additional knowledge based on what is already known.  The more tightly that cartoon universe is defined, the more information one will be able to infer.
+</p>
+<dl><dd>
+<dl><dd> For what purposes is it most appropriate to define an ontology, or inference schema, using strong semantic constraints?  What advantages do such a schema offer to a community of practice?
+</dd></dl>
+</dd></dl>
+<p>2. Validation schemas, such as Application Profiles, are designed to ensure the quality and consistency of data by specifying constraints on the structure and content of that data.  
+</p>
+<dl><dd>
+<dl><dd> For what purposes is it most appropriate to specify a validation schema such as an Application Profile? If a given dataset was created using a validation schema, such as an Application Profile, how can the creators of data advertise, and consumers of the data discover, the schema or profile used?  Might datasets describe themselves using a property for this purpose?
+</dd></dl>
+</dd></dl>
+<p>3. To make use of existing vocabularies in a linked environment, it is important that users can understand the semantics of the elements they are re-using and to be able to use these correctly.
+</p>
+<dl><dd>
+<dl><dd> When is it desirable to define properties strongly linked to specific data models, and when is it better to anticipate that they be used with other models?  What are the implications of strongly versus weakly constrained vocabularies for their uptake and consumption by users who do not know (or understand) a given data model?
+</dd></dl>
+</dd></dl>
+<hr>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-0">
+<a href="#cite_ref-0">↑</a> <a href="http://www.ariadne.ac.uk/issue25/app-profiles" class="external free" rel="nofollow">http://www.ariadne.ac.uk/issue25/app-profiles</a>
+</li>
+<li id="cite_note-1">
+<a href="#cite_ref-1">↑</a> <a href="http://dublincore.org/documents/singapore-framework/" class="external free" rel="nofollow">http://dublincore.org/documents/singapore-framework/</a>
+</li>
+<li id="cite_note-2">
+<a href="#cite_ref-2">↑</a> <a href="http://dublincore.org/documents/dc-dsp/" class="external free" rel="nofollow">http://dublincore.org/documents/dc-dsp/</a>
+</li>
+<li id="cite_note-3">
+<a href="#cite_ref-3">↑</a> <a href="http://dublincore.org/documents/abstract-model/" class="external free" rel="nofollow">http://dublincore.org/documents/abstract-model/</a>
+</li>
+<li id="cite_note-4">
+<a href="#cite_ref-4">↑</a> <a href="http://bibframe.org/" class="external free" rel="nofollow">http://bibframe.org/</a>
+</li>
+<li id="cite_note-5">
+<a href="#cite_ref-5">↑</a> <a href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records" class="external free" rel="nofollow">http://www.ifla.org/publications/functional-requirements-for-bibliographic-records</a>
+</li>
+<li id="cite_note-6">
+<a href="#cite_ref-6">↑</a> <a href="http://dlib.org/dlib/january10/hillmann/01hillmann.html" class="external free" rel="nofollow">http://dlib.org/dlib/january10/hillmann/01hillmann.html</a>
+</li>
+<li id="cite_note-7">
+<a href="#cite_ref-7">↑</a> <a href="http://www.w3.org/ns/oa.rdf" class="external free" rel="nofollow">http://www.w3.org/ns/oa.rdf</a>
+</li>
+<li id="cite_note-8">
+<a href="#cite_ref-8">↑</a> <a href="http://www.openannotation.org/spec/core/" class="external free" rel="nofollow">http://www.openannotation.org/spec/core/</a>
+</li>
+<li id="cite_note-9">
+<a href="#cite_ref-9">↑</a> <a href="http://europeana.eu/schemas/edm/" class="external free" rel="nofollow">http://europeana.eu/schemas/edm/</a>
+</li>
+</ol>
+
+
+
+				
+				
+	</div>

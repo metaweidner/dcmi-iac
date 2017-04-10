@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" dir="ltr">
 <head>
-<title>File:Reviewer-Upcoming assignments alert.txt - DCMI_MediaWiki</title>
+<title>File:Mapping schema.org-DC-sort by id.rdf - DCMI_MediaWiki</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="MediaWiki 1.16.0" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -32,17 +32,17 @@ wgServer="http://wiki.dublincore.org",
 wgCanonicalNamespace="File",
 wgCanonicalSpecialPageName=false,
 wgNamespaceNumber=6,
-wgPageName="File:Reviewer-Upcoming_assignments_alert.txt",
-wgTitle="Reviewer-Upcoming assignments alert.txt",
+wgPageName="File:Mapping_schema.org-DC-sort_by_id.rdf",
+wgTitle="Mapping schema.org-DC-sort by id.rdf",
 wgAction="view",
-wgArticleId=577,
+wgArticleId=401,
 wgIsArticle=true,
 wgUserName=null,
 wgUserGroups=null,
 wgUserLanguage="en",
 wgContentLanguage="en",
 wgBreakFrames=false,
-wgCurRevisionId=5383,
+wgCurRevisionId=3107,
 wgVersion="1.16.0",
 wgEnableAPI=true,
 wgEnableWriteAPI=true,
@@ -60,12 +60,12 @@ wgRestrictionMove=[];
 <script src="/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook&amp;270"></script>
 
 </head>
-<body class="mediawiki ltr ns-6 ns-subject page-File_Reviewer-Upcoming_assignments_alert_txt skin-monobook">
+<body class="mediawiki ltr ns-6 ns-subject page-File_Mapping_schema_org-DC-sort_by_id_rdf skin-monobook">
 <div id="globalWrapper">
 <div id="column-content"><div id="content" >
 	<a id="top"></a>
 	
-	<h1 id="firstHeading" class="firstHeading">File:Reviewer-Upcoming assignments alert.txt</h1>
+	<h1 id="firstHeading" class="firstHeading">File:Mapping schema.org-DC-sort by id.rdf</h1>
 	<div id="bodyContent">
 		<h3 id="siteSub">From DCMI_MediaWiki</h3>
 		<div id="contentSub"></div>
@@ -74,17 +74,16 @@ wgRestrictionMove=[];
 <ul id="filetoc"><li><a href="#file">File</a></li>
 <li><a href="#filehistory">File history</a></li>
 <li><a href="#filelinks">File links</a></li></ul><div class="fullMedia">
-<p><span class="dangerousLink"><a href="/images/b/bd/Reviewer-Upcoming_assignments_alert.txt" class="internal" title="Reviewer-Upcoming assignments alert.txt">Reviewer-Upcoming_assignments_alert.txt</a></span>‎
-<span class="fileInfo">(file size: 1 KB, MIME type: text/plain)</span>
+<p><span class="dangerousLink"><a href="/images/9/91/Mapping_schema.org-DC-sort_by_id.rdf" class="internal" title="Mapping schema.org-DC-sort by id.rdf">Mapping_schema.org-DC-sort_by_id.rdf</a></span>‎
+<span class="fileInfo">(file size: 27 KB, MIME type: application/rdf+xml)</span>
 </p>
 </div>
 <div class="mediaWarning"><b>Warning</b>: This file type may contain malicious code.
 By executing it, your system may be compromised.</div>
-<p>Email sent to peer reviewers the week before review assignments are ready alerting them to be ready.
-</p>
+
 <!-- 
 NewPP limit report
-Preprocessor node count: 1/1000000
+Preprocessor node count: 0/1000000
 Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
@@ -95,22 +94,22 @@ Expensive parser function count: 0/100
 </p>
 <table class="wikitable filehistory">
 <tr><td></td><th>Date/Time</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
-<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="/images/b/bd/Reviewer-Upcoming_assignments_alert.txt">20:23, 24 October 2013</a></td><td> <span style='white-space: nowrap;'>(1 KB)</span></td><td><a href="/index.php?title=User:StuartSutton&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="User:StuartSutton (page does not exist)">StuartSutton</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:StuartSutton&amp;action=edit&amp;redlink=1" class="new" title="User talk:StuartSutton (page does not exist)">Talk</a> | <a href="/index.php/Special:Contributions/StuartSutton" title="Special:Contributions/StuartSutton">contribs</a>)</span></span></td><td> <span class="comment">(Email sent to peer reviewers the week before review assignments are ready alerting them to be ready.)</span></td></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="/images/9/91/Mapping_schema.org-DC-sort_by_id.rdf">00:35, 10 April 2012</a></td><td> <span style='white-space: nowrap;'>(27 KB)</span></td><td><a href="/index.php/User:TomBaker" title="User:TomBaker" class="mw-userlink">TomBaker</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/index.php?title=User_talk:TomBaker&amp;action=edit&amp;redlink=1" class="new" title="User talk:TomBaker (page does not exist)">Talk</a> | <a href="/index.php/Special:Contributions/TomBaker" title="Special:Contributions/TomBaker">contribs</a>)</span></span></td><td></td></tr>
 </table>
 
 </div>
 <br /><ul>
-<li id="mw-imagepage-edit-external"><a href="/index.php?title=File:Reviewer-Upcoming_assignments_alert.txt&amp;action=edit&amp;externaledit=true&amp;mode=file" title="File:Reviewer-Upcoming assignments alert.txt">Edit this file using an external application</a> <small>(See the <a href="http://www.mediawiki.org/wiki/Manual:External_editors" class="external text" rel="nofollow">setup instructions</a> for more information)</small></li>
+<li id="mw-imagepage-edit-external"><a href="/index.php?title=File:Mapping_schema.org-DC-sort_by_id.rdf&amp;action=edit&amp;externaledit=true&amp;mode=file" title="File:Mapping schema.org-DC-sort by id.rdf">Edit this file using an external application</a> <small>(See the <a href="http://www.mediawiki.org/wiki/Manual:External_editors" class="external text" rel="nofollow">setup instructions</a> for more information)</small></li>
 </ul>
 <h2 id="filelinks">File links</h2>
 <div id='mw-imagepage-section-linkstoimage'>
 <p>The following page links to this file:
 </p><ul class='mw-imagepage-linkstoimage'>
-<li><a href="/index.php/DCMI_Handbook/Int_Conf/Annual_Meeting" title="DCMI Handbook/Int Conf/Annual Meeting">DCMI Handbook/Int Conf/Annual Meeting</a></li>
+<li><a href="/index.php/Schema.org_Alignment/MappingIssues" title="Schema.org Alignment/MappingIssues">Schema.org Alignment/MappingIssues</a></li>
 </ul>
 </div>
 <div class="printfooter">
-Retrieved from "<a href="http://wiki.dublincore.org/index.php/File:Reviewer-Upcoming_assignments_alert.txt">http://wiki.dublincore.org/index.php/File:Reviewer-Upcoming_assignments_alert.txt</a>"</div>
+Retrieved from "<a href="http://wiki.dublincore.org/index.php/File:Mapping_schema.org-DC-sort_by_id.rdf">http://wiki.dublincore.org/index.php/File:Mapping_schema.org-DC-sort_by_id.rdf</a>"</div>
 		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
 				<div class="visualClear"></div>
 	</div>
@@ -120,10 +119,10 @@ Retrieved from "<a href="http://wiki.dublincore.org/index.php/File:Reviewer-Upco
 		<h5>Views</h5>
 		<div class="pBody">
 			<ul>
-				 <li id="ca-nstab-image" class="selected"><a href="/index.php/File:Reviewer-Upcoming_assignments_alert.txt" title="View the file page [c]" accesskey="c">File</a></li>
-				 <li id="ca-talk" class="new"><a href="/index.php?title=File_talk:Reviewer-Upcoming_assignments_alert.txt&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
-				 <li id="ca-viewsource"><a href="/index.php?title=File:Reviewer-Upcoming_assignments_alert.txt&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
-				 <li id="ca-history"><a href="/index.php?title=File:Reviewer-Upcoming_assignments_alert.txt&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				 <li id="ca-nstab-image" class="selected"><a href="/index.php/File:Mapping_schema.org-DC-sort_by_id.rdf" title="View the file page [c]" accesskey="c">File</a></li>
+				 <li id="ca-talk" class="new"><a href="/index.php?title=File_talk:Mapping_schema.org-DC-sort_by_id.rdf&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/index.php?title=File:Mapping_schema.org-DC-sort_by_id.rdf&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/index.php?title=File:Mapping_schema.org-DC-sort_by_id.rdf&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 			</ul>
 		</div>
 	</div>
@@ -131,7 +130,7 @@ Retrieved from "<a href="http://wiki.dublincore.org/index.php/File:Reviewer-Upco
 		<h5>Personal tools</h5>
 		<div class="pBody">
 			<ul>
-				<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=File:Reviewer-Upcoming_assignments_alert.txt" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=File:Mapping_schema.org-DC-sort_by_id.rdf" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
 			</ul>
 		</div>
 	</div>
@@ -167,10 +166,10 @@ Retrieved from "<a href="http://wiki.dublincore.org/index.php/File:Reviewer-Upco
 		<h5>Toolbox</h5>
 		<div class="pBody">
 			<ul>
-				<li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/File:Reviewer-Upcoming_assignments_alert.txt" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-				<li id="t-recentchangeslinked"><a href="/index.php/Special:RecentChangesLinked/File:Reviewer-Upcoming_assignments_alert.txt" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/File:Mapping_schema.org-DC-sort_by_id.rdf" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/index.php/Special:RecentChangesLinked/File:Mapping_schema.org-DC-sort_by_id.rdf" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
 <li id="t-specialpages"><a href="/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
-				<li id="t-print"><a href="/index.php?title=File:Reviewer-Upcoming_assignments_alert.txt&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/index.php?title=File:Reviewer-Upcoming_assignments_alert.txt&amp;oldid=5383" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+				<li id="t-print"><a href="/index.php?title=File:Mapping_schema.org-DC-sort_by_id.rdf&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/index.php?title=File:Mapping_schema.org-DC-sort_by_id.rdf&amp;oldid=3107" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
 		</div>
 	</div>
 </div><!-- end of the left (by default at least) column -->
@@ -178,8 +177,8 @@ Retrieved from "<a href="http://wiki.dublincore.org/index.php/File:Reviewer-Upco
 <div id="footer">
 	<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
 	<ul id="f-list">
-		<li id="lastmod"> This page was last modified on 24 October 2013, at 20:23.</li>
-		<li id="viewcount">This page has been accessed 42,445 times.</li>
+		<li id="lastmod"> This page was last modified on 10 April 2012, at 00:35.</li>
+		<li id="viewcount">This page has been accessed 108,460 times.</li>
 		<li id="privacy"><a href="/index.php/DCMI_MediaWiki:Privacy_policy" title="DCMI MediaWiki:Privacy policy">Privacy policy</a></li>
 		<li id="about"><a href="/index.php/DCMI_MediaWiki:About" title="DCMI MediaWiki:About">About DCMI_MediaWiki</a></li>
 		<li id="disclaimer"><a href="/index.php/DCMI_MediaWiki:General_disclaimer" title="DCMI MediaWiki:General disclaimer">Disclaimers</a></li>
@@ -188,4 +187,4 @@ Retrieved from "<a href="http://wiki.dublincore.org/index.php/File:Reviewer-Upco
 </div>
 
 <script>if (window.runOnloadHook) runOnloadHook();</script>
-<!-- Served in 0.455 secs. --></body></html>
+<!-- Served in 0.445 secs. --></body></html>

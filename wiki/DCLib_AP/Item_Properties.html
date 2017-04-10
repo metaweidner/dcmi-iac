@@ -1,0 +1,140 @@
+---
+layout: page
+title: Item Properties
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p>Properties used with an Item
+</p>
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Identifier"><span class="tocnumber">1</span> <span class="toctext">Identifier</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Holding_Location"><span class="tocnumber">2</span> <span class="toctext">Holding Location</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Description"><span class="tocnumber">3</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Provenance"><span class="tocnumber">4</span> <span class="toctext">Provenance</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Exemplar_Of"><span class="tocnumber">5</span> <span class="toctext">Exemplar Of</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Identifier"> Identifier </span>
+</h2>
+<p><b>Name:</b> identifier
+</p>
+<p><b>URI:</b> <a href="http://purl.org/dc/elements/1.1/identifier" class="external free" rel="nofollow">http://purl.org/dc/elements/1.1/identifier</a>
+</p>
+<p><b>Definition:</b> An unambiguous reference to the resource within a given context.
+</p>
+<p><b>Type of Term:</b> Property
+</p>
+<p><b>DCLIB-Comment:</b>
+</p>
+<ul><li> <i>Unique-resource identifier:</i> Provide identifiers assigned to one-of-a-kind resources (such as accession numbers assigned to items in a museum collection) if one or more of this class of identifiers have been assigned to the resource and are known to the metadata agency. Local identifiers should be expressed in a form that guarantee global uniqueness. For instance, local accession number should be expanded into NBN (which can be expressed as HTTP URI; for instance, in <a href="http://urn.fi/URN:NBN:fi-fe201010142588" class="external free" rel="nofollow">http://urn.fi/URN:NBN:fi-fe201010142588</a> NBN is fi-fe201010142588).
+</li></ul>
+<p><b>Has Range:</b> 
+</p>
+<ul><li> dc:identifier may be used with literal or non-literal values. For further information see <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Publishing_Metadata#dcIdentifier_RDF" title="User Guide/Publishing Metadata"><b>RDF Examples</b></a>..
+</li></ul>
+<p><b>SES:</b> 
+</p>
+<ul><li> URI - <a href="http://purl.org/dc/terms/URI" class="external free" rel="nofollow">http://purl.org/dc/terms/URI</a>. 
+</li></ul>
+<p><b>Obligation:</b> MA
+</p>
+<p><b>Occurence:</b> 0-n
+</p>
+<h2> <span class="mw-headline" id="Holding_Location"> Holding Location </span>
+</h2>
+<p><b>Name:</b> availability
+</p>
+<p><b>URI:</b> <a href="http://www.agls.gov.au/agls/terms/availability" class="external free" rel="nofollow">http://www.agls.gov.au/agls/terms/availability</a> 
+</p>
+<p><b>Definition:</b> How the resource can be obtained or accessed, or contact information. 
+</p>
+<p><b>Type of Term:</b> Property 
+</p>
+<p><b>DCLIB-Comment:</b> Use for a physical location that allows the user to retrieve the item when a URI is not appropriate (e.g. for physical items not available electronically). This also facilitates access if the URI doesn't retrieve anything or only a poor substitute. Can also contain further identification within a location such as call number, accession number.
+</p>
+<p><b>Has Range:</b> <a href="http://www.w3.org/2000/01/rdf-schema#Literal" class="external free" rel="nofollow">http://www.w3.org/2000/01/rdf-schema#Literal</a>
+</p>
+<p><b>SES:</b> MARC Code list for Organizations - <a href="http://www.loc.gov/marc/organizations/" class="external free" rel="nofollow">http://www.loc.gov/marc/organizations/</a>
+</p>
+<p><b>Obligation:</b> MA
+</p>
+<p><b>Occurence:</b> 0-1
+</p>
+<h2> <span class="mw-headline" id="Description"> Description </span>
+</h2>
+<p><b>Name:</b> description
+</p>
+<p><b>URI:</b> <a href="http://purl.org/dc/elements/1.1/description" class="external free" rel="nofollow">http://purl.org/dc/elements/1.1/description</a>
+</p>
+<p><b>Definition:</b> An account of the resource.
+</p>
+<p><b>Type of Term:</b> Property 
+</p>
+<p><b>DCLIB-Comment:</b> 
+</p>
+<ul><li> It is permitted to link one or more external descriptions using a URI. (See <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Creating_Metadata#Guidelines_for_the_creation_of_descriptions" title="User Guide/Creating Metadata">Guidelines for the creation of descriptions</a>) 
+</li></ul>
+<p><b>Has Range:</b> 
+</p>
+<ul><li> dc:description may be used with literal or non-literal values. For further information see <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Publishing_Metadata#dcDescription_RDF" title="User Guide/Publishing Metadata"><b>RDF Examples</b></a>.
+</li></ul>
+<p><b>SES:</b> Using a URL the Syntax Encoding <a href="http://purl.org/dc/terms/URI" class="external free" rel="nofollow">http://purl.org/dc/terms/URI</a> should be used.
+</p>
+<p><b>Obligation:</b> O
+</p>
+<p><b>Occurence:</b> 0-n
+</p>
+<h2> <span class="mw-headline" id="Provenance"> Provenance </span>
+</h2>
+<p><b>Name:</b> Provenance
+</p>
+<p><b>URI:</b> <a href="http://purl.org/dc/terms/provenance" class="external free" rel="nofollow">http://purl.org/dc/terms/provenance</a>
+</p>
+<p><b>Definition:</b> A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
+</p>
+<p><b>Type of Term:</b> Property
+</p>
+<p><b>DCLIB-Comment:</b>
+</p>
+<ul><li> Has to be used with non-literal values.You may link to a provenance statement by URI. If no URI exist use a blank node describing the provenance (See <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Creating_Metadata#Guidelines_for_the_creation_of_content_for_provenance" title="User Guide/Creating Metadata">Guidelines for the creation of content for provenance</a>)
+</li></ul>
+<p><b>Has Range:</b> <a href="http://purl.org/dc/terms/ProvenanceStatement" class="external free" rel="nofollow">http://purl.org/dc/terms/ProvenanceStatement</a> (For further information see <a href="http://metaweidner.github.io/dcmi-iac/wiki/User_Guide/Publishing_Metadata#dctermsProvenance_RDF" title="User Guide/Publishing Metadata"><b>RDF Examples</b></a>)
+</p>
+<p><b>Obligation:</b> O
+</p>
+<p><b>Occurence:</b> 0-1
+</p>
+<h2> <span class="mw-headline" id="Exemplar_Of"> Exemplar Of </span>
+</h2>
+<p><b>Name:</b> isExemplarOf
+</p>
+<p><b>URI:</b> <a href="http://iflastandards.info/ns/fr/frbr/frbrer/P2006" class="external free" rel="nofollow">http://iflastandards.info/ns/fr/frbr/frbrer/P2006</a>
+</p>
+<p><b>Definition:</b> Relates an item to the manifestation that is exemplified by the item.
+</p>
+<p><b>Type of Term:</b> Property
+</p>
+<p><b>DCLIB-Comment:</b> The relation between an item and the bibliographicTextResouce.
+</p>
+<p><b>Has Range:</b> The "Manifestation" level of the bibliographicTextResource
+</p>
+<p><b>Has Domain:</b> Item
+</p>
+<p><b>Obligation:</b> M
+</p>
+<p><b>Occurence:</b> 1
+</p>
+<hr>
+<p>Go back to <a href="http://metaweidner.github.io/dcmi-iac/wiki/DCLib_AP#Description_Set_Profile_of_the_DC-Lib_AP_for_Bibliographic_Text_Resources" title="DCLib AP">AP for Bibliographic Text Resources</a>
+</p>
+
+
+				
+				
+	</div>

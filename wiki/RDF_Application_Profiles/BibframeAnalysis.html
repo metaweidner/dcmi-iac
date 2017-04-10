@@ -1,0 +1,86 @@
+---
+layout: page
+title: BibframeAnalysis
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p>A short evaluation of Bibframe against selected requirements:
+</p>
+<p><i>Simple cardinality</i> is covered by BIBFRAME:
+</p>
+<pre>
+"propertyTemplate": [
+         { ... },
+         {
+              "propertyURI": "http://bibframe.org/vocab/titleStatement",
+              "propertyLabel": "Title",
+              "mandatory": "true",
+              "repeatable": "true",
+              "type": "literal"
+         },
+         { ... }
+      ]
+</pre>
+<p><i>Allowed values</i> are not covered by BIBFRAME. They may be introduced for valueConstraints as follows:
+</p>
+<pre>
+"propertyTemplates": [
+         { ... },
+         {
+              "propertyURI": "http://bibframe.org/vocab/subject",
+              "propertyLabel": "Subject",
+              "type": "resource",
+              "valueConstraint": {
+                   "allowedValues": [ "value 1","value 2","value 3" ]
+              }
+         },
+         { ... }
+     ]
+</pre>
+<p><i>Valid datatypes</i> may be covered by BIBFRAME as this is an implementation issue.
+One can state constraints on datatypes for literals in BIBFRAME:
+</p>
+<pre>
+"propertyTemplates": [
+         { ... },
+         {
+              "propertyURI": "http://bibframe.org/vocab/vra/beginDate",
+              "propertyLabel": "Begin Date",
+              "type": "literal",
+              "valueConstraint": {
+                   "valueDataType": {
+                       "dataTypeURI": "http://bibframe.org/vocab/proposed/ISO8601",
+                       "dataTypeLabel": "ISO 8601",
+                       "dataTypeLabelHint": "ISO"
+                   }
+              }
+         },
+         { ... }
+      ]
+</pre>
+<p>What is needed here is to implement to check for each datatype if the literal is valid.
+Regular expressions may be used here in the background when SPARQL is used for the actual implementation.
+</p>
+<p><i>Property/class grouping</i> (e.g. propertyX is used for classY) is covered by BIBFRAME, as property templates are referenced within resource templates:
+</p>
+<pre>
+"resourceTemplate": [
+    {
+       "id": "bfp:Work:Book",
+       "resourceLabel": "Book",
+       "resourceURI": "http://bibframe.org/vocab/Text",
+       "propertyTemplates": [
+             { ... }
+       ]
+    }
+</pre>
+
+
+
+				
+				
+	</div>

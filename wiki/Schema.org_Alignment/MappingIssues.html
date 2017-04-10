@@ -1,0 +1,62 @@
+---
+layout: page
+title: MappingIssues
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<h2> <span class="mw-headline" id="Issues_Scratch_Pad_for_Schema.org_Alignments_Task_Group"> Issues Scratch Pad for Schema.org Alignments Task Group </span>
+</h2>
+<p>== New mapping proposals
+</p>
+<ul>
+<li> <a href="http://metaweidner.github.io/dcmi-iac/wiki/images/File" title="File:Mapping schema.org-DC-sort by domain.rdf">File:Mapping schema.org-DC-sort by domain.rdf</a>, sorted by domain
+</li>
+<li> <a href="http://metaweidner.github.io/dcmi-iac/wiki/images/File" title="File:Mapping schema.org-DC-sort by id.rdf">File:Mapping schema.org-DC-sort by id.rdf</a>, sorted by ID
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Immediate_issues"> Immediate issues </span>
+</h3>
+<ul><li> Which source do we use as the basis for mappings: the (multiple) Web pages at Schema.org; the OWL expression at Schema.org<sup id="cite_ref-0" class="reference"><a href="#cite_note-0">[1]</a></sup>; or the flat lists of properties maintained by Schema.RDFS.org?
+</li></ul>
+<blockquote>In our discussion in The Hague on 22 September, it was pointed out that schema.rdfs.org was automatically created from and synchronized with Schema.org's Web pages, but it was unclear whether the OWL expression at schema.org<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[2]</a></sup> was also intended to be synchronized. At the time, we noted that recent modifications such as those linked to rNews were not taken into account in the OWL schema -- in   
+<a href="http://schema.org/NewsArticle" class="external free" rel="nofollow">http://schema.org/NewsArticle</a>, for example, properties such as printColumn were not to be found in the OWL schema. On the assumption that the OWL schema is generated automatically and periodically refreshed, we plan to use it as the source.</blockquote>
+<ul><li> Where, and in what form, should the mappings be published? For example, should they be folded into the documentation for DCMI Metadata Terms, or kept separate but linked? Should they be published on the DCMI website; under schema.rdfs.org, like the SIOC mappings<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[3]</a></sup>; or on a Mercurial repository at W3C being set up for the Web Schemas Task Force?
+</li></ul>
+<ul><li> For simplicity, should mapping files fall under the CC0 license ("No Rights Reserved")<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[4]</a></sup>?
+</li></ul>
+<ul><li> In what format should the mappings be published?  In plain ntriples, with notes for humans in the wiki?
+</li></ul>
+<ul><li> Do we stick to "simple" direct mappings using owl:equivalentClass, owl:equivalentProperty, rdfs:subClassOf and rdfs:subPropertyOf, or do we consider more complex mapping rules (using OWL property chains, SPARQL CONSTRUCT, RIF ...)?
+</li></ul>
+<h3> <span class="mw-headline" id="Medium-term_issues"> Medium-term issues </span>
+</h3>
+<ul><li> How should the mappings be versioned - e.g., using Mercurial or Git?
+</li></ul>
+<ul><li> What guarantees or clarifications should DCMI make (or not make) about the semantic stability of mappings or their persistence over time? For example, in The Hague we figured it would be problematic to put mappings under the DCMI Namespace Policy because we cannot, in principle, control the semantic stability of what we map to (in many cases).  DCMI has added an equivalent property declaration between dct:creator and foaf:maker in the formal DCMI terms documentation, but this should perhaps be more the exception than the rule.
+</li></ul>
+<ul><li> Is there a need to formalize the process of approving and reviewing the mappings, e.g. by a re-oriented DCMI Usage Board -- bearing in mind that the Schema.org mappings are (presumably) merely the first of many sets of mappings that DCMI may need to make?
+</li></ul>
+<ol class="references">
+<li id="cite_note-0">
+<a href="#cite_ref-0">↑</a> <a href="http://schema.org/docs/schemaorg.owl" class="external free" rel="nofollow">http://schema.org/docs/schemaorg.owl</a>
+</li>
+<li id="cite_note-1">
+<a href="#cite_ref-1">↑</a> <a href="http://schema.org/docs/schemaorg.owl" class="external free" rel="nofollow">http://schema.org/docs/schemaorg.owl</a>
+</li>
+<li id="cite_note-2">
+<a href="#cite_ref-2">↑</a> <a href="http://schema.rdfs.org/mappings/sioc" class="external free" rel="nofollow">http://schema.rdfs.org/mappings/sioc</a>
+</li>
+<li id="cite_note-3">
+<a href="#cite_ref-3">↑</a> <a href="http://creativecommons.org/about/cc0" class="external free" rel="nofollow">http://creativecommons.org/about/cc0</a>
+</li>
+</ol>
+
+
+
+				
+				
+	</div>

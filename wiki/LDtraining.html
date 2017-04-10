@@ -1,0 +1,223 @@
+---
+layout: page
+title: LDtraining
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<table id="toc" class="toc"><tr><td>
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1">
+<a href="#Linked_Data_Training_Sessions"><span class="tocnumber">1</span> <span class="toctext">Linked Data Training Sessions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Microformats_and_RDFa"><span class="tocnumber">1.1</span> <span class="toctext">Microformats and RDFa</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Creating_and_Extending_Vocabularies"><span class="tocnumber">1.2</span> <span class="toctext">Creating and Extending Vocabularies</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Serializations_of_RDF"><span class="tocnumber">1.3</span> <span class="toctext">Serializations of RDF</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#RDF_and_OWL"><span class="tocnumber">1.4</span> <span class="toctext">RDF and OWL</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#SPARQL"><span class="tocnumber">1.5</span> <span class="toctext">SPARQL</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#RDF_in_Databases:_Triple_Stores.2C_and_more"><span class="tocnumber">1.6</span> <span class="toctext">RDF in Databases: Triple Stores, and more</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Linked_Data_Training_Sessions">Linked Data Training Sessions</span>
+</h2>
+<p>Draft and as yet unorganized
+</p>
+<h3> <span class="mw-headline" id="Microformats_and_RDFa">Microformats and RDFa</span>
+</h3>
+<p><b>Audience</b>: Web designers in particular, anyone interested in what these are and how they can be used.
+</p>
+<p><b>Prior skills</b>: Some knowledge of HTML, because it will be used in the exercises but not explained.
+</p>
+<p><b>Lesson</b>
+</p>
+<ul>
+<li> Overview; what they are
+<ul>
+<li> Microformats
+</li>
+<li> RDFa, RDFa lite
+</li>
+</ul>
+</li>
+<li> Show and explain a microformat example using schema.org
+</li>
+<li> Show and explain an RDFa lite example using schema.org
+</li>
+</ul>
+<p><b>Exercises</b>
+</p>
+<ul><li> create and validate one microformat example and one RDFa example
+</li></ul>
+<p>Validation will use Google Rich Snippet tool, so explain what it does and what it means.
+</p>
+<p>Provide the beginning HTML that has to be marked up.
+</p>
+<p>View display of RDFa in WorldCat and discuss.
+</p>
+<h3> <span class="mw-headline" id="Creating_and_Extending_Vocabularies">Creating and Extending Vocabularies</span>
+</h3>
+<p><b>Audience</b>: Non-technical staff in libraries, and anyone who wants to know more about linked data.
+</p>
+<p><b>Prior knowledge</b>: Best if audience has some basic knowledge of linked data, triples, statements, but lesson should be designed to be conceptual so that technical knowledge isn't required.
+</p>
+<p><b>Lesson</b>
+</p>
+<ul><li> Overview: 
+<ul>
+<li> short introduction to ontologies and vocabularies, OWL and SKOS. This lesson will concentrate on OWL.
+</li>
+<li> define URIs and domains
+</li>
+</ul>
+</li></ul>
+<ul><li> Creating a vocabulary 
+<ul><li> best practices
+<ul>
+<li> http URI
+</li>
+<li> information available at the URI location
+</li>
+<li> labels (in different languages as needed)
+</li>
+<li> definitions and comments
+</li>
+</ul>
+</li></ul>
+</li></ul>
+<p><i>Note:</i> This lesson will state that there are many technical issues beyond these (e.g. domains and ranges), and those issues will be covered in a lesson (or two) on OWL.
+</p>
+<ul><li> Extending a vocabulary
+<ul>
+<li> using Include
+</li>
+<li> using super/sub relationships
+</li>
+</ul>
+</li></ul>
+<p><b>Exercise</b>
+</p>
+<ol>
+<li> How would you add another property to this vocabulary? (Use "<a href="http://example.com/" class="external free" rel="nofollow">http://example.com/</a>" as your domain)
+</li>
+<li> How would you link these two vocabularies?
+</li>
+</ol>
+<h3> <span class="mw-headline" id="Serializations_of_RDF">Serializations of RDF</span>
+</h3>
+<p><b>Audience</b>: Developers of metadata schemas and of applications that will use RDF
+</p>
+<p><b>Prior knowledge</b>: Should have basic knowledge of linked data (triples, URIs); should be familiar with at least one common serialization (XML, JSON, as examples).
+</p>
+<p><b>Lesson</b>
+</p>
+<ul><li> Introduction: RDF and triples are the basis, but can be serialized in a number of ways. All of those ways must accurately represent the triples.
+</li></ul>
+<ul><li> Serializations
+<ul>
+<li> Triples
+</li>
+<li> N3/Turtle
+</li>
+<li> RDF/XML
+</li>
+<li> JSON-LD
+</li>
+</ul>
+</li></ul>
+<p><b>Exercises</b>
+</p>
+<p>Provide a simple test case that is in triple form. For Turtle and for RDF/XML, profile the headers with qname definitions, since that is just tedium. Select one or more online validation sites for validating the work.
+</p>
+<ol>
+<li> Create Turtle for this example, and validate
+</li>
+<li> Create RDF/XML for this example, and validate
+</li>
+</ol>
+<h3> <span class="mw-headline" id="RDF_and_OWL">RDF and OWL</span>
+</h3>
+<p><b>Audience</b>: Application developers who expect to work with linked data using RDF and OWL.
+</p>
+<p><b>Prior skills</b>: Should have basic knowledge of linked data, triples, URIs. 
+</p>
+<p><b>Lesson</b>
+</p>
+<ul>
+<li> Basic functions of RDF
+</li>
+<li> OWL for ontologies
+<ul>
+<li> Purpose of inferencing
+</li>
+<li> Role of Classes and Properties in OWL
+</li>
+</ul>
+</li>
+</ul>
+<p>... look for some tutorials
+</p>
+<h3> <span class="mw-headline" id="SPARQL">SPARQL</span>
+</h3>
+<p><b>Audience</b>: Application developers
+</p>
+<p><b>Prior skills</b>: Should have experience with database querying in SQL
+</p>
+<p><b>Lesson</b>
+</p>
+<ul><li> Introduction
+<ul>
+<li> Use of triples in SPARQL
+</li>
+<li> Most common query terms 
+</li>
+<li> SPARQL end point
+</li>
+<li> SPARQL query responses
+</li>
+<li> More complex queries
+</li>
+<li> SPARQL for update (probably just a mention)
+</li>
+</ul>
+</li></ul>
+<p><b>Exercises</b>
+</p>
+<p><i>Note:</i> This lesson requires a robust SPARQL endpoint that one can use during the lesson that will not crash as multiple users submit queries.
+</p>
+<ul><li> Range of exercises (3-5) varying in complexity from very simple to very complex
+</li></ul>
+<h3> <span class="mw-headline" id="RDF_in_Databases:_Triple_Stores.2C_and_more">RDF in Databases: Triple Stores, and more</span>
+</h3>
+<p><b>Audience</b>: Database developers
+</p>
+<p><b>Prior skills</b>: Must know how to develop and manage databases for non-RDF data.
+</p>
+<p><b>Lesson</b>
+</p>
+<ul>
+<li> Introduction
+<ul>
+<li> What is a triple store? How is it different from an RDBMS?
+</li>
+<li> How does this relate to noSQL databases?
+</li>
+</ul>
+</li>
+<li> Common triple-store software
+</li>
+</ul>
+<p><b>Exercises</b>
+</p>
+<p>Not sure if there are exercises, but teacher can demonstrate developing a small database using a set of triples.
+</p>
+
+
+				
+				
+	</div>

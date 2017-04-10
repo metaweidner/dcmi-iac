@@ -1,0 +1,167 @@
+---
+layout: page
+title: RdfAp2014-2-19
+---
+
+<div id="bodyContent">
+		
+		
+		
+		
+<p>RDF Application Profiles - 2014-02-19 - telecon
+</p>
+<p>Chair: Kai
+</p>
+<p>Present: Kai, Evelyn, Robina, Lars, Diane, Bernard, Dickson, Gordon, Miika, TomB, Mariana, Corey, Adrian, Karen, Valentine. 
+</p>
+<p>Scribe: Karen
+</p>
+<h2> <span class="mw-headline" id="DISCUSSION_OF_USE_CASES">DISCUSSION OF USE CASES</span>
+</h2>
+<p>EDM - <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/EDM" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/EDM</a>
+</p>
+<p>Current: validation in XML/Schematron
+</p>
+<p>Desired: more data quality validation (properties, domains, dates)
+</p>
+<p>DM2E model - <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/DM2E" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/DM2E</a>
+(EDM specialisation for digitised manuscripts)
+</p>
+<p>Current: Uses external vocabularies with some difference in ranges, other modifications (extended scope notes of reused properties)
+</p>
+<p>Desired: better use of mix&amp;match vocabularies
+</p>
+<p>EDM in DDB - <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/DDB-EDM" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/DDB-EDM</a>
+</p>
+<p>Current: XML, mapping between different schemas. All changes need to be done in mappings, documentation and Schematron.
+</p>
+<p>Desired: Better workflow, where validate, map, &amp; documentation are together
+</p>
+<p>- versioning so you know if data was done to an earlier AP
+</p>
+<p>OER World Map - <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/OER-world-map" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/OER-world-map</a>
+</p>
+<p>Desired: Validation for read/write API
+</p>
+<p>- need user labels and display order, which links are resolved, etc. (cf: Fresnel)
+</p>
+<p>CEN EuroLMAI - <a href="http://metaweidner.github.io/dcmi-iac/wikihttp://wiki.dublincore.org/CSC" class="external free" rel="nofollow">http://wiki.dublincore.org/index.php/CSC</a>
+</p>
+<p>Current: national data model, moving from UML to AP-type re-usable vocabularies
+</p>
+<p>Desired: machine-readable API for validation &amp; provenance of APs and AP changes
+</p>
+<h2> <span class="mw-headline" id="ACTION:_KAI_SUMMARY_.26_START_OF_DRAFT_CHARTER">ACTION: KAI SUMMARY &amp; START OF DRAFT CHARTER</span>
+</h2>
+<p>- validation of RDF data
+</p>
+<p>- publish coherent machine-readable vocabularies and make additional statements about properties within local context (reusable local view)
+</p>
+<p>- include how to make use of data - view / edit / label / style differences
+</p>
+<p>- APs need to be machine-readable schema specifications
+</p>
+<p>- define constraints, even local extensions and variations
+</p>
+<p>- how to create and maintain APs, including documentation and versioning
+</p>
+<h2> <span class="mw-headline" id="SKYPE_CHAT">SKYPE CHAT</span>
+</h2>
+<pre>
+Karen Coyle: Two possible workshops upcoming that we can use to discuss APs
+Karen Coyle: New participants: Thomas / research ontology for social sciences; model transformations based on meta-modeling.
+Karen Coyle: Valentine / Europeana / data coordinator
+Karen Coyle: Corey / metadata services librarian, NYU / DC architecture forum / RDF in Blacklight, Hydra, Fedora
+Karen Coyle: Robina / Europeana /
+Karen Coyle: Mark Matienzo / DPLA / will add use case
+Karen Coyle: Miika / computer science center, Finland / higher ed and academia
+Karen Coyle: Dickson / MIMOS, Malaysia
+Karen Coyle: Diane / Metatadata Management Associates / vocabulary development, registries
+Kai Eckert: http://wiki.dublincore.org/index.php/RDF-Application-Profiles
+Karen Coyle: USE CASES :
+Karen Coyle: http://wiki.dublincore.org/index.php/EDM
+Karen Coyle: Robina: summary of current validation
+Karen Coyle: ... external and internal schemas / aggregation of data sources; use XML schema to check validity, cardinality, etc. Use Schematron rules
+Karen Coyle: schema-level validation + value types (now) - this is minimal but they would like to do other things
+Karen Coyle: see presentations by A Isaac for validations they would like to do but cannot do now
+Karen Coyle: Valentine: would like to validate recommended values / more data quality validation
+Karen Coyle: -- check occurrence of properties, domains, check dates
+Karen Coyle: -- want to provide info to data providers on how to improve input
+Karen Coyle: Kai: main concern = validation. Need to document? publish?
+Karen Coyle: Robina: not yet clear how an AP would do that. Valentine: could be a document that could be read by providers
+Karen Coyle: Robina: would like to accept specializations of EDM from providers
+Kai Eckert: http://wiki.dublincore.org/index.php/DM2E
+Karen Coyle: Evelyn: specialization of EDM for manuscripts. Main issue: using various external vocabs; sometimes ranges vary from original, or desire to make modifications
+Karen Coyle: -- need to communicate details to data providers / have a large document / specialized model is subclassed to EDM
+Karen Coyle: -- need better way to mix&amp;match, but also specialize for EDM
+Karen Coyle: Stefanie: DDB-EDM / provides data for Europeana but also keep the data in their own system. Working on an XML schema and schematron
+Kai Eckert: http://wiki.dublincore.org/index.php/DDB-EDM
+Karen Coyle: -What if XML is not the solution? (turtle, etc.)
+Karen Coyle: -Mapping: there is a lot of mapping between schemas / every change has to be done in mappings, in documentation, is schematron. Need a better workflow.
+Kai Eckert: http://wiki.dublincore.org/index.php/KIM-recommendations
+Karen Coyle: - Summary: Validate, map, + documentation
+Kai Eckert: http://wiki.dublincore.org/index.php/OER-world-map
+Karen Coyle: Adrian (HBZ): World map project
+Karen Coyle: -- read/write validation of data / building applications on an API, needs user labels and display order, resolution of links
+Karen Coyle: -- incl. order of properties, labels
+Adrian Pohl: http://www.w3.org/2005/04/fresnel-info/
+Karen Coyle: -- will need to create an AP for Fresnel-like display
+Miika Alonen: I added the CSC/academia use case
+Miika Alonen: http://wiki.dublincore.org/index.php/CSC
+Kai Eckert: http://wiki.dublincore.org/index.php/CSC
+Karen Coyle: Miika: CSC - minister of education and culture / data storage and management for education
+Karen Coyle: -- have national data model / moving from UML to AP-type or core vocabularies that can be re-used
+Karen Coyle: -- have one AP for research data publishing
+Karen Coyle: -- want: machine-readable APs for validation / track provenance of APs
+Karen Coyle: Kai: why provenance?
+Karen Coyle: Miika: want to now how APs are constructed, developed / do not know who made changes to data model
+Karen Coyle: Stefanie: data may come in based on an earlier model / need to know "generation" , version of AP
+Kai Eckert: i just wanted to say that application of provenance information beyond versioning of APs could be interesting
+Kai Eckert: nothing more :-)
+Kai Eckert: any further questions?
+Diane Hillmann: Kai, I agree with you--
+Miika Alonen: Yes. Providing machine readable version of AP would enable full use of PROV.
+Mark A. Matienzo: Not ready this week - will ned to postpone
+Mark A. Matienzo: *need
+Karen Coyle: Kai: draft charter (for next call)
+Karen Coyle: - validation of RDF data
+Mark A. Matienzo: I'll be working with Amy Rudersdorf on our end to write up our use case and will send a notice to DC-Architecture when it's on the wiki.
+Karen Coyle: - - W3C group
+charles.valentine:  gathering litterature and rules would be already good
+Karen Coyle: - publish coherent machine-readable vocabularies / but make additional statements about properties within local context
+Karen Coyle: -- reusable local view
+Diane Hillmann: Kai, I think this is an important aspect--might include local extension too?
+Karen Coyle: - further information how to make use of data - view / edit / label / style differences
+Karen Coyle: - machine-readable APs / schema specification / constraints (even local)
+Karen Coyle: - how to create and maintain / document, versioning,
+Mark A. Matienzo: +1 to discussing local extensions
+Mark A. Matienzo: that is relevant to our yet undocumented use case for DPLA.
+Diane Hillmann: Yes
+Karen Coyle: - local extensions
+Karen Coyle: stefanie: difference between extensions and refinements (EDM)
+Kai Eckert: lars?
+Karen Coyle: Lars: DNB - how to distribute data in RDF with different types of representations / own schema or BIBFRAME schema / how to tell users what profile they are getting, using http headers
+Karen Coyle: Kai: this method could be an extension to VOID - point to different representations of the same data
+Karen Coyle: Lars: do it using URI patterns
+Karen Coyle: next meeting?
+Mark A. Matienzo: +1 for using doodle
+Robina Clayphan: +1
+Karen Coyle: Will schedule via Doodle
+Mariana Curado Malta: Doodle is perfect
+Robina Clayphan: or a dealing for filling in the doodle?
+Robina Clayphan: deadline
+Adrian Pohl: +1 to what Corey said or send the actual date to the list earlier
+Adrian Pohl: +1 for deadline
+Mariana Curado Malta: there is a problem there
+Mariana Curado Malta: for those who have to give classes
+Mariana Curado Malta: will never be able to attend
+Mariana Curado Malta: if it goes in a day that is occupied
+Corey Harper: deadlines++
+
+</pre>
+
+
+
+				
+				
+	</div>
